@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="danielqf">
+
+
+    <meta name="subtitle" content="Modify">
+
+
+
+
+<title>「ZSKOI2023」总结 | Danielqf&#39;s Blog</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+    });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+    
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+    
+<script src="/js/search.js"></script>
+
+    <script type="text/javascript">
+        var search_path = "search.xml";
+        if (search_path.length == 0) {
+            search_path = "search.xml";
+        }
+        var path = "/" + search_path;
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        click_time=0;
+    </script>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Danielqf&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/tag">Tag</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <a class="menu-item" onclick="$('#search-page').show(); $('#local-search-input')[0].focus();">Search</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Danielqf&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/tag">Tag</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+
+        <div class="main">
+            <div style="z-index: 1000; position: fixed; background-color: rgba(0, 0, 0, 0.8);
+        top: 0; bottom: 0; left: 0; right: 0; padding: 0 max(50% - 375px,5px); display: none;" id="search-page"
+        onclick="if (Date.now()-click_time>=10) { this.style.display='none'; } quitting=1; ">
+    <input id="local-search-input" style="height: 24px; position: relative; top: 24px; font-size: 16px;
+        width: calc(100% - 50px); color: white; background-color: initial; padding: 12px 23px; border-radius: 5px; border: 2px solid #bbb; outline: 0;"
+        onclick="click_time=Date.now()">
+    <div id="local-search-result" style="width: 100%; position: relative; top: 24px;
+        height: calc(100% - 105px);" onclick="click_time=Date.now()"></div>
+</div>
+
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">「ZSKOI2023」总结</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href=>danielqf</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a>2023.06.19&nbsp;&nbsp;21:30:49</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>所以说这场比赛与义务教育有什么关系？</p>
+<h2 id="day-1，6-16，Fri"><a href="#day-1，6-16，Fri" class="headerlink" title="day -1，6.16，Fri"></a>day -1，6.16，Fri</h2><p><del>人在机房坐，比赛天上来。</del></p>
+<p>当时洛谷日爆，然后<del>脑抽</del>写了个东西一直打开luogu.com.cn。</p>
+<p>然后教练打开了屏幕广播，说了一下比赛的事情，把座位表发给我们。</p>
+<p>似乎不用linux评测。</p>
+<p>结束广播之后，屏幕就再也没有亮起来。。。（后面重启好了）</p>
+<h2 id="day-0，6-17，Sat"><a href="#day-0，6-17，Sat" class="headerlink" title="day 0，6.17，Sat"></a>day 0，6.17，Sat</h2><p>jy只有初一去了jz，高中在402断网比赛（当然还有春神），于是初中的去了302。</p>
+<p>8G内存！VScode！（虽然我不用）VMware！NOIlinux！</p>
+<p>下午Jimmy说<strong>应该</strong>是用Windows评测。。。</p>
+<h2 id="day-1，6-18-Sun"><a href="#day-1，6-18-Sun" class="headerlink" title="day 1，6.18.Sun"></a>day 1，6.18.Sun</h2><p>昨晚睡得比较晚，头有些痛。</p>
+<p>6点起来，7：50到jz，又睡了一会，8：20进考场，考场在503。</p>
+<p>我前两个位置都没人。Verser在我正前方3个位%%%</p>
+<p>没断网？全都在敲代码？没有VMware但有Gvim和CodeBlocks？</p>
+<p>于是我配好了Dev，测了一下a+b和文操。</p>
+<p>发了题面，没有大样例。</p>
+<p>开题！</p>
+<h3 id="T1"><a href="#T1" class="headerlink" title="T1"></a>T1</h3><p>求给定字符串的最长回文<strong>子序列</strong>长度，$n\leq1000$。</p>
+<p>不会有人想manacher吧？</p>
+<p>想了一个朴素的 $O(n^2)$ 区间DP，应该能过。</p>
+<h3 id="T2"><a href="#T2" class="headerlink" title="T2"></a>T2</h3><p>有两个盒子AB，其中黑白球数给定。每次从A拿一个球到B，再从B拿一个球到A。重复 $n$ 次，求A中白球比率的期望。$n,\text{总球数}\leq10^{18}$。</p>
+<p>奇奇怪怪，只会 $O(nm)$ dp。</p>
+<h3 id="T3"><a href="#T3" class="headerlink" title="T3"></a>T3</h3><p>给定一个 $n\times n$ 的方阵，每次操作一个矩形 $(x1,y1)(x2,y2)$，给矩形内的点 $(x,y)$ 加上 $\binom{x-x1}{y-y1}$。求最终矩形每行每列的异或和。$n,Q\leq5000$</p>
+<p>题目主人公是<strong>骐度空间·莫羯座·十一月的萧彰</strong>。。。</p>
+<h3 id="T4"><a href="#T4" class="headerlink" title="T4"></a>T4</h3><p>给定一颗树。每次操作先选择一个点 $a$ ，断开 $a$ 的邻边，再在 $a$ 与之前相邻的点之间重新连边（任意方式，只要没有环）。求把树调整成给定形态的最少操作次数（点有标号）。$n\leq10^6$。</p>
+<p>弃。</p>
+<p>看完题大约9点，感觉很懵，先打了T1，过了样例和手造数据。</p>
+<p>9点半，出去上了个厕所。</p>
+<p>然后强攻T3，发现了一个差分做法，设 $a_{i,j}&#x3D;ans_{i,j}-ans_{i-1,j-1}-ans_{i-1,j}$，那么操作时只会改动 $O(n)$ 个位置。</p>
+<p>用1小时打完，尝试优化T2的DP无果，于是打了60部分分。</p>
+<p>T4暴力都不会。。。</p>
+<p>然后闲着没事干，打了T1T3的对拍。</p>
+<p>于是边检查边对拍边摸鱼了半个小时。</p>
+<p>估分100+60+100+0&#x3D;260</p>
+<h3 id="赛后"><a href="#赛后" class="headerlink" title="赛后"></a>赛后</h3><p>听说不少人切T3，T1有好多奇怪做法。</p>
+<p>路上被-6n<del>打劫</del>了，他说401有VMware！</p>
+<p>yjx和我估分一样。</p>
+<p>lsx切T2？$O(64\log n)$？？？</p>
+<p>中考、期末考RP++！</p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E6%B8%B8%E8%AE%B0/"># 游记</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+    <script src="https://giscus.app/client.js"
+        data-repo="danielqfmai/danielqfmai.github.io"
+        data-repo-id="R_kgDOK66FXA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOK66FXM4Cb1ep"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+    </script>
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© danielqf | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

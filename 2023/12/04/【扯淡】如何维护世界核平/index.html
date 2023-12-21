@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="danielqf">
+
+
+    <meta name="subtitle" content="Modify">
+
+
+
+
+<title>【扯淡】如何维护世界核平 | Danielqf&#39;s Blog</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+    });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+    
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+    
+<script src="/js/search.js"></script>
+
+    <script type="text/javascript">
+        var search_path = "search.xml";
+        if (search_path.length == 0) {
+            search_path = "search.xml";
+        }
+        var path = "/" + search_path;
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        click_time=0;
+    </script>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Danielqf&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/tag">Tag</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <a class="menu-item" onclick="$('#search-page').show(); $('#local-search-input')[0].focus();">Search</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Danielqf&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/tag">Tag</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+
+        <div class="main">
+            <div style="z-index: 1000; position: fixed; background-color: rgba(0, 0, 0, 0.8);
+        top: 0; bottom: 0; left: 0; right: 0; padding: 0 max(50% - 375px,5px); display: none;" id="search-page"
+        onclick="if (Date.now()-click_time>=10) { this.style.display='none'; } quitting=1; ">
+    <input id="local-search-input" style="height: 24px; position: relative; top: 24px; font-size: 16px;
+        width: calc(100% - 50px); color: white; background-color: initial; padding: 12px 23px; border-radius: 5px; border: 2px solid #bbb; outline: 0;"
+        onclick="click_time=Date.now()">
+    <div id="local-search-result" style="width: 100%; position: relative; top: 24px;
+        height: calc(100% - 105px);" onclick="click_time=Date.now()"></div>
+</div>
+
+            <div class="container">
+    
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">【扯淡】如何维护世界核平</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href=>danielqf</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a>2023.12.04&nbsp;&nbsp;11:40:54</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>假设一个区域存在两类人：鹰派和鸽派，他们要争取资源。</p>
+<p>如果两个人 A 和 B 分配 $2$ 单位的资源，会形成以下四种结果：</p>
+<ul>
+<li>如果 A B 都是鸽派，则他们会和平相处，每人分得 $1$ 单位的资源。</li>
+<li>如果 A 是鹰派，B 是鸽派，则 A 会独占 $2$ 单位的资源。反之亦然。</li>
+<li>如果 A B 都是鹰派，则他们会爆发战争，最后还是每人分得 $1$ 单位的资源，但会因为战争而每人亏损 $x$ 单位的资源（$x&gt;0$）。</li>
+</ul>
+<p>设该地区鹰派所占比例为 $h$，鸽派所占比例为 $1-h$，则：</p>
+<ul>
+<li>一位鸽派人士能得到的资源 $v_\text鸽&#x3D;(1-h)\times1\ +\ h\times0&#x3D;1-h$.</li>
+<li>一位鹰派人士能得到的资源 $v_\text鹰&#x3D;(1-h)\times2\ +\ h\times(1-x)&#x3D;(-1-x)h+2$.</li>
+</ul>
+<p>可以发现：</p>
+<ul>
+<li>当 $h&lt;\frac 1x$ 时，$v_\text鹰&gt;v_\text鸽$，于是会有一些鸽派人士转变为鹰派，使 $h$ 增大。</li>
+<li>当 $h&gt;\frac 1x$ 时，$v_\text鸽&gt;v_\text鹰$，于是会有一些鹰派人士转变为鸽派，使 $h$ 减小。</li>
+</ul>
+<p>所以 $h$ 最终会等于 $\min(\frac 1x,1)$，此时 $v_\text鸽&#x3D;v_\text鹰&#x3D;max(0,1-\frac 1x)$.</p>
+<p>所以 $x$ 越大 $h$ 就越小，战争就越少，同时每个人获得的资源就越多。</p>
+<p><del>曼哈顿计划，启动！</del></p>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E6%89%AF%E6%B7%A1/"># 扯淡</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+    <script src="https://giscus.app/client.js"
+        data-repo="danielqfmai/danielqfmai.github.io"
+        data-repo-id="R_kgDOK66FXA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOK66FXM4Cb1ep"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+    </script>
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© danielqf | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

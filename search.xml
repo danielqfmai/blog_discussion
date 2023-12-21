@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>GDKOI2023油寄</title>
+    <url>/2023/03/13/GDKOI2023%E6%B2%B9%E5%AF%84/</url>
+    <content><![CDATA[<p>3月10日下午坤点，抱着行李，怀着激动的心情，踏上了大巴，开始了长达2天半的被虐之旅</p>
+<h1 id="D0"><a href="#D0" class="headerlink" title="D0"></a>D0</h1><p>车上看洋葱，<del>还偷拍了lsx和thy</del>，没有手机qwq</p>
+<p>到了酒店，4点50进到了房间，用电视腐B站</p>
+<p>接着去6中，领了个袋子然后去吃饭，这饭蔡和 2.5线城市的某小破学校 的有点像啊，4个蔡吃不完qwq</p>
+<p>晚上没走远，去吃了Mixue Icecream</p>
+<h1 id="D1"><a href="#D1" class="headerlink" title="D1"></a>D1</h1><p>昨晚12点才睡，因为只收了手只因，<del>没有收电视</del>，居然没犯困</p>
+<p>早上在麦当劳吃了早餐，花了15大洋，热量还蛮高的（汉堡+薯饼+豆浆）</p>
+<p>8：30开始比赛 <del><strong>正片结束</strong></del></p>
+<p><strong>T1</strong> 是判断两方阵（方形矩阵）相乘是否等于第个方阵，$0\leqslant n\leqslant 3000$，之前C组D过原题，两边同时乘一个随机向量 $O(n^2)$ 判断</p>
+<p><strong>T2</strong> 是求满足 $\forall i\in[1,m],\ p_i&gt;m$ 的长度为 $n$ 错排列数，$T$ 组数据，$0\leqslant m\leqslant n\leqslant 2\times10^5,\ 0\leqslant T\leqslant 2\times10^5$</p>
+<p>首先前 $m$ 个数有 $\tbinom{n-m}{m}$ 种方案，然后转化为 $m$ 个点不限制 的长度为 $n-m$ 错排列数（从置换环角度考虑）</p>
+<p>$O(Tm)$ 暴算</p>
+<p><strong>T3</strong> 题面说得很清楚了，不再描述了<del>（明明是懒）</del></p>
+<p>首先打了个暴力，然后1小时打 $m&#x3D;0$ 的情况</p>
+<p><strong>赛后</strong></p>
+<p>T1没加快读，还随机了10次（lsx只随3次就用了1.9秒），要寄了！！！！</p>
+<p>T2没有想到可以 $O(nm)$ 递推！！</p>
+<p>中午pmx去渡忘记把房卡给我了，只能去找f6n，然后没腐多久就到2点了</p>
+<p>下午听讲题，只听懂了T1T2（先不写做法了）</p>
+<p>接着是两场不明所以的演讲，实在无聊，看周围的人打电动</p>
+<p>没发成绩，吃完晚饭后失望地走了</p>
+<p>晚上又去了蜜雪冰城，买了珍珠奶茶，不是很好喝，感觉有点亏</p>
+<p>然后和同学在必胜客合资买了一块披萨，还不错</p>
+<p>吃完后就呆在酒店搞腐，11点半睡觉</p>
+<h1 id="D2"><a href="#D2" class="headerlink" title="D2"></a>D2</h1><p>昨晚睡得不好，因为看了不该看的（似乎也不是很恐怖也）</p>
+<p>早餐吃了肠粉+油条，很好吃</p>
+<p>到6中比赛换了一个机房，居然没有隔板，<del>可以D！</del></p>
+<p><strong>T1</strong> 先预处理出 以每个为根分别 能向3个方向走多远，然后询问时找到符合条件的根并算出答案，复杂度 $O(nQ)$</p>
+<p>打了两个小时，过程中似乎想到了正解，但是去搞后2题了</p>
+<p><strong>T2</strong> 暴力矩阵乘法，$O(4^n\log K)$</p>
+<p><strong>T3</strong> 想要拆位，但是一直不会维护，最后打了最裸的暴力，一个特殊性质都不会啊！</p>
+<p>出场时感觉要寄了，此时发了D1的成绩单，总分180，T1A了，但lsx挂了，不知是什么原因</p>
+<p>中午退了酒店的房，提着东西来听课</p>
+<p>只听懂了T1，一直在看别人搞腐</p>
+<p>还有快乐滚榜，紧张激烈</p>
+<p>T1拿了40，T2T3爆0，离金线差40，要是集中精力A掉T1也许就能金了</p>
+<p>lsx差金线100，因为D1T1</p>
+<p>滚完榜，颁完奖，吃盒饭</p>
+<p>盒饭性价比不好说，12元但配了瓶7喜</p>
+<p>吃完饭，待完最后20分钟，踏上了大巴，睡了一觉</p>
+<p>醒来时已到了学校门口，就这样结束了这场广州之行。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>LocalSend从入门到被炸死</title>
+    <url>/2023/10/08/LocalSend%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E8%A2%AB%E7%82%B8%E6%AD%BB/</url>
+    <content><![CDATA[<p>LocalSend 顾名思义，局域网文件传输。</p>
+<p>建议从<strong>应用场景</strong>读起。</p>
+<h2 id="安装包"><a href="#安装包" class="headerlink" title="安装包"></a>安装包</h2><ol>
+<li><p>从 <a href="https://localsend.org/">官网</a> 下载。</p>
+<p>Linux 建议下载 DEB。Windows 的 ZIP 比 MSIX 小一点。</p>
+</li>
+<li><p>从装有 LocalSend 的设备获取。</p>
+<ol>
+<li>（发送者）打开 LocalSend，并在「发送」中添加安装包文件。</li>
+<li>（发送者）在「发送模式」中选择「通过链接分享」。<br><img src="https://cdn.luogu.com.cn/upload/image_hosting/wqjux829.png"></li>
+<li>（接收者）在浏览器中输入链接。</li>
+<li>（发送者）同意请求。</li>
+<li>（接收者）点击下载。</li>
+</ol>
+</li>
+</ol>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
+<li><p><strong>Linux, DEB 文件</strong></p>
+<p>执行 Shell 命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo dpkg -i （文件名.deb）</span><br></pre></td></tr></table></figure></li>
+<li><p><strong>Windows 10 及以上，MSIX 文件</strong></p>
+<p>一般情况下，可以直接打开。</p>
+<p>如不成功，则在 powershell 中执行：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">add-appxpackage （文件名.msix）</span><br></pre></td></tr></table></figure></li>
+<li><p><strong>Windows，ZIP 文件</strong></p>
+<p>直接解压即可，建议固定到任务栏。</p>
+</li>
+</ol>
+<h2 id="使用（常见问题）"><a href="#使用（常见问题）" class="headerlink" title="使用（常见问题）"></a>使用（常见问题）</h2><ul>
+<li><p><strong>更改「别名」没有生效</strong></p>
+<p> 在「设置」中重启服务器即可。<br> <img src="https://cdn.luogu.com.cn/upload/image_hosting/dh7iqr9v.png"></p>
+</li>
+<li><p><strong>「附近的设备」中没有出现已安装 LocalSend 的虚拟机</strong></p>
+<ul>
+<li>VMware<ol>
+<li>Ctrl+D 打开「虚拟机设置」。</li>
+<li>依次选择「网络适配器」–&gt;「桥接模式」–&gt;「复制物理网络连接状态」。</li>
+<li>在 LocalSend「设置」中重启服务器。</li>
+</ol>
+</li>
+<li>VirtualBox<ol>
+<li>关机。</li>
+<li>打开「设置」–&gt;「网络」。</li>
+<li>将「连接方式」改为「桥接网卡」。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p><strong>发送时出现「已完成，但发生错误。」</strong></p>
+<p> 对方可能退出了 LocalSend，建议重新扫描设备。</p>
+</li>
+<li><p><strong>Windows 设备无法接收消息或无法成为发送目标</strong></p>
+<ol>
+<li>在 LocalSend 的「接收」中查看「端口」。<br><img src="https://cdn.luogu.com.cn/upload/image_hosting/v40mkwm5.png"></li>
+<li>在 LocalSend 的「发送」中依次点击「故障排除」–&gt;「打开防火墙」–&gt;「入站规则」–&gt;「新建规则」。<br><img src="https://cdn.luogu.com.cn/upload/image_hosting/jmebn0au.png"></li>
+<li>选择「端口」。</li>
+<li>选择「TCP」和「特定本地端口」，并填写第 1 步中查看的端口号。</li>
+<li>选择「允许连接」。</li>
+<li>勾选「域」。</li>
+<li>名称描述自定。</li>
+</ol>
+</li>
+</ul>
+<h2 id="应用场景-不足"><a href="#应用场景-不足" class="headerlink" title="应用场景 &amp; 不足"></a>应用场景 &amp; 不足</h2><ol>
+<li><p><strong>文件传输</strong></p>
+<p>跨平台，无联网，界面简洁美观。断网做模拟赛时如果忘记下载大样例，可以找同学 LocalSend 给你。</p>
+<p>速度快，文件无大小限制，但速度不如基于 ssh 协议的 scp 命令。</p>
+<p>可以「输入地址」给不同子网内设备发送消息。</p>
+</li>
+<li><p><strong>匿名聊天</strong></p>
+<p>使用 LocalSend 聊天无需登录，非常方便（这里就不点名<strong>腾讯</strong>开发的聊天软件及其『账号安全』验证机制了）。</p>
+<p>LocalSend 在初次启动时会随机生成一个「别名」，这为匿名聊天创造了天然的条件。</p>
+<p>如果把「别名」清空，不重启服务器，则每次启动都会重新生成「别名」。</p>
+<p>缺点：一个设备同时只能接收一条消息。</p>
+</li>
+<li><p><strong>激情对 Send</strong></p>
+<p>将「发送模式」改为「多个接收者」，就可以将一条消息发送多次（可以给多个设备发送，并在接收者<strong>处理完请求后再次发送</strong>）。</p>
+<p>然后能做什么大家应该都能想到。</p>
+<p>那如果被消息“轰炸”了，除了关掉 LocalSend 就没有别的办法了吗？</p>
+<p>办法当然是有的。在“轰炸”时，发送与接收一般会形成稳定的节奏.如果突然打破节奏，趁对方还没有反应过来，抢先一步发送消息，就夺取了“制空权”，可以进行『火力压制』。但『反轰炸』不一定能成功，需要良好的心理素质和较快的手速。</p>
+<p>还有有一个『反轰炸』技巧，收到消息后可以按 Esc 键关闭（也可以左手狂按 Esc，右手狂点鼠标，进行『无差别轰炸』）。</p>
+<p>但『轰炸』和『反轰炸』，都将导致 LocalSend 不能正常使用。所以如果要传输重要的文件，但有人一直在『轰炸』，建议线下物理解决 <del>（我就曾经被坐我旁边的 <a href="https://www.luogu.com.cn/user/342322">lyx_sing_dance_rap</a> 制裁过）</del>。</p>
+</li>
+</ol>
+]]></content>
+      <tags>
+        <tag>腐败</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>THUSC莫得游记</title>
+    <url>/2023/05/08/THUSC%E8%8E%AB%E5%BE%97%E6%B8%B8%E8%AE%B0/</url>
+    <content><![CDATA[<h2 id="为什么叫莫得游记？"><a href="#为什么叫莫得游记？" class="headerlink" title="为什么叫莫得游记？"></a>为什么叫莫得游记？</h2><p>jz著名金牌教练<strong>XC</strong>曾经说过：</p>
+<blockquote>
+<p>“我们是来旅游的，不是来比赛的。”</p>
+</blockquote>
+<h2 id="五一假期"><a href="#五一假期" class="headerlink" title="五一假期"></a>五一假期</h2><p>day1day2打A组模拟赛，day2下午回家。</p>
+<p>接着<del>腐败</del>休息了两天，day4下午2点回jz。</p>
+<p>打THU&#x2F;PKUSC的模拟赛，用4h打满了3题暴力，<br>提交了才发现是IOI赛制。</p>
+<p>人均切T1，我被区分了。</p>
+<p>day5打A组，因为昨天题都改不出来。</p>
+<h2 id="5月4日"><a href="#5月4日" class="headerlink" title="5月4日"></a>5月4日</h2><p>因为第二天就去THU，所以就留在jz，但jz初中的要去上课。</p>
+<p>人少所以只有THU&#x2F;PKUSC的模拟赛。</p>
+<p>T1不会，又被区分。</p>
+<p>T2玄学博弈论，没看到Subtask打了总司令，喜提25分。</p>
+<p>T3博弈+998244353。。。最后打了个暴力</p>
+<p>晚上回家收拾东西，早早就睡了，听说住校的拿了设备要开黑。</p>
+<h2 id="5月5日，day0"><a href="#5月5日，day0" class="headerlink" title="5月5日，day0"></a>5月5日，day0</h2><p>起得比较晚，8:40到jz，8:50集合，<br>坐大巴到珠海金湾机场。然后就和PKU的分开走了。</p>
+<p>第一次坐飞机，跟着别的同学走。<br>把重要的东西（身份证，登机牌，手机）<br>都放在一起应该就不容易丢了吧。</p>
+<p>在机场搞了一些离线游戏，<br>如扫雷，俄罗斯方块，蜘蛛纸牌，<del>MC</del>。</p>
+<p>12点上了飞机，和fy坐一起。</p>
+<p>飞机的午餐不好评价，一饭一菜一面包，还有龟苓膏。</p>
+<p>3点到了南京，拿行李之后发现身份证落在飞机上了，<br>后来LDC找机场的人了拿回来。</p>
+<p>坐大巴到南外，报道，领东西（包有点难提啊），拍照，<br>然后用了30min走去酒店。</p>
+<p>由于没有双床房了，所以我和wtc只能住大床房。</p>
+<p>酒店非常高级，厕所有浴缸，电视还有节目单。</p>
+<p>5:40fy打电话说一起去吃饭，6:00在大堂会合。</p>
+<p>我们决定骑共享单车，但wtc没微信，于是搞到6:20才出发。</p>
+<p>6:30到达，买了饮品，去吃烤鱼。</p>
+<p>点菜，鱼119元&#x2F;1条有点贵，但米饭和饮料可以2元无限拿。</p>
+<p>服务员非常6，在我们吃到一半时突然开始跳舞，<br>快跳完时fy还带头鼓掌。。。</p>
+<p>吃得很饱，吃完后去逛，什么都不想买。</p>
+<p>由于骑单车已经投入了很多，所以回来继续骑单车。</p>
+<p>我先扫了一辆，再去帮WTC扫，<br>fy和wzx扫好之后准备骑时，我发现最先扫的那辆不见了！</p>
+<p>wzx说刚才来了一对情侣，可能他们骑走了那辆车。。。</p>
+<p>money-&#x3D;1.5。</p>
+<h2 id="5月6日，day1"><a href="#5月6日，day1" class="headerlink" title="5月6日，day1"></a>5月6日，day1</h2><p>昨晚11点睡（没收设备！在fy那边腐了亿会），7点起，但不困。</p>
+<p>早餐在酒店吃，自助餐，种类比GDOI的多。</p>
+<p>8点出发去学校，8点半到，试机。</p>
+<p>电脑是Linux系统，但版本很低，<br>多桌面非常奇怪，如果窗口拖得太左，<br>就会自动新建桌面并把窗口放过去。</p>
+<p>T1 a+b，配好vim之后很快就A掉了。</p>
+<p>T2 交互，在3个有序数列中找第k，<br>想了一个 $O(nlogn)$ 的二分，但没有调出来。</p>
+<p>T3 提交答案题，求 $k$ 维空间中 $k$ 个超球体的公切面，弃。</p>
+<p>中午从众买了张饭票，60大洋血亏。</p>
+<p>下午比赛时没带胸牌但让进了。</p>
+<p>开始时THUOJ炸了，卡了大约30min，于是比赛结束延迟45min。<br>但有人先加载出了题！！</p>
+<p>T1 数据结构，当时差分了一下，发现用树状数组就能做了。<br>（但有往这个方向想的人不是很多）</p>
+<p>T2 奇妙DP，想了一个 $O(n^3m^2)$ 的，<br>似乎还能用数据结构优化？</p>
+<p>T3 数学，只会暴力。。。</p>
+<p>T4 交互，没看到有5分暴力。。。</p>
+<p>于是用了3h写T2，结果只过了一个点。What devil subtasks！</p>
+<p>比赛完后骑单车回酒店，由于开了前进4，<br>先到了酒店，就在大堂放下东西坐着。</p>
+<p>接着去吃饭，9人分了两桌。<br>zzk点的全是特色菜，很好吃，<br>但4个人花费比另一桌5个人还多（什么坑人椰汁要28大洋！）。</p>
+<p>吃完饭渡了瓶饮料就回酒店了。</p>
+<p>睡前发现包不见了！算了，明天找。</p>
+<h2 id="5月7日，day2"><a href="#5月7日，day2" class="headerlink" title="5月7日，day2"></a>5月7日，day2</h2><p>还是11点睡7点起，但有点困，喉咙比较痛，可能是吃了辣的。</p>
+<p>初步判断是在fy的房间，酒店大堂，或者昨晚吃饭的饭店。</p>
+<p>但找了前两个地方都没有，且还依稀记得昨晚fy给我拍了张照，<br>照片里我只拿了手机。</p>
+<p>只好跟HXG说，HXG带我去饭店找了也没有，<br>难道是骑自行车时掉在了路上吗？</p>
+<p>时间不早了，就先去了学校，没有身份证也让进了！</p>
+<p>day2比赛是写电路，前面的题目都有题解可以看，<br>后面的题目看不懂。</p>
+<p>于是痛苦地手打了4h电路，最后拿了120。</p>
+<p>赛后发现电路可以用c++生成，我。。。</p>
+<p>我饭票装在包里一起丢了，wtc的饭票的放在了酒店，<br>于是一起去找饭店吃饭。</p>
+<p>半途撞见LDC，LDC热情地邀请我们和他们一起吃，3位教练压迫感可想而知。但饭菜比南外的好吃多了。</p>
+<p>下午去听讲座，讲ChatGPT，听完之后LDC跟我回酒店找包，<br>包里电话手表的定位显示在酒店，后来问了前台找到了。<br>原来是那天放在大堂的包被酒店的人收起来了。</p>
+<p>因为在找包，没有参加闭幕式，但听同学说我拿了1&#x3D;。</p>
+<p>之后坐大巴到了机场，吃了麦当劳（超贵），8:35登了机，<br>睡了一程。飞到珠海机场之后坐车去纪中，家长来接。</p>
+]]></content>
+      <tags>
+        <tag>游记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>csp2023</title>
+    <url>/2023/10/22/csp2023/</url>
+    <content><![CDATA[<p>来 JZ 后坐到了背对门的位置，不敢腐败。</p>
+<p>暑假腐太多，有些后悔，现已杜绝了 Generals，Bilibili，ModernGMOJ（自己写的 Github 腐败项目），<del>原神</del> 等腐败，取关了 vicky，但还腐犇犇（虽然已经什么没有好康的了）。</p>
+<h3 id="day-4（周一）"><a href="#day-4（周一）" class="headerlink" title="day -4（周一）"></a>day -4（周一）</h3><p>晚上来训练时，XC 安排了初中周二周四的停课。</p>
+<h3 id="day-3（周二）"><a href="#day-3（周二）" class="headerlink" title="day -3（周二）"></a>day -3（周二）</h3><p>模拟赛想出了两题，T1 数组开小挂了 50 分，希望正式比赛时不要挂成这样。</p>
+<p>晚上补作业启动。</p>
+<h3 id="day-2（周三）"><a href="#day-2（周三）" class="headerlink" title="day -2（周三）"></a>day -2（周三）</h3><p>中午 <a href="https://www.luogu.com.cn/user/110010">lsx</a>，<a href="https://www.luogu.com.cn/user/513838">wtc</a>，<a href="https://www.luogu.com.cn/user/222729">pmx</a>，cyt 等初三高一大奆在团建 <del>团 Gen</del>，这标志着 generals 文化从 JY 向 JZ 传播进程的完成（学历史学的）。</p>
+<p>晚上训练改出了一题，不会 T3。</p>
+<h3 id="day-1（周四）"><a href="#day-1（周四）" class="headerlink" title="day -1（周四）"></a>day -1（周四）</h3><p>真·信心赛，全是诈骗题，人均 200 我 140，被薄纱了。赛后没调出 T1。。。</p>
+<p>晚上跟 <a href="https://www.luogu.com.cn/user/759370">fy</a> 和 wtc 去 知行餐厅，碰见好多认识的人。我不小心多点了一碗米饭，于是跟 wtc 拿去喂鸭子，有点引人注目（好像鸭子没什么食欲）。</p>
+<p>晚上戴眼镜被 fy 看到了，fy 说我玩原神玩近视了。</p>
+<h3 id="day-0（周五）"><a href="#day-0（周五）" class="headerlink" title="day 0（周五）"></a>day 0（周五）</h3><p>学文化课的下午放学，<del>可以 Gen 一晚上了</del>。</p>
+<p>下午去 303 试了一下机，Virtual Box 虚拟机还挺好用的。</p>
+<p>由于格式化考场的磁盘时出了某些问题，403 的电脑好像一重启 D 盘就会没。</p>
+<p>晚上主要复习了 c++ 语法。</p>
+<p>XC 把所有人叫来聊天，说今年 CSP 真是天时地利人和，周六早上不会有人六点半不到就起来，使我们没法好好休息（此时 wzx 拍了拍我的肩膀），而且天气也很好（真），303 机房换掉了原神键盘。还说不要太紧张，就把 CSP 当作<strong>昨天的模拟赛</strong>。</p>
+<p>chd 扬言要一个半小时 AK -J 之后玩 edge:&#x2F;&#x2F;surf。</p>
+<h3 id="day-1（周六）"><a href="#day-1（周六）" class="headerlink" title="day 1（周六）"></a>day 1（周六）</h3><p>6:00 闹钟，6:05 闹钟，6:10 闹钟，6:15 闹钟，最后 6:20 起了。</p>
+<p>吃完早餐后大约 6:50，旧科学馆已经拉起了警戒线，但保安在我弯腰过警戒线时看都不看我一眼。</p>
+<p>复习了字符串，但没什么用。大约 7:50 时 <a href="https://www.luogu.com.cn/user/373254">lmd</a> 和 lsx 来 Gen 了一把，还看到了一个叫 <a href="https://www.luogu.com.cn/user/121995">Smt</a> 人（不打 -J 的大奆去了图书馆）。</p>
+<hr>
+<p>把 pdf 密码看成了文件夹的解压密码，导致输错了 114514 次。</p>
+<p>T1 签到，$O(\log n)$ 直接过。</p>
+<p>T2 有点迷，后来想到是贪心，$O(n)$。</p>
+<p>T3 小模拟，先跳过，因为可能调试会费很多时间。</p>
+<p>T4 首先想到把 $1$ 个点拆成 $k$ 个，后来又想到可以二分答案，再倒着 BFS，$O(n\log(a+m))$。</p>
+<p>最后写 T3，因为运气好写得很顺利，过完大样例大概是 10:45。</p>
+<p>暴力不好写，于是没对拍，靠肉眼检查，希望能 AK 吧。</p>
+<hr>
+<p>T4 一堆写 SPFA 的，<a href="https://www.luogu.com.cn/user/793777">yjx</a> 似乎 AK 了，fy 最后十几秒写完了 T4。</p>
+<p>中午没回宿舍，跟着 <a href="https://www.luogu.com.cn/user/455757">ywj</a> 和 <a href="https://www.luogu.com.cn/user/473639">sqc</a> 跑去音乐厅想面基 <a href="https://www.luogu.com.cn/user/501947">duck</a> 但没面到。</p>
+<p>后来回机房复习了图论和莫队（最没用的算法），开机时发现 Windows 没了。</p>
+<p>进考场前 XC 把我叫去谈话，说以后不回宿舍要请假，谈完后又说记得不要写错文件名，不要开小数组。</p>
+<hr>
+<p>T1 签到。</p>
+<p>T2 想到 $O(n^3)$ 35 分做法。</p>
+<p>T3 巨模拟，跳过。</p>
+<p>T4 发现可以二分答案，但觉得细节有点多。</p>
+<p>打题顺序 1 –&gt; 4 –&gt; 2 –&gt; 3，T4 吸氧 0.7s 不吸氧 1.4s。</p>
+<p>打到 T3 时还剩 50min，感觉时间不够。</p>
+<p>此时感觉要退役了，T2 都想不出来，一等拿不了了，也不想打对拍。由于心情低落，我决定去上厕所。</p>
+<p>上厕所时突然发现 T2 可以枚举左端点，再维护一个栈，$O(n^2)$ 50 分。</p>
+<p>打完后发现如果字符串随机，那么合法的子串长度不会太长，$O(n\cdot E(len))$ A 性质 10 分拿下。</p>
+<hr>
+<p>很多 $O(n\sum)$ 切 T2 的。</p>
+<p>yjx 莅临了我们的教室，聊了很多文化课内容（被薄纱了），后来 <a href="https://www.luogu.com.cn/user/1025299">zy</a> 揭露了 yjx 传播绯闻的罪行，yjx 却说他<strong>忘记</strong>了这件事。</p>
+<h3 id="总结反思"><a href="#总结反思" class="headerlink" title="总结反思"></a>总结反思</h3><ul>
+<li>大模拟和细节多的题目放在后面写。</li>
+<li>不要 dfs 式想题。</li>
+<li>数组大小不要斤斤计较。</li>
+<li>要留时间检查。</li>
+</ul>
+<p>写题速度还是需要提高，要多打 ABC。</p>
+<h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>%%% <a href="https://www.luogu.com.cn/user/111055">DX</a>，<a href="https://www.luogu.com.cn/user/99506">LHF</a>，<a href="https://www.luogu.com.cn/user/116664">Daniel_lele</a>，<a href="https://www.luogu.com.cn/user/272088">lqy</a> AK -S %%%。</p>
+<p>100+100+100+100，100+60+0+100。</p>
+<p>-J 比赛时似乎没断网导致泄题，看 €€£ 怎么查办。</p>
+<p><a href="https://www.noi.cn/xw/2023-10-23/796608.shtml">《关于部分平台私自发布CSP-J&#x2F;S 2023认证结果的公告》</a></p>
+<p>-S T2 有<a href="https://www.luogu.com.cn/problem/CF1223F">类似的题</a>，但做法似乎不一样。</p>
+<p>周日回来后发现 Windows 处于有和没有的叠加态，每次观察就会波函数坍缩（说白了就是有时候开机有，有时候开机没有）。</p>
+<p>++NOIP.rp（前自增常数更小）。</p>
+]]></content>
+      <tags>
+        <tag>游记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>「ZSKOI2023」总结</title>
+    <url>/2023/06/19/%E3%80%8CZSKOI2023%E3%80%8D%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<p>所以说这场比赛与义务教育有什么关系？</p>
+<h2 id="day-1，6-16，Fri"><a href="#day-1，6-16，Fri" class="headerlink" title="day -1，6.16，Fri"></a>day -1，6.16，Fri</h2><p><del>人在机房坐，比赛天上来。</del></p>
+<p>当时洛谷日爆，然后<del>脑抽</del>写了个东西一直打开luogu.com.cn。</p>
+<p>然后教练打开了屏幕广播，说了一下比赛的事情，把座位表发给我们。</p>
+<p>似乎不用linux评测。</p>
+<p>结束广播之后，屏幕就再也没有亮起来。。。（后面重启好了）</p>
+<h2 id="day-0，6-17，Sat"><a href="#day-0，6-17，Sat" class="headerlink" title="day 0，6.17，Sat"></a>day 0，6.17，Sat</h2><p>jy只有初一去了jz，高中在402断网比赛（当然还有春神），于是初中的去了302。</p>
+<p>8G内存！VScode！（虽然我不用）VMware！NOIlinux！</p>
+<p>下午Jimmy说<strong>应该</strong>是用Windows评测。。。</p>
+<h2 id="day-1，6-18-Sun"><a href="#day-1，6-18-Sun" class="headerlink" title="day 1，6.18.Sun"></a>day 1，6.18.Sun</h2><p>昨晚睡得比较晚，头有些痛。</p>
+<p>6点起来，7：50到jz，又睡了一会，8：20进考场，考场在503。</p>
+<p>我前两个位置都没人。Verser在我正前方3个位%%%</p>
+<p>没断网？全都在敲代码？没有VMware但有Gvim和CodeBlocks？</p>
+<p>于是我配好了Dev，测了一下a+b和文操。</p>
+<p>发了题面，没有大样例。</p>
+<p>开题！</p>
+<h3 id="T1"><a href="#T1" class="headerlink" title="T1"></a>T1</h3><p>求给定字符串的最长回文<strong>子序列</strong>长度，$n\leq1000$。</p>
+<p>不会有人想manacher吧？</p>
+<p>想了一个朴素的 $O(n^2)$ 区间DP，应该能过。</p>
+<h3 id="T2"><a href="#T2" class="headerlink" title="T2"></a>T2</h3><p>有两个盒子AB，其中黑白球数给定。每次从A拿一个球到B，再从B拿一个球到A。重复 $n$ 次，求A中白球比率的期望。$n,\text{总球数}\leq10^{18}$。</p>
+<p>奇奇怪怪，只会 $O(nm)$ dp。</p>
+<h3 id="T3"><a href="#T3" class="headerlink" title="T3"></a>T3</h3><p>给定一个 $n\times n$ 的方阵，每次操作一个矩形 $(x1,y1)(x2,y2)$，给矩形内的点 $(x,y)$ 加上 $\binom{x-x1}{y-y1}$。求最终矩形每行每列的异或和。$n,Q\leq5000$</p>
+<p>题目主人公是<strong>骐度空间·莫羯座·十一月的萧彰</strong>。。。</p>
+<h3 id="T4"><a href="#T4" class="headerlink" title="T4"></a>T4</h3><p>给定一颗树。每次操作先选择一个点 $a$ ，断开 $a$ 的邻边，再在 $a$ 与之前相邻的点之间重新连边（任意方式，只要没有环）。求把树调整成给定形态的最少操作次数（点有标号）。$n\leq10^6$。</p>
+<p>弃。</p>
+<p>看完题大约9点，感觉很懵，先打了T1，过了样例和手造数据。</p>
+<p>9点半，出去上了个厕所。</p>
+<p>然后强攻T3，发现了一个差分做法，设 $a_{i,j}&#x3D;ans_{i,j}-ans_{i-1,j-1}-ans_{i-1,j}$，那么操作时只会改动 $O(n)$ 个位置。</p>
+<p>用1小时打完，尝试优化T2的DP无果，于是打了60部分分。</p>
+<p>T4暴力都不会。。。</p>
+<p>然后闲着没事干，打了T1T3的对拍。</p>
+<p>于是边检查边对拍边摸鱼了半个小时。</p>
+<p>估分100+60+100+0&#x3D;260</p>
+<h3 id="赛后"><a href="#赛后" class="headerlink" title="赛后"></a>赛后</h3><p>听说不少人切T3，T1有好多奇怪做法。</p>
+<p>路上被-6n<del>打劫</del>了，他说401有VMware！</p>
+<p>yjx和我估分一样。</p>
+<p>lsx切T2？$O(64\log n)$？？？</p>
+<p>中考、期末考RP++！</p>
+]]></content>
+      <tags>
+        <tag>游记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【扯淡】如何维护世界核平</title>
+    <url>/2023/12/04/%E3%80%90%E6%89%AF%E6%B7%A1%E3%80%91%E5%A6%82%E4%BD%95%E7%BB%B4%E6%8A%A4%E4%B8%96%E7%95%8C%E6%A0%B8%E5%B9%B3/</url>
+    <content><![CDATA[<p>假设一个区域存在两类人：鹰派和鸽派，他们要争取资源。</p>
+<p>如果两个人 A 和 B 分配 $2$ 单位的资源，会形成以下四种结果：</p>
+<ul>
+<li>如果 A B 都是鸽派，则他们会和平相处，每人分得 $1$ 单位的资源。</li>
+<li>如果 A 是鹰派，B 是鸽派，则 A 会独占 $2$ 单位的资源。反之亦然。</li>
+<li>如果 A B 都是鹰派，则他们会爆发战争，最后还是每人分得 $1$ 单位的资源，但会因为战争而每人亏损 $x$ 单位的资源（$x&gt;0$）。</li>
+</ul>
+<p>设该地区鹰派所占比例为 $h$，鸽派所占比例为 $1-h$，则：</p>
+<ul>
+<li>一位鸽派人士能得到的资源 $v_\text鸽&#x3D;(1-h)\times1\ +\ h\times0&#x3D;1-h$.</li>
+<li>一位鹰派人士能得到的资源 $v_\text鹰&#x3D;(1-h)\times2\ +\ h\times(1-x)&#x3D;(-1-x)h+2$.</li>
+</ul>
+<p>可以发现：</p>
+<ul>
+<li>当 $h&lt;\frac 1x$ 时，$v_\text鹰&gt;v_\text鸽$，于是会有一些鸽派人士转变为鹰派，使 $h$ 增大。</li>
+<li>当 $h&gt;\frac 1x$ 时，$v_\text鸽&gt;v_\text鹰$，于是会有一些鹰派人士转变为鸽派，使 $h$ 减小。</li>
+</ul>
+<p>所以 $h$ 最终会等于 $\min(\frac 1x,1)$，此时 $v_\text鸽&#x3D;v_\text鹰&#x3D;max(0,1-\frac 1x)$.</p>
+<p>所以 $x$ 越大 $h$ 就越小，战争就越少，同时每个人获得的资源就越多。</p>
+<p><del>曼哈顿计划，启动！</del></p>
+]]></content>
+      <tags>
+        <tag>扯淡</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>背包问题</title>
+    <url>/2021/07/15/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="01背包"><a href="#01背包" class="headerlink" title="01背包"></a>01背包</h2><p>有一个背包容量为 $V$，还有 $n$ 件物品，第 $i$ 件的体积为 $v[i]$，价值为 $w[i]$，问背包能装载的最大价值</p>
+<h3 id="先站在背包的角度想一想"><a href="#先站在背包的角度想一想" class="headerlink" title="先站在背包的角度想一想"></a>先站在背包的角度想一想</h3><p>原背包 <del>（偷懒，画背包太难了，画成袋子算了）。</del><br><img src="https://cdn.luogu.com.cn/upload/image_hosting/og5xzndv.png"></p>
+<p>这么大个背包，装啥好呢？</p>
+<p>先想一想，背包是不是有<strong>分</strong>很多格？</p>
+<p>那我们也来分一分</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/37a9idip.png"></p>
+<p>分成2个子背包。</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/5itk9099.png"></p>
+<p>子背包还能再分。</p>
+<h3 id="再站在物品的角度想一想"><a href="#再站在物品的角度想一想" class="headerlink" title="再站在物品的角度想一想"></a>再站在物品的角度想一想</h3><p>2种情况：装、不装。</p>
+<p>如果装，那背包余剩的容量就会减少。</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/61h6s8w4.png"></p>
+<h4 id="这么说的话，是用记忆化搜索吗？"><a href="#这么说的话，是用记忆化搜索吗？" class="headerlink" title="这么说的话，是用记忆化搜索吗？"></a>这么说的话，是用记忆化搜索吗？</h4><p>NO！NO！NO！我们要 <strong>DP</strong>。</p>
+<h3 id="上代码"><a href="#上代码" class="headerlink" title="上代码"></a>上代码</h3><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> dp[N][V]; <span class="comment">//dp[i][j]表示在考虑了前i种物品、背包容量为j的情况下的最大装载价值</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123; <span class="comment">//遍历每种物品</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt;= V; j++) &#123; <span class="comment">//递推背包容量</span></span><br><span class="line">		<span class="keyword">if</span> (j &gt;= v[i]) <span class="comment">//如果能装得下物品i</span></span><br><span class="line">			dp[i][j] = <span class="built_in">max</span>(dp[i - <span class="number">1</span>][j], <span class="comment">//不装物品i</span></span><br><span class="line">				dp[i - <span class="number">1</span>][j - v[i]] + w[i]; <span class="comment">//装物品i</span></span><br><span class="line">		<span class="keyword">else</span> dp[i][j] = dp[i - <span class="number">1</span>][j]; <span class="comment">// 装不下，直接不装</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h3><p>首先我们想想能不能把 <code>dp</code> 数组压缩成1维。</p>
+<hr>
+<p>好，现在如果你去试了，那么恭喜你，发现了错误。</p>
+<p><del>那如果你没去试的话，那么也恭喜你，没被我坑。</del></p>
+<h4 id="出错原因"><a href="#出错原因" class="headerlink" title="出错原因"></a>出错原因</h4><p>看下这行代码</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line">dp[i][j] = <span class="built_in">max</span>(dp[i - <span class="number">1</span>][j],dp[i - <span class="number">1</span>][j - v[i]] + w[i]);</span><br></pre></td></tr></table></figure>
+
+<p>$j-v[i]$ 是不是在前面它已经更新过了，<strong>更新过</strong>意味着可能已经装过物品 $i$ 了，所以可能导致重复装入。</p>
+<h4 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h4><p>如果它已经更新过了，就可能会出错。</p>
+<p>那就先别更新呗！先更新后面的，把第二层循环倒过来。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> dp[V]; <span class="comment">//dp[j]表示当前背包容量为j时的最大装载价值</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123; <span class="comment">//遍历每种物品</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> j = V; j &gt;= <span class="number">1</span>; j--) &#123; <span class="comment">//递推背包容量（倒过来）</span></span><br><span class="line">		<span class="keyword">if</span> (j &gt;= v[i]) <span class="comment">//如果能装得下物品i</span></span><br><span class="line">			dp[j] = <span class="built_in">max</span>(dp[j], <span class="comment">//不装物品i</span></span><br><span class="line">				dp[j - v[i]] + w[i]; <span class="comment">//装物品i</span></span><br><span class="line"><span class="comment">//		else dp[j] = dp[j]; //没用的语句</span></span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="删掉if语句"><a href="#删掉if语句" class="headerlink" title="删掉if语句"></a>删掉if语句</h4><p>由于第二层循环到 $v[i]-1$ 时，物品已经装不下了，所以我们就不用继续循环了，dp数组剩下的部分就放着（不装）。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> dp[V]; <span class="comment">//dp[j]表示当前背包容量为j时的最大装载价值</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) <span class="comment">//遍历每种物品</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> j = V; j &gt;= v[i]; j--) <span class="comment">//递推背包容量（倒过来）</span></span><br><span class="line">		dp[j] = <span class="built_in">max</span>(dp[j], <span class="comment">//不装物品i</span></span><br><span class="line">			dp[j - v[i]] + w[i]; <span class="comment">//装物品i</span></span><br></pre></td></tr></table></figure>
+<p>算法复杂度分析：</p>
+<ul>
+<li>时间复杂度：二重循环，$O(nV)$。</li>
+<li>空间复杂度：一维dp数组，$O(V)$。</li>
+</ul>
+<h2 id="完全背包"><a href="#完全背包" class="headerlink" title="完全背包"></a>完全背包</h2><p>在01背包上加点花样，每种物品都有无限个。</p>
+<p>我们先来看一个很眼熟的东西:</p>
+<blockquote>
+<p>$j-v[i]$ 是不是在前面它已经更新过了，<strong>更新过</strong>意味着可能已经装过物品i了，<strong>所以可能导致重复装入</strong></p>
+</blockquote>
+<p><del>是的，你曾经在这儿被我坑过一次。</del></p>
+<p><strong>重复装入</strong> 意味着物品i可以不受限制地选下去，就相当于物品i有无限个。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> dp[V]; <span class="comment">//dp[j]表示当前背包容量为j时的最大装载价值</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) <span class="comment">//遍历每种物品</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> j = v[i]; j &lt;= V; j++) <span class="comment">//递推背包容量</span></span><br><span class="line">		dp[j] = <span class="built_in">max</span>(dp[j], <span class="comment">//不装物品i</span></span><br><span class="line">			dp[j - v[i]] + w[i]; <span class="comment">//装物品i</span></span><br></pre></td></tr></table></figure>
+
+<p>算法复杂度分析：</p>
+<ul>
+<li>时间复杂度：二重循环，$O(nV)$</li>
+<li>空间复杂度：一维dp数组，$O(V)$</li>
+</ul>
+<h2 id="多重背包"><a href="#多重背包" class="headerlink" title="多重背包"></a>多重背包</h2><p>还是在01背包上加点花样，每种物品都有 $m[i]$ 个。</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> j = V; i &gt;= v[i]; i--)</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> k = <span class="number">1</span>; k &lt;= <span class="built_in">min</span>(m[i], j / v[i]); k++)</span><br><span class="line">			dp[j] = <span class="built_in">max</span>(dp[j], dp[j - v[i] * k] + w[i] * k);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>算法复杂度分析：</p>
+<ul>
+<li>时间复杂度：三重循环，$O(nVm)$</li>
+<li>空间复杂度：一维dp数组，$O(V)$</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>dp,code</tag>
+      </tags>
+  </entry>
+</search>

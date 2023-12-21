@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="danielqf">
+
+
+    <meta name="subtitle" content="Modify">
+
+
+
+
+<title>背包问题 | Danielqf&#39;s Blog</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+    });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+    
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+    
+<script src="/js/search.js"></script>
+
+    <script type="text/javascript">
+        var search_path = "search.xml";
+        if (search_path.length == 0) {
+            search_path = "search.xml";
+        }
+        var path = "/" + search_path;
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        click_time=0;
+    </script>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Danielqf&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/tag">Tag</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <a class="menu-item" onclick="$('#search-page').show(); $('#local-search-input')[0].focus();">Search</a>
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Danielqf&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/tag">Tag</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+
+        <div class="main">
+            <div style="z-index: 1000; position: fixed; background-color: rgba(0, 0, 0, 0.8);
+        top: 0; bottom: 0; left: 0; right: 0; padding: 0 max(50% - 375px,5px); display: none;" id="search-page"
+        onclick="if (Date.now()-click_time>=10) { this.style.display='none'; } quitting=1; ">
+    <input id="local-search-input" style="height: 24px; position: relative; top: 24px; font-size: 16px;
+        width: calc(100% - 50px); color: white; background-color: initial; padding: 12px 23px; border-radius: 5px; border: 2px solid #bbb; outline: 0;"
+        onclick="click_time=Date.now()">
+    <div id="local-search-result" style="width: 100%; position: relative; top: 24px;
+        height: calc(100% - 105px);" onclick="click_time=Date.now()"></div>
+</div>
+
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">背包问题</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href=>danielqf</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a>2021.07.15&nbsp;&nbsp;16:37:59</a>
+                        </span>
+                    
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h2 id="01背包"><a href="#01背包" class="headerlink" title="01背包"></a>01背包</h2><p>有一个背包容量为 $V$，还有 $n$ 件物品，第 $i$ 件的体积为 $v[i]$，价值为 $w[i]$，问背包能装载的最大价值</p>
+<h3 id="先站在背包的角度想一想"><a href="#先站在背包的角度想一想" class="headerlink" title="先站在背包的角度想一想"></a>先站在背包的角度想一想</h3><p>原背包 <del>（偷懒，画背包太难了，画成袋子算了）。</del><br><img src="https://cdn.luogu.com.cn/upload/image_hosting/og5xzndv.png"></p>
+<p>这么大个背包，装啥好呢？</p>
+<p>先想一想，背包是不是有<strong>分</strong>很多格？</p>
+<p>那我们也来分一分</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/37a9idip.png"></p>
+<p>分成2个子背包。</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/5itk9099.png"></p>
+<p>子背包还能再分。</p>
+<h3 id="再站在物品的角度想一想"><a href="#再站在物品的角度想一想" class="headerlink" title="再站在物品的角度想一想"></a>再站在物品的角度想一想</h3><p>2种情况：装、不装。</p>
+<p>如果装，那背包余剩的容量就会减少。</p>
+<p><img src="https://cdn.luogu.com.cn/upload/image_hosting/61h6s8w4.png"></p>
+<h4 id="这么说的话，是用记忆化搜索吗？"><a href="#这么说的话，是用记忆化搜索吗？" class="headerlink" title="这么说的话，是用记忆化搜索吗？"></a>这么说的话，是用记忆化搜索吗？</h4><p>NO！NO！NO！我们要 <strong>DP</strong>。</p>
+<h3 id="上代码"><a href="#上代码" class="headerlink" title="上代码"></a>上代码</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> dp[N][V]; <span class="comment">//dp[i][j]表示在考虑了前i种物品、背包容量为j的情况下的最大装载价值</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123; <span class="comment">//遍历每种物品</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">1</span>; j &lt;= V; j++) &#123; <span class="comment">//递推背包容量</span></span><br><span class="line">		<span class="keyword">if</span> (j &gt;= v[i]) <span class="comment">//如果能装得下物品i</span></span><br><span class="line">			dp[i][j] = <span class="built_in">max</span>(dp[i - <span class="number">1</span>][j], <span class="comment">//不装物品i</span></span><br><span class="line">				dp[i - <span class="number">1</span>][j - v[i]] + w[i]; <span class="comment">//装物品i</span></span><br><span class="line">		<span class="keyword">else</span> dp[i][j] = dp[i - <span class="number">1</span>][j]; <span class="comment">// 装不下，直接不装</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h3><p>首先我们想想能不能把 <code>dp</code> 数组压缩成1维。</p>
+<hr>
+<p>好，现在如果你去试了，那么恭喜你，发现了错误。</p>
+<p><del>那如果你没去试的话，那么也恭喜你，没被我坑。</del></p>
+<h4 id="出错原因"><a href="#出错原因" class="headerlink" title="出错原因"></a>出错原因</h4><p>看下这行代码</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dp[i][j] = <span class="built_in">max</span>(dp[i - <span class="number">1</span>][j],dp[i - <span class="number">1</span>][j - v[i]] + w[i]);</span><br></pre></td></tr></table></figure>
+
+<p>$j-v[i]$ 是不是在前面它已经更新过了，<strong>更新过</strong>意味着可能已经装过物品 $i$ 了，所以可能导致重复装入。</p>
+<h4 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h4><p>如果它已经更新过了，就可能会出错。</p>
+<p>那就先别更新呗！先更新后面的，把第二层循环倒过来。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> dp[V]; <span class="comment">//dp[j]表示当前背包容量为j时的最大装载价值</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) &#123; <span class="comment">//遍历每种物品</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> j = V; j &gt;= <span class="number">1</span>; j--) &#123; <span class="comment">//递推背包容量（倒过来）</span></span><br><span class="line">		<span class="keyword">if</span> (j &gt;= v[i]) <span class="comment">//如果能装得下物品i</span></span><br><span class="line">			dp[j] = <span class="built_in">max</span>(dp[j], <span class="comment">//不装物品i</span></span><br><span class="line">				dp[j - v[i]] + w[i]; <span class="comment">//装物品i</span></span><br><span class="line"><span class="comment">//		else dp[j] = dp[j]; //没用的语句</span></span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="删掉if语句"><a href="#删掉if语句" class="headerlink" title="删掉if语句"></a>删掉if语句</h4><p>由于第二层循环到 $v[i]-1$ 时，物品已经装不下了，所以我们就不用继续循环了，dp数组剩下的部分就放着（不装）。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> dp[V]; <span class="comment">//dp[j]表示当前背包容量为j时的最大装载价值</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) <span class="comment">//遍历每种物品</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> j = V; j &gt;= v[i]; j--) <span class="comment">//递推背包容量（倒过来）</span></span><br><span class="line">		dp[j] = <span class="built_in">max</span>(dp[j], <span class="comment">//不装物品i</span></span><br><span class="line">			dp[j - v[i]] + w[i]; <span class="comment">//装物品i</span></span><br></pre></td></tr></table></figure>
+<p>算法复杂度分析：</p>
+<ul>
+<li>时间复杂度：二重循环，$O(nV)$。</li>
+<li>空间复杂度：一维dp数组，$O(V)$。</li>
+</ul>
+<h2 id="完全背包"><a href="#完全背包" class="headerlink" title="完全背包"></a>完全背包</h2><p>在01背包上加点花样，每种物品都有无限个。</p>
+<p>我们先来看一个很眼熟的东西:</p>
+<blockquote>
+<p>$j-v[i]$ 是不是在前面它已经更新过了，<strong>更新过</strong>意味着可能已经装过物品i了，<strong>所以可能导致重复装入</strong></p>
+</blockquote>
+<p><del>是的，你曾经在这儿被我坑过一次。</del></p>
+<p><strong>重复装入</strong> 意味着物品i可以不受限制地选下去，就相当于物品i有无限个。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> dp[V]; <span class="comment">//dp[j]表示当前背包容量为j时的最大装载价值</span></span><br><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++) <span class="comment">//遍历每种物品</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> j = v[i]; j &lt;= V; j++) <span class="comment">//递推背包容量</span></span><br><span class="line">		dp[j] = <span class="built_in">max</span>(dp[j], <span class="comment">//不装物品i</span></span><br><span class="line">			dp[j - v[i]] + w[i]; <span class="comment">//装物品i</span></span><br></pre></td></tr></table></figure>
+
+<p>算法复杂度分析：</p>
+<ul>
+<li>时间复杂度：二重循环，$O(nV)$</li>
+<li>空间复杂度：一维dp数组，$O(V)$</li>
+</ul>
+<h2 id="多重背包"><a href="#多重背包" class="headerlink" title="多重背包"></a>多重背包</h2><p>还是在01背包上加点花样，每种物品都有 $m[i]$ 个。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">	<span class="keyword">for</span> (<span class="type">int</span> j = V; i &gt;= v[i]; i--)</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> k = <span class="number">1</span>; k &lt;= <span class="built_in">min</span>(m[i], j / v[i]); k++)</span><br><span class="line">			dp[j] = <span class="built_in">max</span>(dp[j], dp[j - v[i] * k] + w[i] * k);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>算法复杂度分析：</p>
+<ul>
+<li>时间复杂度：三重循环，$O(nVm)$</li>
+<li>空间复杂度：一维dp数组，$O(V)$</li>
+</ul>
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/dp-code/"># dp,code</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+    <script src="https://giscus.app/client.js"
+        data-repo="danielqfmai/danielqfmai.github.io"
+        data-repo-id="R_kgDOK66FXA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOK66FXM4Cb1ep"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+    </script>
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© danielqf | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
