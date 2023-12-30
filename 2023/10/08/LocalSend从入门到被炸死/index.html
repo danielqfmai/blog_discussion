@@ -126,13 +126,11 @@
                 
                     <a class="menu-item" href="/archives">Posts</a>
                 
-                    <a class="menu-item" href="/tag">Tag</a>
+                    <a class="menu-item" href="/category">Category</a>
                 
                     <a class="menu-item" href="/about">About</a>
                 
                 <a class="menu-item" onclick="$('#search-page').show(); $('#local-search-input')[0].focus();">Search</a>
-                <input id="switch_default" type="checkbox" class="switch_default">
-                <label for="switch_default" class="toggleBtn"></label>
             </div>
         </div>
     </nav>
@@ -150,7 +148,7 @@
                 
                     <a class="menu-item" href="/archives">Posts</a>
                 
-                    <a class="menu-item" href="/tag">Tag</a>
+                    <a class="menu-item" href="/category">Category</a>
                 
                     <a class="menu-item" href="/about">About</a>
                 
@@ -269,6 +267,13 @@
                         </span>
                     
                     
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E8%85%90%E8%B4%A5/">腐败</a>
+                            
+                        </span>
+                    
                 </div>
             
         </header>
@@ -276,117 +281,116 @@
         <div class="post-content">
             <p>LocalSend 顾名思义，局域网文件传输。</p>
 <p>建议从<strong>应用场景</strong>读起。</p>
-<h2 id="安装包"><a href="#安装包" class="headerlink" title="安装包"></a>安装包</h2><ol>
-<li><p>从 <a target="_blank" rel="noopener" href="https://localsend.org/">官网</a> 下载。</p>
+<h2 id="安装包"><a class="header-anchor" href="#安装包"></a>安装包</h2>
+<ol>
+<li class="lvl-3">
+<p>从 <a target="_blank" rel="noopener" href="https://localsend.org">官网</a> 下载。</p>
 <p>Linux 建议下载 DEB。Windows 的 ZIP 比 MSIX 小一点。</p>
 </li>
-<li><p>从装有 LocalSend 的设备获取。</p>
+<li class="lvl-3">
+<p>从装有 LocalSend 的设备获取。</p>
 <ol>
-<li>（发送者）打开 LocalSend，并在「发送」中添加安装包文件。</li>
-<li>（发送者）在「发送模式」中选择「通过链接分享」。<br><img src="https://cdn.luogu.com.cn/upload/image_hosting/wqjux829.png"></li>
-<li>（接收者）在浏览器中输入链接。</li>
-<li>（发送者）同意请求。</li>
-<li>（接收者）点击下载。</li>
+<li class="lvl-6">（发送者）打开 LocalSend，并在「发送」中添加安装包文件。</li>
+<li class="lvl-6">（发送者）在「发送模式」中选择「通过链接分享」。<br>
+<img src="https://cdn.luogu.com.cn/upload/image_hosting/wqjux829.png" alt=""></li>
+<li class="lvl-6">（接收者）在浏览器中输入链接。</li>
+<li class="lvl-6">（发送者）同意请求。</li>
+<li class="lvl-6">（接收者）点击下载。</li>
 </ol>
 </li>
 </ol>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ol>
-<li><p><strong>Linux, DEB 文件</strong></p>
+<h2 id="安装"><a class="header-anchor" href="#安装"></a>安装</h2>
+<ol>
+<li class="lvl-3">
+<p><strong>Linux, DEB 文件</strong></p>
 <p>执行 Shell 命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg -i （文件名.deb）</span><br></pre></td></tr></table></figure></li>
-<li><p><strong>Windows 10 及以上，MSIX 文件</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg -i （文件名.deb）</span><br></pre></td></tr></table></figure>
+</li>
+<li class="lvl-3">
+<p><strong>Windows 10 及以上，MSIX 文件</strong></p>
 <p>一般情况下，可以直接打开。</p>
 <p>如不成功，则在 powershell 中执行：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">add-appxpackage （文件名.msix）</span><br></pre></td></tr></table></figure></li>
-<li><p><strong>Windows，ZIP 文件</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">add-appxpackage （文件名.msix）</span><br></pre></td></tr></table></figure>
+</li>
+<li class="lvl-3">
+<p><strong>Windows，ZIP 文件</strong></p>
 <p>直接解压即可，建议固定到任务栏。</p>
 </li>
 </ol>
-<h2 id="使用（常见问题）"><a href="#使用（常见问题）" class="headerlink" title="使用（常见问题）"></a>使用（常见问题）</h2><ul>
-<li><p><strong>更改「别名」没有生效</strong></p>
-<p> 在「设置」中重启服务器即可。<br> <img src="https://cdn.luogu.com.cn/upload/image_hosting/dh7iqr9v.png"></p>
+<h2 id="使用（常见问题）"><a class="header-anchor" href="#使用（常见问题）"></a>使用（常见问题）</h2>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p><strong>更改「别名」没有生效</strong></p>
+<p>在「设置」中重启服务器即可。<br>
+<img src="https://cdn.luogu.com.cn/upload/image_hosting/dh7iqr9v.png" alt=""></p>
 </li>
-<li><p><strong>「附近的设备」中没有出现已安装 LocalSend 的虚拟机</strong></p>
-<ul>
-<li>VMware<ol>
-<li>Ctrl+D 打开「虚拟机设置」。</li>
-<li>依次选择「网络适配器」–&gt;「桥接模式」–&gt;「复制物理网络连接状态」。</li>
-<li>在 LocalSend「设置」中重启服务器。</li>
-</ol>
-</li>
-<li>VirtualBox<ol>
-<li>关机。</li>
-<li>打开「设置」–&gt;「网络」。</li>
-<li>将「连接方式」改为「桥接网卡」。</li>
-</ol>
-</li>
-</ul>
-</li>
-<li><p><strong>发送时出现「已完成，但发生错误。」</strong></p>
-<p> 对方可能退出了 LocalSend，建议重新扫描设备。</p>
-</li>
-<li><p><strong>Windows 设备无法接收消息或无法成为发送目标</strong></p>
+<li class="lvl-2">
+<p><strong>「附近的设备」中没有出现已安装 LocalSend 的虚拟机</strong></p>
+<ul class="lvl-2">
+<li class="lvl-5">VMware
 <ol>
-<li>在 LocalSend 的「接收」中查看「端口」。<br><img src="https://cdn.luogu.com.cn/upload/image_hosting/v40mkwm5.png"></li>
-<li>在 LocalSend 的「发送」中依次点击「故障排除」–&gt;「打开防火墙」–&gt;「入站规则」–&gt;「新建规则」。<br><img src="https://cdn.luogu.com.cn/upload/image_hosting/jmebn0au.png"></li>
-<li>选择「端口」。</li>
-<li>选择「TCP」和「特定本地端口」，并填写第 1 步中查看的端口号。</li>
-<li>选择「允许连接」。</li>
-<li>勾选「域」。</li>
-<li>名称描述自定。</li>
+<li class="lvl-9">Ctrl+D 打开「虚拟机设置」。</li>
+<li class="lvl-9">依次选择「网络适配器」–&gt;「桥接模式」–&gt;「复制物理网络连接状态」。</li>
+<li class="lvl-9">在 LocalSend「设置」中重启服务器。</li>
+</ol>
+</li>
+<li class="lvl-5">VirtualBox
+<ol>
+<li class="lvl-9">关机。</li>
+<li class="lvl-9">打开「设置」–&gt;「网络」。</li>
+<li class="lvl-9">将「连接方式」改为「桥接网卡」。</li>
 </ol>
 </li>
 </ul>
-<h2 id="应用场景-不足"><a href="#应用场景-不足" class="headerlink" title="应用场景 &amp; 不足"></a>应用场景 &amp; 不足</h2><ol>
-<li><p><strong>文件传输</strong></p>
+</li>
+<li class="lvl-2">
+<p><strong>发送时出现「已完成，但发生错误。」</strong></p>
+<p>对方可能退出了 LocalSend，建议重新扫描设备。</p>
+</li>
+<li class="lvl-2">
+<p><strong>Windows 设备无法接收消息或无法成为发送目标</strong></p>
+<ol>
+<li class="lvl-6">在 LocalSend 的「接收」中查看「端口」。<br>
+<img src="https://cdn.luogu.com.cn/upload/image_hosting/v40mkwm5.png" alt=""></li>
+<li class="lvl-6">在 LocalSend 的「发送」中依次点击「故障排除」–&gt;「打开防火墙」–&gt;「入站规则」–&gt;「新建规则」。<br>
+<img src="https://cdn.luogu.com.cn/upload/image_hosting/jmebn0au.png" alt=""></li>
+<li class="lvl-6">选择「端口」。</li>
+<li class="lvl-6">选择「TCP」和「特定本地端口」，并填写第 1 步中查看的端口号。</li>
+<li class="lvl-6">选择「允许连接」。</li>
+<li class="lvl-6">勾选「域」。</li>
+<li class="lvl-6">名称描述自定。</li>
+</ol>
+</li>
+</ul>
+<h2 id="应用场景-不足"><a class="header-anchor" href="#应用场景-不足"></a>应用场景 &amp; 不足</h2>
+<ol>
+<li class="lvl-3">
+<p><strong>文件传输</strong></p>
 <p>跨平台，无联网，界面简洁美观。断网做模拟赛时如果忘记下载大样例，可以找同学 LocalSend 给你。</p>
 <p>速度快，文件无大小限制，但速度不如基于 ssh 协议的 scp 命令。</p>
 <p>可以「输入地址」给不同子网内设备发送消息。</p>
 </li>
-<li><p><strong>匿名聊天</strong></p>
+<li class="lvl-3">
+<p><strong>匿名聊天</strong></p>
 <p>使用 LocalSend 聊天无需登录，非常方便（这里就不点名<strong>腾讯</strong>开发的聊天软件及其『账号安全』验证机制了）。</p>
 <p>LocalSend 在初次启动时会随机生成一个「别名」，这为匿名聊天创造了天然的条件。</p>
 <p>如果把「别名」清空，不重启服务器，则每次启动都会重新生成「别名」。</p>
 <p>缺点：一个设备同时只能接收一条消息。</p>
 </li>
-<li><p><strong>激情对 Send</strong></p>
+<li class="lvl-3">
+<p><strong>激情对 Send</strong></p>
 <p>将「发送模式」改为「多个接收者」，就可以将一条消息发送多次（可以给多个设备发送，并在接收者<strong>处理完请求后再次发送</strong>）。</p>
 <p>然后能做什么大家应该都能想到。</p>
 <p>那如果被消息“轰炸”了，除了关掉 LocalSend 就没有别的办法了吗？</p>
 <p>办法当然是有的。在“轰炸”时，发送与接收一般会形成稳定的节奏.如果突然打破节奏，趁对方还没有反应过来，抢先一步发送消息，就夺取了“制空权”，可以进行『火力压制』。但『反轰炸』不一定能成功，需要良好的心理素质和较快的手速。</p>
 <p>还有有一个『反轰炸』技巧，收到消息后可以按 Esc 键关闭（也可以左手狂按 Esc，右手狂点鼠标，进行『无差别轰炸』）。</p>
-<p>但『轰炸』和『反轰炸』，都将导致 LocalSend 不能正常使用。所以如果要传输重要的文件，但有人一直在『轰炸』，建议线下物理解决 <del>（我就曾经被坐我旁边的 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/342322">lyx_sing_dance_rap</a> 制裁过）</del>。</p>
+<p>但『轰炸』和『反轰炸』，都将导致 LocalSend 不能正常使用。所以如果要传输重要的文件，但有人一直在『轰炸』，建议线下物理解决 <s>（我就曾经被坐我旁边的 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/342322">lyx_sing_dance_rap</a> 制裁过）</s>。</p>
 </li>
 </ol>
 
         </div>
 
         
-            <section class="post-copyright">
-                
-                
-                
-                
-
-            </section>
-        
-        <section class="post-tags">
-            <div>
-                <span>Tag(s):</span>
-                <span class="tag">
-                    
-                    
-                        <a href="/tags/%E8%85%90%E8%B4%A5/"># 腐败</a>
-                    
-                        
-                </span>
-            </div>
-            <div>
-                <a href="javascript:window.history.back();">back</a>
-                <span>· </span>
-                <a href="/">home</a>
-            </div>
-        </section>
     <script src="https://giscus.app/client.js"
         data-repo="danielqfmai/danielqfmai.github.io"
         data-repo-id="R_kgDOK66FXA"
@@ -409,7 +413,7 @@
         </div>
         <footer id="footer" class="footer">
     <div class="copyright">
-        <span>© danielqf | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+        <span>© danielqf | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/danielqfmai/chic" target="_blank">Chic</a></span>
     </div>
 </footer>
 

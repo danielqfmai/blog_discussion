@@ -790,36 +790,36 @@ header label {
   padding-top: 0.8em;
   padding-bottom: 0.3em;
 }
-.post-content h1::before {
+.post-content h1>a:first-child::before {
   content: "#";
   margin-right: 5px;
   color: #2d96bd;
 }
-.dark-theme .post-content h1::before {
+.dark-theme .post-content h1>a:first-child::before {
   color: #eee;
 }
-.post-content h2::before {
+.post-content h2>a:first-child::before {
   content: "#";
   margin-right: 5px;
   color: #2d96bd;
 }
-.dark-theme .post-content h2::before {
+.dark-theme .post-content h2>a:first-child::before {
   color: #eee;
 }
-.post-content h3::before {
+.post-content h3>a:first-child::before {
   content: "|";
   margin-right: 5px;
   color: #2d96bd;
 }
-.dark-theme .post-content h3::before {
+.dark-theme .post-content h3>a:first-child::before {
   color: #eee;
 }
-.post-content h4::before {
+.post-content h4>a:first-child::before {
   content: "*";
   margin-right: 5px;
   color: #2d96bd;
 }
-.dark-theme .post-content h4::before {
+.dark-theme .post-content h4>a:first-child::before {
   color: #eee;
 }
 .post-content a {
@@ -1007,7 +1007,7 @@ header label {
   background: #f8f5ec;
 }
 .dark-theme .post-content code {
-  color: #fffe28;
+  color: #d0d0d0;
   background: #787575;
 }
 .post-content h1 code,
@@ -1060,6 +1060,7 @@ header label {
 }
 .post-content figure.highlight .gutter pre {
   margin: 0;
+  text-align: right;
 }
 .post-tags {
   padding: 1rem 0 1rem;

@@ -126,13 +126,11 @@
                 
                     <a class="menu-item" href="/archives">Posts</a>
                 
-                    <a class="menu-item" href="/tag">Tag</a>
+                    <a class="menu-item" href="/category">Category</a>
                 
                     <a class="menu-item" href="/about">About</a>
                 
                 <a class="menu-item" onclick="$('#search-page').show(); $('#local-search-input')[0].focus();">Search</a>
-                <input id="switch_default" type="checkbox" class="switch_default">
-                <label for="switch_default" class="toggleBtn"></label>
             </div>
         </div>
     </nav>
@@ -150,7 +148,7 @@
                 
                     <a class="menu-item" href="/archives">Posts</a>
                 
-                    <a class="menu-item" href="/tag">Tag</a>
+                    <a class="menu-item" href="/category">Category</a>
                 
                     <a class="menu-item" href="/about">About</a>
                 
@@ -204,6 +202,13 @@
                         </span>
                     
                     
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E8%85%90%E8%B4%A5/">腐败</a>
+                            
+                        </span>
+                    
                 </div>
             
         </header>
@@ -211,53 +216,42 @@
         <div class="post-content">
             <p>假设一个区域存在两类人：鹰派和鸽派，他们要争取资源。</p>
 <p>如果两个人 A 和 B 分配 $2$ 单位的资源，会形成以下四种结果：</p>
-<ul>
-<li>如果 A B 都是鸽派，则他们会和平相处，每人分得 $1$ 单位的资源。</li>
-<li>如果 A 是鹰派，B 是鸽派，则 A 会独占 $2$ 单位的资源。反之亦然。</li>
-<li>如果 A B 都是鹰派，则他们会爆发战争，最后还是每人分得 $1$ 单位的资源，但会因为战争而每人亏损 $x$ 单位的资源（$x&gt;0$）。</li>
+<ul class="lvl-0">
+<li class="lvl-4">
+<p>如果 A B 都是鸽派，则他们会和平相处，每人分得 $1$ 单位的资源。</p>
+</li>
+<li class="lvl-4">
+<p>如果 A 是鹰派，B 是鸽派，则 A 会独占 $2$ 单位的资源。反之亦然。</p>
+</li>
+<li class="lvl-4">
+<p>如果 A B 都是鹰派，则他们会爆发战争，最后还是每人分得 $1$ 单位的资源，但会因为战争而每人亏损 $x$ 单位的资源（$x&gt;0$）。</p>
+</li>
 </ul>
 <p>设该地区鹰派所占比例为 $h$，鸽派所占比例为 $1-h$，则：</p>
-<ul>
-<li>一位鸽派人士能得到的资源 $v_\text鸽&#x3D;(1-h)\times1\ +\ h\times0&#x3D;1-h$.</li>
-<li>一位鹰派人士能得到的资源 $v_\text鹰&#x3D;(1-h)\times2\ +\ h\times(1-x)&#x3D;(-1-x)h+2$.</li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>一位鸽派人士能得到的资源 $v_\text鸽=(1-h)\times1\ +\ h\times0=1-h$.</p>
+</li>
+<li class="lvl-2">
+<p>一位鹰派人士能得到的资源 $v_\text鹰=(1-h)\times2\ +\ h\times(1-x)=(-1-x)h+2$.</p>
+</li>
 </ul>
 <p>可以发现：</p>
-<ul>
-<li>当 $h&lt;\frac 1x$ 时，$v_\text鹰&gt;v_\text鸽$，于是会有一些鸽派人士转变为鹰派，使 $h$ 增大。</li>
-<li>当 $h&gt;\frac 1x$ 时，$v_\text鸽&gt;v_\text鹰$，于是会有一些鹰派人士转变为鸽派，使 $h$ 减小。</li>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>当 $h&lt;\frac 1x$ 时，$v_\text鹰&gt;v_\text鸽$，于是会有一些鸽派人士转变为鹰派，使 $h$ 增大。</p>
+</li>
+<li class="lvl-2">
+<p>当 $h&gt;\frac 1x$ 时，$v_\text鸽&gt;v_\text鹰$，于是会有一些鹰派人士转变为鸽派，使 $h$ 减小。</p>
+</li>
 </ul>
-<p>所以 $h$ 最终会等于 $\min(\frac 1x,1)$，此时 $v_\text鸽&#x3D;v_\text鹰&#x3D;max(0,1-\frac 1x)$.</p>
+<p>所以 $h$ 最终会等于 $\min(\frac 1x,1)$，此时 $v_\text鸽=v_\text鹰=max(0,1-\frac 1x)$.</p>
 <p>所以 $x$ 越大 $h$ 就越小，战争就越少，同时每个人获得的资源就越多。</p>
-<p><del>曼哈顿计划，启动！</del></p>
+<p><s>曼哈顿计划，启动！</s></p>
 
         </div>
 
         
-            <section class="post-copyright">
-                
-                
-                
-                
-
-            </section>
-        
-        <section class="post-tags">
-            <div>
-                <span>Tag(s):</span>
-                <span class="tag">
-                    
-                    
-                        <a href="/tags/%E6%89%AF%E6%B7%A1/"># 扯淡</a>
-                    
-                        
-                </span>
-            </div>
-            <div>
-                <a href="javascript:window.history.back();">back</a>
-                <span>· </span>
-                <a href="/">home</a>
-            </div>
-        </section>
     <script src="https://giscus.app/client.js"
         data-repo="danielqfmai/danielqfmai.github.io"
         data-repo-id="R_kgDOK66FXA"
@@ -280,7 +274,7 @@
         </div>
         <footer id="footer" class="footer">
     <div class="copyright">
-        <span>© danielqf | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+        <span>© danielqf | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/danielqfmai/chic" target="_blank">Chic</a></span>
     </div>
 </footer>
 

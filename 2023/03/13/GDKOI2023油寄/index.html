@@ -126,13 +126,11 @@
                 
                     <a class="menu-item" href="/archives">Posts</a>
                 
-                    <a class="menu-item" href="/tag">Tag</a>
+                    <a class="menu-item" href="/category">Category</a>
                 
                     <a class="menu-item" href="/about">About</a>
                 
                 <a class="menu-item" onclick="$('#search-page').show(); $('#local-search-input')[0].focus();">Search</a>
-                <input id="switch_default" type="checkbox" class="switch_default">
-                <label for="switch_default" class="toggleBtn"></label>
             </div>
         </div>
     </nav>
@@ -150,7 +148,7 @@
                 
                     <a class="menu-item" href="/archives">Posts</a>
                 
-                    <a class="menu-item" href="/tag">Tag</a>
+                    <a class="menu-item" href="/category">Category</a>
                 
                     <a class="menu-item" href="/about">About</a>
                 
@@ -269,25 +267,34 @@
                         </span>
                     
                     
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E6%B8%B8%E8%AE%B0/">游记</a>
+                            
+                        </span>
+                    
                 </div>
             
         </header>
 
         <div class="post-content">
             <p>3月10日下午坤点，抱着行李，怀着激动的心情，踏上了大巴，开始了长达2天半的被虐之旅</p>
-<h1 id="D0"><a href="#D0" class="headerlink" title="D0"></a>D0</h1><p>车上看洋葱，<del>还偷拍了lsx和thy</del>，没有手机qwq</p>
+<h1>D0</h1>
+<p>车上看洋葱，<s>还偷拍了lsx和thy</s>，没有手机qwq</p>
 <p>到了酒店，4点50进到了房间，用电视腐B站</p>
 <p>接着去6中，领了个袋子然后去吃饭，这饭蔡和 2.5线城市的某小破学校 的有点像啊，4个蔡吃不完qwq</p>
 <p>晚上没走远，去吃了Mixue Icecream</p>
-<h1 id="D1"><a href="#D1" class="headerlink" title="D1"></a>D1</h1><p>昨晚12点才睡，因为只收了手只因，<del>没有收电视</del>，居然没犯困</p>
+<h1>D1</h1>
+<p>昨晚12点才睡，因为只收了手只因，<s>没有收电视</s>，居然没犯困</p>
 <p>早上在麦当劳吃了早餐，花了15大洋，热量还蛮高的（汉堡+薯饼+豆浆）</p>
-<p>8：30开始比赛 <del><strong>正片结束</strong></del></p>
+<p>8：30开始比赛 <s><strong>正片结束</strong></s></p>
 <p><strong>T1</strong> 是判断两方阵（方形矩阵）相乘是否等于第个方阵，$0\leqslant n\leqslant 3000$，之前C组D过原题，两边同时乘一个随机向量 $O(n^2)$ 判断</p>
 <p><strong>T2</strong> 是求满足 $\forall i\in[1,m],\ p_i&gt;m$ 的长度为 $n$ 错排列数，$T$ 组数据，$0\leqslant m\leqslant n\leqslant 2\times10^5,\ 0\leqslant T\leqslant 2\times10^5$</p>
 <p>首先前 $m$ 个数有 $\tbinom{n-m}{m}$ 种方案，然后转化为 $m$ 个点不限制 的长度为 $n-m$ 错排列数（从置换环角度考虑）</p>
-<p>$O(Tm)$ 暴算</p>
-<p><strong>T3</strong> 题面说得很清楚了，不再描述了<del>（明明是懒）</del></p>
-<p>首先打了个暴力，然后1小时打 $m&#x3D;0$ 的情况</p>
+<p>$O™$ 暴算</p>
+<p><strong>T3</strong> 题面说得很清楚了，不再描述了~~（明明是懒）~~</p>
+<p>首先打了个暴力，然后1小时打 $m=0$ 的情况</p>
 <p><strong>赛后</strong></p>
 <p>T1没加快读，还随机了10次（lsx只随3次就用了1.9秒），要寄了！！！！</p>
 <p>T2没有想到可以 $O(nm)$ 递推！！</p>
@@ -298,9 +305,10 @@
 <p>晚上又去了蜜雪冰城，买了珍珠奶茶，不是很好喝，感觉有点亏</p>
 <p>然后和同学在必胜客合资买了一块披萨，还不错</p>
 <p>吃完后就呆在酒店搞腐，11点半睡觉</p>
-<h1 id="D2"><a href="#D2" class="headerlink" title="D2"></a>D2</h1><p>昨晚睡得不好，因为看了不该看的（似乎也不是很恐怖也）</p>
+<h1>D2</h1>
+<p>昨晚睡得不好，因为看了不该看的（似乎也不是很恐怖也）</p>
 <p>早餐吃了肠粉+油条，很好吃</p>
-<p>到6中比赛换了一个机房，居然没有隔板，<del>可以D！</del></p>
+<p>到6中比赛换了一个机房，居然没有隔板，<s>可以D！</s></p>
 <p><strong>T1</strong> 先预处理出 以每个为根分别 能向3个方向走多远，然后询问时找到符合条件的根并算出答案，复杂度 $O(nQ)$</p>
 <p>打了两个小时，过程中似乎想到了正解，但是去搞后2题了</p>
 <p><strong>T2</strong> 暴力矩阵乘法，$O(4^n\log K)$</p>
@@ -319,27 +327,6 @@
         </div>
 
         
-            <section class="post-copyright">
-                
-                
-                
-                
-
-            </section>
-        
-        <section class="post-tags">
-            <div>
-                <span>Tag(s):</span>
-                <span class="tag">
-                    
-                </span>
-            </div>
-            <div>
-                <a href="javascript:window.history.back();">back</a>
-                <span>· </span>
-                <a href="/">home</a>
-            </div>
-        </section>
     <script src="https://giscus.app/client.js"
         data-repo="danielqfmai/danielqfmai.github.io"
         data-repo-id="R_kgDOK66FXA"
@@ -362,7 +349,7 @@
         </div>
         <footer id="footer" class="footer">
     <div class="copyright">
-        <span>© danielqf | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+        <span>© danielqf | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/danielqfmai/chic" target="_blank">Chic</a></span>
     </div>
 </footer>
 
