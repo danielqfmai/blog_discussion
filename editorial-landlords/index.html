@@ -234,7 +234,7 @@
 
         <div class="post-content">
             <p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/record/141689771">原</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/record/141691086">加强版</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/record/141691086">加强版（c++最优解）</a></p>
 <p>首先搜索飞机（其实题面已经简化了很多，原本斗地主的飞机可以有机翼）、连对、顺子，然后就不需要考虑牌的数值，只用考虑牌的出现次数了（也就是说只用记录有几个炸弹、三张、对子、单牌）。</p>
 <p>先枚举出几个炸弹和三张（这里有可能要拆炸弹），然后再尝试把单牌和对子“塞”进去。</p>
 <p>可以证明，拆对子只能是拆成两张再“塞”到一个炸弹里（例如 <code>444422</code>），于是可以分开考虑对子和单牌，先塞单牌，再塞对子，因为塞对子时不用分开考虑炸弹和三张。</p>
