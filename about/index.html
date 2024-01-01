@@ -100,28 +100,32 @@
         click_time=0;
     </script>
     <script>
-        // this function is used to check current theme before page loaded.
-        (() => {
-            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
-            const isDark = currentTheme === 'dark';
-            const pagebody = document.getElementsByTagName('body')[0]
-            if (isDark) {
-                pagebody.classList.add('dark-theme');
-                // mobile
-                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
-            } else {
-                pagebody.classList.remove('dark-theme');
-                // mobile
-                document.getElementById("mobile-toggle-theme").innerText = "· Light"
-            }
-        })();
+//        // this function is used to check current theme before page loaded.
+//        (() => {
+//            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+//            const isDark = currentTheme === 'dark';
+//            const pagebody = document.getElementsByTagName('body')[0]
+//            if (isDark) {
+//                pagebody.classList.add('dark-theme');
+//                // mobile
+//                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+//            } else {
+//                pagebody.classList.remove('dark-theme');
+//                // mobile
+//                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+//            }
+//        })();
     </script>
 
     <div class="wrapper">
         <header>
     <nav class="navbar">
         <div class="container">
-            <div class="navbar-header header-logo"><a href="/">Danielqf&#39;s Blog</a></div>
+            <div class="navbar-header header-logo">
+                <a href="/">Danielqf&#39;s Blog</a>
+                <span style="display: none; margin: 0; padding-left: 84px;
+                    font-weight: 1000; font-size: 17px;">about</span>
+            </div>
             <div class="menu navbar-right">
                 
                     <a class="menu-item" href="/archives">Posts</a>
@@ -158,6 +162,21 @@
 
 </header>
 <script>
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset>60) {
+            $('.navbar').css({'position':'fixed',
+//                'height':'calc(3.5rem - 15px)',
+//                'line-height':'calc(3.5rem - 15px)',
+                'left':'0px', 'right':'0px',
+                'background-color':'white', 'z-index':'900',
+                'box-shadow': '0 0 0.3em #888'});
+            $('.header-logo>span').css('display','inline');
+        }
+        else {
+            $('.navbar')[0].style='height:3.5rem; line-height:3.5rem;';
+            $('.header-logo>span').css('display','none');
+        }
+    });
     var mobileBtn = function f() {
         var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
         var mobileMenu = document.getElementById("mobile-menu");
@@ -192,6 +211,7 @@
 <p><a target="_blank" rel="noopener" href="https://github.com/danielqfmai/danielqfmai.github.io/issues">博客有锅？提个 Issue</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/378555">我的洛谷菜号</a></p>
 <p><a target="_blank" rel="noopener" href="https://atcoder.jp/users/danielqf"><img src="https://atrating.baoshuo.dev/rating?username=danielqf" alt=""></a></p>
+<p><a target="_blank" rel="noopener" href="https://codeforces.com/profile/danielqf"><img src="https://cfrating.baoshuo.dev/rating?username=danielqf&amp;style=for-the-badge" alt=""></a></p>
 <h2 id="分享"><a class="header-anchor" href="#分享"></a>分享</h2>
 <p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/paste/hs3jg81l">KATEX 速查</a></p>
 <p><a target="_blank" rel="noopener" href="https://csacademy.com/app/graph_editor">图论画图工具</a></p>

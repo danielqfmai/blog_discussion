@@ -15,7 +15,7 @@
 
 
 
-<title>「ZSKOI2023」总结 | Danielqf&#39;s Blog</title>
+<title>【题解】斗地主 | Danielqf&#39;s Blog</title>
 
 
 
@@ -100,28 +100,32 @@
         click_time=0;
     </script>
     <script>
-        // this function is used to check current theme before page loaded.
-        (() => {
-            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
-            const isDark = currentTheme === 'dark';
-            const pagebody = document.getElementsByTagName('body')[0]
-            if (isDark) {
-                pagebody.classList.add('dark-theme');
-                // mobile
-                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
-            } else {
-                pagebody.classList.remove('dark-theme');
-                // mobile
-                document.getElementById("mobile-toggle-theme").innerText = "· Light"
-            }
-        })();
+//        // this function is used to check current theme before page loaded.
+//        (() => {
+//            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+//            const isDark = currentTheme === 'dark';
+//            const pagebody = document.getElementsByTagName('body')[0]
+//            if (isDark) {
+//                pagebody.classList.add('dark-theme');
+//                // mobile
+//                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+//            } else {
+//                pagebody.classList.remove('dark-theme');
+//                // mobile
+//                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+//            }
+//        })();
     </script>
 
     <div class="wrapper">
         <header>
     <nav class="navbar">
         <div class="container">
-            <div class="navbar-header header-logo"><a href="/">Danielqf&#39;s Blog</a></div>
+            <div class="navbar-header header-logo">
+                <a href="/">Danielqf&#39;s Blog</a>
+                <span style="display: none; margin: 0; padding-left: 84px;
+                    font-weight: 1000; font-size: 17px;">【题解】斗地主</span>
+            </div>
             <div class="menu navbar-right">
                 
                     <a class="menu-item" href="/archives">Posts</a>
@@ -158,6 +162,21 @@
 
 </header>
 <script>
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset>60) {
+            $('.navbar').css({'position':'fixed',
+//                'height':'calc(3.5rem - 15px)',
+//                'line-height':'calc(3.5rem - 15px)',
+                'left':'0px', 'right':'0px',
+                'background-color':'white', 'z-index':'900',
+                'box-shadow': '0 0 0.3em #888'});
+            $('.header-logo>span').css('display','inline');
+        }
+        else {
+            $('.navbar')[0].style='height:3.5rem; line-height:3.5rem;';
+            $('.header-logo>span').css('display','none');
+        }
+    });
     var mobileBtn = function f() {
         var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
         var mobileMenu = document.getElementById("mobile-menu");
@@ -185,76 +204,11 @@
             <div class="container">
     
     
-        <div class="post-toc">
-    <div class="tocbot-list">
-    </div>
-    <div class="tocbot-list-menu">
-        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
-        <a onclick="go_top()">Back to top</a>
-        <a onclick="go_bottom()">Go to bottom</a>
-    </div>
-</div>
-
-<script>
-    var tocbot_timer;
-    var DEPTH_MAX = 6; // 为 6 时展开所有
-    var tocbot_default_config = {
-        tocSelector: '.tocbot-list',
-        contentSelector: '.post-content',
-        headingSelector: 'h1, h2, h3, h4, h5',
-        orderedList: false,
-        scrollSmooth: true,
-        onClick: extend_click,
-    };
-
-    function extend_click() {
-        clearTimeout(tocbot_timer);
-        tocbot_timer = setTimeout(function() {
-            tocbot.refresh(obj_merge(tocbot_default_config, {
-                hasInnerContainers: true
-            }));
-        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
-    }
-
-    document.ready(function() {
-        tocbot.init(obj_merge(tocbot_default_config, {
-            collapseDepth: 1
-        }));
-    });
-
-    function expand_toc() {
-        var b = document.querySelector('.tocbot-toc-expand');
-        var expanded = b.getAttribute('data-expanded');
-        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
-        tocbot.refresh(obj_merge(tocbot_default_config, {
-            collapseDepth: expanded ? 1 : DEPTH_MAX
-        }));
-        b.innerText = expanded ? 'Expand all' : 'Collapse all';
-    }
-
-    function go_top() {
-        window.scrollTo(0, 0);
-    }
-
-    function go_bottom() {
-        window.scrollTo(0, document.body.scrollHeight);
-    }
-
-    function obj_merge(target, source) {
-        for (var item in source) {
-            if (source.hasOwnProperty(item)) {
-                target[item] = source[item];
-            }
-        }
-        return target;
-    }
-</script>
-    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">「ZSKOI2023」总结</h1>
+            <h1 class="post-title">【题解】斗地主</h1>
             
                 <div class="post-meta">
                     
@@ -263,14 +217,14 @@
 
                     
                         <span class="post-time">
-                        Date: <a>2023.06.19&nbsp;&nbsp;21:30:49</a>
+                        Date: <a>2024.01.01&nbsp;&nbsp;20:41:04</a>
                         </span>
                     
                     
                         <span class="post-category">
                     Category:
                             
-                                <a href="/categories/%E6%B8%B8%E8%AE%B0/">游记</a>
+                                <a href="/categories/%E9%A2%98%E8%A7%A3/">题解</a>
                             
                         </span>
                     
@@ -279,52 +233,12 @@
         </header>
 
         <div class="post-content">
-            <p>所以说这场比赛与义务教育有什么关系？</p>
-<h2 id="day-1，6-16，Fri"><a class="header-anchor" href="#day-1，6-16，Fri"></a>day -1，6.16，Fri</h2>
-<p><s>人在机房坐，比赛天上来。</s></p>
-<p>当时洛谷日爆，然后<s>脑抽</s><a target="_blank" rel="noopener" href="http://xn--luogu-fg1hpg7d90b38tpz3b0lirs1e0iyc.com.cn">写了个东西一直打开luogu.com.cn</a>。</p>
-<p>然后教练打开了屏幕广播，说了一下比赛的事情，把座位表发给我们。</p>
-<p>似乎不用linux评测。</p>
-<p>结束广播之后，屏幕就再也没有亮起来。。。（后面重启好了）</p>
-<h2 id="day-0，6-17，Sat"><a class="header-anchor" href="#day-0，6-17，Sat"></a>day 0，6.17，Sat</h2>
-<p>jy只有初一去了jz，高中在402断网比赛（当然还有春神），于是初中的去了302。</p>
-<p>8G内存！VScode！（虽然我不用）VMware！NOIlinux！</p>
-<p>下午Jimmy说<strong>应该</strong>是用Windows评测。。。</p>
-<h2 id="day-1，6-18-Sun"><a class="header-anchor" href="#day-1，6-18-Sun"></a>day 1，6.18.Sun</h2>
-<p>昨晚睡得比较晚，头有些痛。</p>
-<p>6点起来，7：50到jz，又睡了一会，8：20进考场，考场在503。</p>
-<p>我前两个位置都没人。Verser在我正前方3个位%%%</p>
-<p>没断网？全都在敲代码？没有VMware但有Gvim和CodeBlocks？</p>
-<p>于是我配好了Dev，测了一下a+b和文操。</p>
-<p>发了题面，没有大样例。</p>
-<p>开题！</p>
-<h3 id="T1"><a class="header-anchor" href="#T1"></a>T1</h3>
-<p>求给定字符串的最长回文<strong>子序列</strong>长度，$n\leq1000$。</p>
-<p>不会有人想manacher吧？</p>
-<p>想了一个朴素的 $O(n^2)$ 区间DP，应该能过。</p>
-<h3 id="T2"><a class="header-anchor" href="#T2"></a>T2</h3>
-<p>有两个盒子AB，其中黑白球数给定。每次从A拿一个球到B，再从B拿一个球到A。重复 $n$ 次，求A中白球比率的期望。$n,\text{总球数}\leq10^{18}$。</p>
-<p>奇奇怪怪，只会 $O(nm)$ dp。</p>
-<h3 id="T3"><a class="header-anchor" href="#T3"></a>T3</h3>
-<p>给定一个 $n\times n$ 的方阵，每次操作一个矩形 $(x1,y1)(x2,y2)$，给矩形内的点 $(x,y)$ 加上 $\binom{x-x1}{y-y1}$。求最终矩形每行每列的异或和。$n,Q\leq5000$</p>
-<p>题目主人公是<strong>骐度空间·莫羯座·十一月的萧彰</strong>。。。</p>
-<h3 id="T4"><a class="header-anchor" href="#T4"></a>T4</h3>
-<p>给定一颗树。每次操作先选择一个点 $a$ ，断开 $a$ 的邻边，再在 $a$ 与之前相邻的点之间重新连边（任意方式，只要没有环）。求把树调整成给定形态的最少操作次数（点有标号）。$n\leq10^6$。</p>
-<p>弃。</p>
-<p>看完题大约9点，感觉很懵，先打了T1，过了样例和手造数据。</p>
-<p>9点半，出去上了个厕所。</p>
-<p>然后强攻T3，发现了一个差分做法，设 $a_{i,j}=ans_{i,j}-ans_{i-1,j-1}-ans_{i-1,j}$，那么操作时只会改动 $O(n)$ 个位置。</p>
-<p>用1小时打完，尝试优化T2的DP无果，于是打了60部分分。</p>
-<p>T4暴力都不会。。。</p>
-<p>然后闲着没事干，打了T1T3的对拍。</p>
-<p>于是边检查边对拍边摸鱼了半个小时。</p>
-<p>估分100+60+100+0=260</p>
-<h3 id="赛后"><a class="header-anchor" href="#赛后"></a>赛后</h3>
-<p>听说不少人切T3，T1有好多奇怪做法。</p>
-<p>路上被-6n<s>打劫</s>了，他说401有VMware！</p>
-<p>yjx和我估分一样。</p>
-<p>lsx切T2？$O(64\log n)$？？？</p>
-<p>中考、期末考RP++！</p>
+            <p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/record/141689771">原</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/record/141691086">加强版</a></p>
+<p>首先搜索飞机（其实题面已经简化了很多，原本斗地主的飞机可以有机翼）、连对、顺子，然后就不需要考虑牌的数值，只用考虑牌的出现次数了（也就是说只用记录有几个炸弹、三张、对子、单牌）。</p>
+<p>先枚举出几个炸弹和三张（这里有可能要拆炸弹），然后再尝试把单牌和对子“塞”进去。</p>
+<p>可以证明，拆对子只能是拆成两张再“塞”到一个炸弹里（例如 <code>444422</code>），于是可以分开考虑对子和单牌，先塞单牌，再塞对子，因为塞对子时不用分开考虑炸弹和三张。</p>
+<p>加强版做法：把大小王视作两种不同的单牌，在“塞”单牌剩下大于等于两张时考虑凑王炸。</p>
 
         </div>
 

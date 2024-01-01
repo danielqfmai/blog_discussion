@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="danielqf">
+
+
+    <meta name="subtitle" content="Modify">
+
+
+
+
+<title>csp2023 | Danielqf&#39;s Blog</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+    });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+    
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+    
+<script src="/js/search.js"></script>
+
+    <script type="text/javascript">
+        var search_path = "search.xml";
+        if (search_path.length == 0) {
+            search_path = "search.xml";
+        }
+        var path = "/" + search_path;
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        click_time=0;
+    </script>
+    <script>
+//        // this function is used to check current theme before page loaded.
+//        (() => {
+//            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+//            const isDark = currentTheme === 'dark';
+//            const pagebody = document.getElementsByTagName('body')[0]
+//            if (isDark) {
+//                pagebody.classList.add('dark-theme');
+//                // mobile
+//                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+//            } else {
+//                pagebody.classList.remove('dark-theme');
+//                // mobile
+//                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+//            }
+//        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="/">Danielqf&#39;s Blog</a>
+                <span style="display: none; margin: 0; padding-left: 84px;
+                    font-weight: 1000; font-size: 17px;">csp2023</span>
+            </div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Category</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <a class="menu-item" onclick="$('#search-page').show(); $('#local-search-input')[0].focus();">Search</a>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Danielqf&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Category</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset>60) {
+            $('.navbar').css({'position':'fixed',
+//                'height':'calc(3.5rem - 15px)',
+//                'line-height':'calc(3.5rem - 15px)',
+                'left':'0px', 'right':'0px',
+                'background-color':'white', 'z-index':'900',
+                'box-shadow': '0 0 0.3em #888'});
+            $('.header-logo>span').css('display','inline');
+        }
+        else {
+            $('.navbar')[0].style='height:3.5rem; line-height:3.5rem;';
+            $('.header-logo>span').css('display','none');
+        }
+    });
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+
+        <div class="main">
+            <div style="z-index: 1000; position: fixed; background-color: rgba(0, 0, 0, 0.8);
+        top: 0; bottom: 0; left: 0; right: 0; padding: 0 max(50% - 375px,5px); display: none;" id="search-page"
+        onclick="if (Date.now()-click_time>=10) { this.style.display='none'; } quitting=1; ">
+    <input id="local-search-input" style="height: 24px; position: relative; top: 24px; font-size: 16px;
+        width: calc(100% - 50px); color: white; background-color: initial; padding: 12px 23px; border-radius: 5px; border: 2px solid #bbb; outline: 0;"
+        onclick="click_time=Date.now()">
+    <div id="local-search-result" style="width: 100%; position: relative; top: 24px;
+        height: calc(100% - 105px);" onclick="click_time=Date.now()"></div>
+</div>
+
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">csp2023</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href=>danielqf</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a>2023.10.22&nbsp;&nbsp;10:19:00</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E6%B8%B8%E8%AE%B0/">游记</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>来 JZ 后坐到了背对门的位置，不敢腐败。</p>
+<p>暑假腐太多，有些后悔，现已杜绝了 Generals，Bilibili，ModernGMOJ（自己写的 Github 腐败项目），<s>原神</s> 等腐败，取关了 vicky，但还腐犇犇（虽然已经什么没有好康的了）。</p>
+<h3 id="day-4（周一）"><a class="header-anchor" href="#day-4（周一）"></a>day -4（周一）</h3>
+<p>晚上来训练时，XC 安排了初中周二周四的停课。</p>
+<h3 id="day-3（周二）"><a class="header-anchor" href="#day-3（周二）"></a>day -3（周二）</h3>
+<p>模拟赛想出了两题，T1 数组开小挂了 50 分，希望正式比赛时不要挂成这样。</p>
+<p>晚上补作业启动。</p>
+<h3 id="day-2（周三）"><a class="header-anchor" href="#day-2（周三）"></a>day -2（周三）</h3>
+<p>中午 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/110010">lsx</a>，<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/513838">wtc</a>，<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/222729">pmx</a>，cyt 等初三高一大奆在团建 <s>团 Gen</s>，这标志着 generals 文化从 JY 向 JZ 传播进程的完成（学历史学的）。</p>
+<p>晚上训练改出了一题，不会 T3。</p>
+<h3 id="day-1（周四）"><a class="header-anchor" href="#day-1（周四）"></a>day -1（周四）</h3>
+<p>真·信心赛，全是诈骗题，人均 200 我 140，被薄纱了。赛后没调出 T1。。。</p>
+<p>晚上跟 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/759370">fy</a> 和 wtc 去 知行餐厅，碰见好多认识的人。我不小心多点了一碗米饭，于是跟 wtc 拿去喂鸭子，有点引人注目（好像鸭子没什么食欲）。</p>
+<p>晚上戴眼镜被 fy 看到了，fy 说我玩原神玩近视了。</p>
+<h3 id="day-0（周五）"><a class="header-anchor" href="#day-0（周五）"></a>day 0（周五）</h3>
+<p>学文化课的下午放学，<s>可以 Gen 一晚上了</s>。</p>
+<p>下午去 303 试了一下机，Virtual Box 虚拟机还挺好用的。</p>
+<p>由于格式化考场的磁盘时出了某些问题，403 的电脑好像一重启 D 盘就会没。</p>
+<p>晚上主要复习了 c++ 语法。</p>
+<p>XC 把所有人叫来聊天，说今年 CSP 真是天时地利人和，周六早上不会有人六点半不到就起来，使我们没法好好休息（此时 wzx 拍了拍我的肩膀），而且天气也很好（真），303 机房换掉了原神键盘。还说不要太紧张，就把 CSP 当作<strong>昨天的模拟赛</strong>。</p>
+<p>chd 扬言要一个半小时 AK -J 之后玩 edge://surf。</p>
+<h3 id="day-1（周六）"><a class="header-anchor" href="#day-1（周六）"></a>day 1（周六）</h3>
+<p>6:00 闹钟，6:05 闹钟，6:10 闹钟，6:15 闹钟，最后 6:20 起了。</p>
+<p>吃完早餐后大约 6:50，旧科学馆已经拉起了警戒线，但保安在我弯腰过警戒线时看都不看我一眼。</p>
+<p>复习了字符串，但没什么用。大约 7:50 时 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/373254">lmd</a> 和 lsx 来 Gen 了一把，还看到了一个叫 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/121995">Smt</a> 人（不打 -J 的大奆去了图书馆）。</p>
+<hr>
+<p>把 pdf 密码看成了文件夹的解压密码，导致输错了 114514 次。</p>
+<p>T1 签到，$O(\log n)$ 直接过。</p>
+<p>T2 有点迷，后来想到是贪心，$O(n)$。</p>
+<p>T3 小模拟，先跳过，因为可能调试会费很多时间。</p>
+<p>T4 首先想到把 $1$ 个点拆成 $k$ 个，后来又想到可以二分答案，再倒着 BFS，$O(n\log(a+m))$。</p>
+<p>最后写 T3，因为运气好写得很顺利，过完大样例大概是 10:45。</p>
+<p>暴力不好写，于是没对拍，靠肉眼检查，希望能 AK 吧。</p>
+<hr>
+<p>T4 一堆写 SPFA 的，<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/793777">yjx</a> 似乎 AK 了，fy 最后十几秒写完了 T4。</p>
+<p>中午没回宿舍，跟着 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/455757">ywj</a> 和 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/473639">sqc</a> 跑去音乐厅想面基 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/501947">duck</a> 但没面到。</p>
+<p>后来回机房复习了图论和莫队（最没用的算法），开机时发现 Windows 没了。</p>
+<p>进考场前 XC 把我叫去谈话，说以后不回宿舍要请假，谈完后又说记得不要写错文件名，不要开小数组。</p>
+<hr>
+<p>T1 签到。</p>
+<p>T2 想到 $O(n^3)$ 35 分做法。</p>
+<p>T3 巨模拟，跳过。</p>
+<p>T4 发现可以二分答案，但觉得细节有点多。</p>
+<p>打题顺序 1 --&gt; 4 --&gt; 2 --&gt; 3，T4 吸氧 0.7s 不吸氧 1.4s。</p>
+<p>打到 T3 时还剩 50min，感觉时间不够。</p>
+<p>此时感觉要退役了，T2 都想不出来，一等拿不了了，也不想打对拍。由于心情低落，我决定去上厕所。</p>
+<p>上厕所时突然发现 T2 可以枚举左端点，再维护一个栈，$O(n^2)$ 50 分。</p>
+<p>打完后发现如果字符串随机，那么合法的子串长度不会太长，$O(n\cdot E(len))$ A 性质 10 分拿下。</p>
+<hr>
+<p>很多 $O(n\sum)$ 切 T2 的。</p>
+<p>yjx 莅临了我们的教室，聊了很多文化课内容（被薄纱了），后来 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/1025299">zy</a> 揭露了 yjx 传播绯闻的罪行，yjx 却说他<strong>忘记</strong>了这件事。</p>
+<h3 id="总结反思"><a class="header-anchor" href="#总结反思"></a>总结反思</h3>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>大模拟和细节多的题目放在后面写。</p>
+</li>
+<li class="lvl-2">
+<p>不要 dfs 式想题。</p>
+</li>
+<li class="lvl-2">
+<p>数组大小不要斤斤计较。</p>
+</li>
+<li class="lvl-2">
+<p>要留时间检查。</p>
+</li>
+</ul>
+<p>写题速度还是需要提高，要多打 ABC。</p>
+<h3 id="后记"><a class="header-anchor" href="#后记"></a>后记</h3>
+<p>%%% <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/111055">DX</a>，<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/99506">LHF</a>，<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/116664">Daniel_lele</a>，<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/272088">lqy</a> AK -S %%%。</p>
+<p>100+100+100+100，100+60+0+100。</p>
+<p>-J 比赛时似乎没断网导致泄题，看 €€£ 怎么查办。</p>
+<p><a target="_blank" rel="noopener" href="https://www.noi.cn/xw/2023-10-23/796608.shtml">《关于部分平台私自发布CSP-J/S 2023认证结果的公告》</a></p>
+<p>-S T2 有<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/CF1223F">类似的题</a>，但做法似乎不一样。</p>
+<p>周日回来后发现 Windows 处于有和没有的叠加态，每次观察就会波函数坍缩（说白了就是有时候开机有，有时候开机没有）。</p>
+<p>++NOIP.rp（前自增常数更小）。</p>
+
+        </div>
+
+        
+    <script src="https://giscus.app/client.js"
+        data-repo="danielqfmai/danielqfmai.github.io"
+        data-repo-id="R_kgDOK66FXA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOK66FXM4Cb1ep"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+    </script>
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© danielqf | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/danielqfmai/chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>

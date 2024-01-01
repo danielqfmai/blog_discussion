@@ -15,7 +15,7 @@
 
 
 
-<title>THUSC莫得游记 | Danielqf&#39;s Blog</title>
+<title>GDKOI2023油寄 | Danielqf&#39;s Blog</title>
 
 
 
@@ -100,28 +100,32 @@
         click_time=0;
     </script>
     <script>
-        // this function is used to check current theme before page loaded.
-        (() => {
-            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
-            const isDark = currentTheme === 'dark';
-            const pagebody = document.getElementsByTagName('body')[0]
-            if (isDark) {
-                pagebody.classList.add('dark-theme');
-                // mobile
-                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
-            } else {
-                pagebody.classList.remove('dark-theme');
-                // mobile
-                document.getElementById("mobile-toggle-theme").innerText = "· Light"
-            }
-        })();
+//        // this function is used to check current theme before page loaded.
+//        (() => {
+//            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+//            const isDark = currentTheme === 'dark';
+//            const pagebody = document.getElementsByTagName('body')[0]
+//            if (isDark) {
+//                pagebody.classList.add('dark-theme');
+//                // mobile
+//                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+//            } else {
+//                pagebody.classList.remove('dark-theme');
+//                // mobile
+//                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+//            }
+//        })();
     </script>
 
     <div class="wrapper">
         <header>
     <nav class="navbar">
         <div class="container">
-            <div class="navbar-header header-logo"><a href="/">Danielqf&#39;s Blog</a></div>
+            <div class="navbar-header header-logo">
+                <a href="/">Danielqf&#39;s Blog</a>
+                <span style="display: none; margin: 0; padding-left: 84px;
+                    font-weight: 1000; font-size: 17px;">GDKOI2023油寄</span>
+            </div>
             <div class="menu navbar-right">
                 
                     <a class="menu-item" href="/archives">Posts</a>
@@ -158,6 +162,21 @@
 
 </header>
 <script>
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset>60) {
+            $('.navbar').css({'position':'fixed',
+//                'height':'calc(3.5rem - 15px)',
+//                'line-height':'calc(3.5rem - 15px)',
+                'left':'0px', 'right':'0px',
+                'background-color':'white', 'z-index':'900',
+                'box-shadow': '0 0 0.3em #888'});
+            $('.header-logo>span').css('display','inline');
+        }
+        else {
+            $('.navbar')[0].style='height:3.5rem; line-height:3.5rem;';
+            $('.header-logo>span').css('display','none');
+        }
+    });
     var mobileBtn = function f() {
         var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
         var mobileMenu = document.getElementById("mobile-menu");
@@ -254,7 +273,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">THUSC莫得游记</h1>
+            <h1 class="post-title">GDKOI2023油寄</h1>
             
                 <div class="post-meta">
                     
@@ -263,7 +282,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a>2023.05.08&nbsp;&nbsp;20:09:26</a>
+                        Date: <a>2023.03.13&nbsp;&nbsp;20:06:11</a>
                         </span>
                     
                     
@@ -279,103 +298,50 @@
         </header>
 
         <div class="post-content">
-            <h2 id="为什么叫莫得游记？"><a class="header-anchor" href="#为什么叫莫得游记？"></a>为什么叫莫得游记？</h2>
-<p>jz著名金牌教练<strong>XC</strong>曾经说过：</p>
-<blockquote>
-<p>“我们是来旅游的，不是来比赛的。”</p>
-</blockquote>
-<h2 id="五一假期"><a class="header-anchor" href="#五一假期"></a>五一假期</h2>
-<p>day1day2打A组模拟赛，day2下午回家。</p>
-<p>接着<s>腐败</s>休息了两天，day4下午2点回jz。</p>
-<p>打THU/PKUSC的模拟赛，用4h打满了3题暴力，<br>
-提交了才发现是IOI赛制。</p>
-<p>人均切T1，我被区分了。</p>
-<p>day5打A组，因为昨天题都改不出来。</p>
-<h2 id="5月4日"><a class="header-anchor" href="#5月4日"></a>5月4日</h2>
-<p>因为第二天就去THU，所以就留在jz，但jz初中的要去上课。</p>
-<p>人少所以只有THU/PKUSC的模拟赛。</p>
-<p>T1不会，又被区分。</p>
-<p>T2玄学博弈论，没看到Subtask打了总司令，喜提25分。</p>
-<p>T3博弈+998244353。。。最后打了个暴力</p>
-<p>晚上回家收拾东西，早早就睡了，听说住校的拿了设备要开黑。</p>
-<h2 id="5月5日，day0"><a class="header-anchor" href="#5月5日，day0"></a>5月5日，day0</h2>
-<p>起得比较晚，8:40到jz，8:50集合，<br>
-坐大巴到珠海金湾机场。然后就和PKU的分开走了。</p>
-<p>第一次坐飞机，跟着别的同学走。<br>
-把重要的东西（身份证，登机牌，手机）<br>
-都放在一起应该就不容易丢了吧。</p>
-<p>在机场搞了一些离线游戏，<br>
-如扫雷，俄罗斯方块，蜘蛛纸牌，<s>MC</s>。</p>
-<p>12点上了飞机，和fy坐一起。</p>
-<p>飞机的午餐不好评价，一饭一菜一面包，还有龟苓膏。</p>
-<p>3点到了南京，拿行李之后发现身份证落在飞机上了，<br>
-后来LDC找机场的人了拿回来。</p>
-<p>坐大巴到南外，报道，领东西（包有点难提啊），拍照，<br>
-然后用了30min走去酒店。</p>
-<p>由于没有双床房了，所以我和wtc只能住大床房。</p>
-<p>酒店非常高级，厕所有浴缸，电视还有节目单。</p>
-<p>5:40fy打电话说一起去吃饭，6:00在大堂会合。</p>
-<p>我们决定骑共享单车，但wtc没微信，于是搞到6:20才出发。</p>
-<p>6:30到达，买了饮品，去吃烤鱼。</p>
-<p>点菜，鱼119元/1条有点贵，但米饭和饮料可以2元无限拿。</p>
-<p>服务员非常6，在我们吃到一半时突然开始跳舞，<br>
-快跳完时fy还带头鼓掌。。。</p>
-<p>吃得很饱，吃完后去逛，什么都不想买。</p>
-<p>由于骑单车已经投入了很多，所以回来继续骑单车。</p>
-<p>我先扫了一辆，再去帮WTC扫，<br>
-fy和wzx扫好之后准备骑时，我发现最先扫的那辆不见了！</p>
-<p>wzx说刚才来了一对情侣，可能他们骑走了那辆车。。。</p>
-<p>money-=1.5。</p>
-<h2 id="5月6日，day1"><a class="header-anchor" href="#5月6日，day1"></a>5月6日，day1</h2>
-<p>昨晚11点睡（没收设备！在fy那边腐了亿会），7点起，但不困。</p>
-<p>早餐在酒店吃，自助餐，种类比GDOI的多。</p>
-<p>8点出发去学校，8点半到，试机。</p>
-<p>电脑是Linux系统，但版本很低，<br>
-多桌面非常奇怪，如果窗口拖得太左，<br>
-就会自动新建桌面并把窗口放过去。</p>
-<p>T1 a+b，配好vim之后很快就A掉了。</p>
-<p>T2 交互，在3个有序数列中找第k，<br>
-想了一个 $O(nlogn)$ 的二分，但没有调出来。</p>
-<p>T3 提交答案题，求 $k$ 维空间中 $k$ 个超球体的公切面，弃。</p>
-<p>中午从众买了张饭票，60大洋血亏。</p>
-<p>下午比赛时没带胸牌但让进了。</p>
-<p>开始时THUOJ炸了，卡了大约30min，于是比赛结束延迟45min。<br>
-但有人先加载出了题！！</p>
-<p>T1 数据结构，当时差分了一下，发现用树状数组就能做了。<br>
-（但有往这个方向想的人不是很多）</p>
-<p>T2 奇妙DP，想了一个 $O(n^3m^2)$ 的，<br>
-似乎还能用数据结构优化？</p>
-<p>T3 数学，只会暴力。。。</p>
-<p>T4 交互，没看到有5分暴力。。。</p>
-<p>于是用了3h写T2，结果只过了一个点。What devil subtasks！</p>
-<p>比赛完后骑单车回酒店，由于开了前进4，<br>
-先到了酒店，就在大堂放下东西坐着。</p>
-<p>接着去吃饭，9人分了两桌。<br>
-zzk点的全是特色菜，很好吃，<br>
-但4个人花费比另一桌5个人还多（什么坑人椰汁要28大洋！）。</p>
-<p>吃完饭渡了瓶饮料就回酒店了。</p>
-<p>睡前发现包不见了！算了，明天找。</p>
-<h2 id="5月7日，day2"><a class="header-anchor" href="#5月7日，day2"></a>5月7日，day2</h2>
-<p>还是11点睡7点起，但有点困，喉咙比较痛，可能是吃了辣的。</p>
-<p>初步判断是在fy的房间，酒店大堂，或者昨晚吃饭的饭店。</p>
-<p>但找了前两个地方都没有，且还依稀记得昨晚fy给我拍了张照，<br>
-照片里我只拿了手机。</p>
-<p>只好跟HXG说，HXG带我去饭店找了也没有，<br>
-难道是骑自行车时掉在了路上吗？</p>
-<p>时间不早了，就先去了学校，没有身份证也让进了！</p>
-<p>day2比赛是写电路，前面的题目都有题解可以看，<br>
-后面的题目看不懂。</p>
-<p>于是痛苦地手打了4h电路，最后拿了120。</p>
-<p>赛后发现电路可以用c++生成，我。。。</p>
-<p>我饭票装在包里一起丢了，wtc的饭票的放在了酒店，<br>
-于是一起去找饭店吃饭。</p>
-<p>半途撞见LDC，LDC热情地邀请我们和他们一起吃，3位教练压迫感可想而知。但饭菜比南外的好吃多了。</p>
-<p>下午去听讲座，讲ChatGPT，听完之后LDC跟我回酒店找包，<br>
-包里电话手表的定位显示在酒店，后来问了前台找到了。<br>
-原来是那天放在大堂的包被酒店的人收起来了。</p>
-<p>因为在找包，没有参加闭幕式，但听同学说我拿了1=。</p>
-<p>之后坐大巴到了机场，吃了麦当劳（超贵），8:35登了机，<br>
-睡了一程。飞到珠海机场之后坐车去纪中，家长来接。</p>
+            <p>3月10日下午坤点，抱着行李，怀着激动的心情，踏上了大巴，开始了长达2天半的被虐之旅</p>
+<h1>D0</h1>
+<p>车上看洋葱，<s>还偷拍了lsx和thy</s>，没有手机qwq</p>
+<p>到了酒店，4点50进到了房间，用电视腐B站</p>
+<p>接着去6中，领了个袋子然后去吃饭，这饭蔡和 2.5线城市的某小破学校 的有点像啊，4个蔡吃不完qwq</p>
+<p>晚上没走远，去吃了Mixue Icecream</p>
+<h1>D1</h1>
+<p>昨晚12点才睡，因为只收了手只因，<s>没有收电视</s>，居然没犯困</p>
+<p>早上在麦当劳吃了早餐，花了15大洋，热量还蛮高的（汉堡+薯饼+豆浆）</p>
+<p>8：30开始比赛 <s><strong>正片结束</strong></s></p>
+<p><strong>T1</strong> 是判断两方阵（方形矩阵）相乘是否等于第个方阵，$0\leqslant n\leqslant 3000$，之前C组D过原题，两边同时乘一个随机向量 $O(n^2)$ 判断</p>
+<p><strong>T2</strong> 是求满足 $\forall i\in[1,m],\ p_i&gt;m$ 的长度为 $n$ 错排列数，$T$ 组数据，$0\leqslant m\leqslant n\leqslant 2\times10^5,\ 0\leqslant T\leqslant 2\times10^5$</p>
+<p>首先前 $m$ 个数有 $\tbinom{n-m}{m}$ 种方案，然后转化为 $m$ 个点不限制 的长度为 $n-m$ 错排列数（从置换环角度考虑）</p>
+<p>$O™$ 暴算</p>
+<p><strong>T3</strong> 题面说得很清楚了，不再描述了~~（明明是懒）~~</p>
+<p>首先打了个暴力，然后1小时打 $m=0$ 的情况</p>
+<p><strong>赛后</strong></p>
+<p>T1没加快读，还随机了10次（lsx只随3次就用了1.9秒），要寄了！！！！</p>
+<p>T2没有想到可以 $O(nm)$ 递推！！</p>
+<p>中午pmx去渡忘记把房卡给我了，只能去找f6n，然后没腐多久就到2点了</p>
+<p>下午听讲题，只听懂了T1T2（先不写做法了）</p>
+<p>接着是两场不明所以的演讲，实在无聊，看周围的人打电动</p>
+<p>没发成绩，吃完晚饭后失望地走了</p>
+<p>晚上又去了蜜雪冰城，买了珍珠奶茶，不是很好喝，感觉有点亏</p>
+<p>然后和同学在必胜客合资买了一块披萨，还不错</p>
+<p>吃完后就呆在酒店搞腐，11点半睡觉</p>
+<h1>D2</h1>
+<p>昨晚睡得不好，因为看了不该看的（似乎也不是很恐怖也）</p>
+<p>早餐吃了肠粉+油条，很好吃</p>
+<p>到6中比赛换了一个机房，居然没有隔板，<s>可以D！</s></p>
+<p><strong>T1</strong> 先预处理出 以每个为根分别 能向3个方向走多远，然后询问时找到符合条件的根并算出答案，复杂度 $O(nQ)$</p>
+<p>打了两个小时，过程中似乎想到了正解，但是去搞后2题了</p>
+<p><strong>T2</strong> 暴力矩阵乘法，$O(4^n\log K)$</p>
+<p><strong>T3</strong> 想要拆位，但是一直不会维护，最后打了最裸的暴力，一个特殊性质都不会啊！</p>
+<p>出场时感觉要寄了，此时发了D1的成绩单，总分180，T1A了，但lsx挂了，不知是什么原因</p>
+<p>中午退了酒店的房，提着东西来听课</p>
+<p>只听懂了T1，一直在看别人搞腐</p>
+<p>还有快乐滚榜，紧张激烈</p>
+<p>T1拿了40，T2T3爆0，离金线差40，要是集中精力A掉T1也许就能金了</p>
+<p>lsx差金线100，因为D1T1</p>
+<p>滚完榜，颁完奖，吃盒饭</p>
+<p>盒饭性价比不好说，12元但配了瓶7喜</p>
+<p>吃完饭，待完最后20分钟，踏上了大巴，睡了一觉</p>
+<p>醒来时已到了学校门口，就这样结束了这场广州之行。</p>
 
         </div>
 

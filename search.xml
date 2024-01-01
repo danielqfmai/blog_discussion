@@ -1,8 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>csp2023</title>
+    <url>/CSP2023/</url>
+    <content><![CDATA[<p>来 JZ 后坐到了背对门的位置，不敢腐败。</p>
+<p>暑假腐太多，有些后悔，现已杜绝了 Generals，Bilibili，ModernGMOJ（自己写的 Github 腐败项目），<s>原神</s> 等腐败，取关了 vicky，但还腐犇犇（虽然已经什么没有好康的了）。</p>
+<h3 id="day-4（周一）"><a class="header-anchor" href="#day-4（周一）"></a>day -4（周一）</h3>
+<p>晚上来训练时，XC 安排了初中周二周四的停课。</p>
+<h3 id="day-3（周二）"><a class="header-anchor" href="#day-3（周二）"></a>day -3（周二）</h3>
+<p>模拟赛想出了两题，T1 数组开小挂了 50 分，希望正式比赛时不要挂成这样。</p>
+<p>晚上补作业启动。</p>
+<h3 id="day-2（周三）"><a class="header-anchor" href="#day-2（周三）"></a>day -2（周三）</h3>
+<p>中午 <a href="https://www.luogu.com.cn/user/110010">lsx</a>，<a href="https://www.luogu.com.cn/user/513838">wtc</a>，<a href="https://www.luogu.com.cn/user/222729">pmx</a>，cyt 等初三高一大奆在团建 <s>团 Gen</s>，这标志着 generals 文化从 JY 向 JZ 传播进程的完成（学历史学的）。</p>
+<p>晚上训练改出了一题，不会 T3。</p>
+<h3 id="day-1（周四）"><a class="header-anchor" href="#day-1（周四）"></a>day -1（周四）</h3>
+<p>真·信心赛，全是诈骗题，人均 200 我 140，被薄纱了。赛后没调出 T1。。。</p>
+<p>晚上跟 <a href="https://www.luogu.com.cn/user/759370">fy</a> 和 wtc 去 知行餐厅，碰见好多认识的人。我不小心多点了一碗米饭，于是跟 wtc 拿去喂鸭子，有点引人注目（好像鸭子没什么食欲）。</p>
+<p>晚上戴眼镜被 fy 看到了，fy 说我玩原神玩近视了。</p>
+<h3 id="day-0（周五）"><a class="header-anchor" href="#day-0（周五）"></a>day 0（周五）</h3>
+<p>学文化课的下午放学，<s>可以 Gen 一晚上了</s>。</p>
+<p>下午去 303 试了一下机，Virtual Box 虚拟机还挺好用的。</p>
+<p>由于格式化考场的磁盘时出了某些问题，403 的电脑好像一重启 D 盘就会没。</p>
+<p>晚上主要复习了 c++ 语法。</p>
+<p>XC 把所有人叫来聊天，说今年 CSP 真是天时地利人和，周六早上不会有人六点半不到就起来，使我们没法好好休息（此时 wzx 拍了拍我的肩膀），而且天气也很好（真），303 机房换掉了原神键盘。还说不要太紧张，就把 CSP 当作<strong>昨天的模拟赛</strong>。</p>
+<p>chd 扬言要一个半小时 AK -J 之后玩 edge://surf。</p>
+<h3 id="day-1（周六）"><a class="header-anchor" href="#day-1（周六）"></a>day 1（周六）</h3>
+<p>6:00 闹钟，6:05 闹钟，6:10 闹钟，6:15 闹钟，最后 6:20 起了。</p>
+<p>吃完早餐后大约 6:50，旧科学馆已经拉起了警戒线，但保安在我弯腰过警戒线时看都不看我一眼。</p>
+<p>复习了字符串，但没什么用。大约 7:50 时 <a href="https://www.luogu.com.cn/user/373254">lmd</a> 和 lsx 来 Gen 了一把，还看到了一个叫 <a href="https://www.luogu.com.cn/user/121995">Smt</a> 人（不打 -J 的大奆去了图书馆）。</p>
+<hr>
+<p>把 pdf 密码看成了文件夹的解压密码，导致输错了 114514 次。</p>
+<p>T1 签到，$O(\log n)$ 直接过。</p>
+<p>T2 有点迷，后来想到是贪心，$O(n)$。</p>
+<p>T3 小模拟，先跳过，因为可能调试会费很多时间。</p>
+<p>T4 首先想到把 $1$ 个点拆成 $k$ 个，后来又想到可以二分答案，再倒着 BFS，$O(n\log(a+m))$。</p>
+<p>最后写 T3，因为运气好写得很顺利，过完大样例大概是 10:45。</p>
+<p>暴力不好写，于是没对拍，靠肉眼检查，希望能 AK 吧。</p>
+<hr>
+<p>T4 一堆写 SPFA 的，<a href="https://www.luogu.com.cn/user/793777">yjx</a> 似乎 AK 了，fy 最后十几秒写完了 T4。</p>
+<p>中午没回宿舍，跟着 <a href="https://www.luogu.com.cn/user/455757">ywj</a> 和 <a href="https://www.luogu.com.cn/user/473639">sqc</a> 跑去音乐厅想面基 <a href="https://www.luogu.com.cn/user/501947">duck</a> 但没面到。</p>
+<p>后来回机房复习了图论和莫队（最没用的算法），开机时发现 Windows 没了。</p>
+<p>进考场前 XC 把我叫去谈话，说以后不回宿舍要请假，谈完后又说记得不要写错文件名，不要开小数组。</p>
+<hr>
+<p>T1 签到。</p>
+<p>T2 想到 $O(n^3)$ 35 分做法。</p>
+<p>T3 巨模拟，跳过。</p>
+<p>T4 发现可以二分答案，但觉得细节有点多。</p>
+<p>打题顺序 1 --&gt; 4 --&gt; 2 --&gt; 3，T4 吸氧 0.7s 不吸氧 1.4s。</p>
+<p>打到 T3 时还剩 50min，感觉时间不够。</p>
+<p>此时感觉要退役了，T2 都想不出来，一等拿不了了，也不想打对拍。由于心情低落，我决定去上厕所。</p>
+<p>上厕所时突然发现 T2 可以枚举左端点，再维护一个栈，$O(n^2)$ 50 分。</p>
+<p>打完后发现如果字符串随机，那么合法的子串长度不会太长，$O(n\cdot E(len))$ A 性质 10 分拿下。</p>
+<hr>
+<p>很多 $O(n\sum)$ 切 T2 的。</p>
+<p>yjx 莅临了我们的教室，聊了很多文化课内容（被薄纱了），后来 <a href="https://www.luogu.com.cn/user/1025299">zy</a> 揭露了 yjx 传播绯闻的罪行，yjx 却说他<strong>忘记</strong>了这件事。</p>
+<h3 id="总结反思"><a class="header-anchor" href="#总结反思"></a>总结反思</h3>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>大模拟和细节多的题目放在后面写。</p>
+</li>
+<li class="lvl-2">
+<p>不要 dfs 式想题。</p>
+</li>
+<li class="lvl-2">
+<p>数组大小不要斤斤计较。</p>
+</li>
+<li class="lvl-2">
+<p>要留时间检查。</p>
+</li>
+</ul>
+<p>写题速度还是需要提高，要多打 ABC。</p>
+<h3 id="后记"><a class="header-anchor" href="#后记"></a>后记</h3>
+<p>%%% <a href="https://www.luogu.com.cn/user/111055">DX</a>，<a href="https://www.luogu.com.cn/user/99506">LHF</a>，<a href="https://www.luogu.com.cn/user/116664">Daniel_lele</a>，<a href="https://www.luogu.com.cn/user/272088">lqy</a> AK -S %%%。</p>
+<p>100+100+100+100，100+60+0+100。</p>
+<p>-J 比赛时似乎没断网导致泄题，看 €€£ 怎么查办。</p>
+<p><a href="https://www.noi.cn/xw/2023-10-23/796608.shtml">《关于部分平台私自发布CSP-J/S 2023认证结果的公告》</a></p>
+<p>-S T2 有<a href="https://www.luogu.com.cn/problem/CF1223F">类似的题</a>，但做法似乎不一样。</p>
+<p>周日回来后发现 Windows 处于有和没有的叠加态，每次观察就会波函数坍缩（说白了就是有时候开机有，有时候开机没有）。</p>
+<p>++NOIP.rp（前自增常数更小）。</p>
+]]></content>
+      <categories>
+        <category>游记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>GDKOI2023油寄</title>
+    <url>/GDKOI2023/</url>
+    <content><![CDATA[<p>3月10日下午坤点，抱着行李，怀着激动的心情，踏上了大巴，开始了长达2天半的被虐之旅</p>
+<h1>D0</h1>
+<p>车上看洋葱，<s>还偷拍了lsx和thy</s>，没有手机qwq</p>
+<p>到了酒店，4点50进到了房间，用电视腐B站</p>
+<p>接着去6中，领了个袋子然后去吃饭，这饭蔡和 2.5线城市的某小破学校 的有点像啊，4个蔡吃不完qwq</p>
+<p>晚上没走远，去吃了Mixue Icecream</p>
+<h1>D1</h1>
+<p>昨晚12点才睡，因为只收了手只因，<s>没有收电视</s>，居然没犯困</p>
+<p>早上在麦当劳吃了早餐，花了15大洋，热量还蛮高的（汉堡+薯饼+豆浆）</p>
+<p>8：30开始比赛 <s><strong>正片结束</strong></s></p>
+<p><strong>T1</strong> 是判断两方阵（方形矩阵）相乘是否等于第个方阵，$0\leqslant n\leqslant 3000$，之前C组D过原题，两边同时乘一个随机向量 $O(n^2)$ 判断</p>
+<p><strong>T2</strong> 是求满足 $\forall i\in[1,m],\ p_i&gt;m$ 的长度为 $n$ 错排列数，$T$ 组数据，$0\leqslant m\leqslant n\leqslant 2\times10^5,\ 0\leqslant T\leqslant 2\times10^5$</p>
+<p>首先前 $m$ 个数有 $\tbinom{n-m}{m}$ 种方案，然后转化为 $m$ 个点不限制 的长度为 $n-m$ 错排列数（从置换环角度考虑）</p>
+<p>$O™$ 暴算</p>
+<p><strong>T3</strong> 题面说得很清楚了，不再描述了~~（明明是懒）~~</p>
+<p>首先打了个暴力，然后1小时打 $m=0$ 的情况</p>
+<p><strong>赛后</strong></p>
+<p>T1没加快读，还随机了10次（lsx只随3次就用了1.9秒），要寄了！！！！</p>
+<p>T2没有想到可以 $O(nm)$ 递推！！</p>
+<p>中午pmx去渡忘记把房卡给我了，只能去找f6n，然后没腐多久就到2点了</p>
+<p>下午听讲题，只听懂了T1T2（先不写做法了）</p>
+<p>接着是两场不明所以的演讲，实在无聊，看周围的人打电动</p>
+<p>没发成绩，吃完晚饭后失望地走了</p>
+<p>晚上又去了蜜雪冰城，买了珍珠奶茶，不是很好喝，感觉有点亏</p>
+<p>然后和同学在必胜客合资买了一块披萨，还不错</p>
+<p>吃完后就呆在酒店搞腐，11点半睡觉</p>
+<h1>D2</h1>
+<p>昨晚睡得不好，因为看了不该看的（似乎也不是很恐怖也）</p>
+<p>早餐吃了肠粉+油条，很好吃</p>
+<p>到6中比赛换了一个机房，居然没有隔板，<s>可以D！</s></p>
+<p><strong>T1</strong> 先预处理出 以每个为根分别 能向3个方向走多远，然后询问时找到符合条件的根并算出答案，复杂度 $O(nQ)$</p>
+<p>打了两个小时，过程中似乎想到了正解，但是去搞后2题了</p>
+<p><strong>T2</strong> 暴力矩阵乘法，$O(4^n\log K)$</p>
+<p><strong>T3</strong> 想要拆位，但是一直不会维护，最后打了最裸的暴力，一个特殊性质都不会啊！</p>
+<p>出场时感觉要寄了，此时发了D1的成绩单，总分180，T1A了，但lsx挂了，不知是什么原因</p>
+<p>中午退了酒店的房，提着东西来听课</p>
+<p>只听懂了T1，一直在看别人搞腐</p>
+<p>还有快乐滚榜，紧张激烈</p>
+<p>T1拿了40，T2T3爆0，离金线差40，要是集中精力A掉T1也许就能金了</p>
+<p>lsx差金线100，因为D1T1</p>
+<p>滚完榜，颁完奖，吃盒饭</p>
+<p>盒饭性价比不好说，12元但配了瓶7喜</p>
+<p>吃完饭，待完最后20分钟，踏上了大巴，睡了一觉</p>
+<p>醒来时已到了学校门口，就这样结束了这场广州之行。</p>
+]]></content>
+      <categories>
+        <category>游记</category>
+      </categories>
+  </entry>
+  <entry>
     <title>LocalSend从入门到被炸死</title>
-    <url>/2023/10/08/LocalSend%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E8%A2%AB%E7%82%B8%E6%AD%BB/</url>
+    <url>/LocalSend/</url>
     <content><![CDATA[<p>LocalSend 顾名思义，局域网文件传输。</p>
 <p>建议从<strong>应用场景</strong>读起。</p>
 <h2 id="安装包"><a class="header-anchor" href="#安装包"></a>安装包</h2>
@@ -117,60 +252,8 @@
       </categories>
   </entry>
   <entry>
-    <title>GDKOI2023油寄</title>
-    <url>/2023/03/13/GDKOI2023%E6%B2%B9%E5%AF%84/</url>
-    <content><![CDATA[<p>3月10日下午坤点，抱着行李，怀着激动的心情，踏上了大巴，开始了长达2天半的被虐之旅</p>
-<h1>D0</h1>
-<p>车上看洋葱，<s>还偷拍了lsx和thy</s>，没有手机qwq</p>
-<p>到了酒店，4点50进到了房间，用电视腐B站</p>
-<p>接着去6中，领了个袋子然后去吃饭，这饭蔡和 2.5线城市的某小破学校 的有点像啊，4个蔡吃不完qwq</p>
-<p>晚上没走远，去吃了Mixue Icecream</p>
-<h1>D1</h1>
-<p>昨晚12点才睡，因为只收了手只因，<s>没有收电视</s>，居然没犯困</p>
-<p>早上在麦当劳吃了早餐，花了15大洋，热量还蛮高的（汉堡+薯饼+豆浆）</p>
-<p>8：30开始比赛 <s><strong>正片结束</strong></s></p>
-<p><strong>T1</strong> 是判断两方阵（方形矩阵）相乘是否等于第个方阵，$0\leqslant n\leqslant 3000$，之前C组D过原题，两边同时乘一个随机向量 $O(n^2)$ 判断</p>
-<p><strong>T2</strong> 是求满足 $\forall i\in[1,m],\ p_i&gt;m$ 的长度为 $n$ 错排列数，$T$ 组数据，$0\leqslant m\leqslant n\leqslant 2\times10^5,\ 0\leqslant T\leqslant 2\times10^5$</p>
-<p>首先前 $m$ 个数有 $\tbinom{n-m}{m}$ 种方案，然后转化为 $m$ 个点不限制 的长度为 $n-m$ 错排列数（从置换环角度考虑）</p>
-<p>$O™$ 暴算</p>
-<p><strong>T3</strong> 题面说得很清楚了，不再描述了~~（明明是懒）~~</p>
-<p>首先打了个暴力，然后1小时打 $m=0$ 的情况</p>
-<p><strong>赛后</strong></p>
-<p>T1没加快读，还随机了10次（lsx只随3次就用了1.9秒），要寄了！！！！</p>
-<p>T2没有想到可以 $O(nm)$ 递推！！</p>
-<p>中午pmx去渡忘记把房卡给我了，只能去找f6n，然后没腐多久就到2点了</p>
-<p>下午听讲题，只听懂了T1T2（先不写做法了）</p>
-<p>接着是两场不明所以的演讲，实在无聊，看周围的人打电动</p>
-<p>没发成绩，吃完晚饭后失望地走了</p>
-<p>晚上又去了蜜雪冰城，买了珍珠奶茶，不是很好喝，感觉有点亏</p>
-<p>然后和同学在必胜客合资买了一块披萨，还不错</p>
-<p>吃完后就呆在酒店搞腐，11点半睡觉</p>
-<h1>D2</h1>
-<p>昨晚睡得不好，因为看了不该看的（似乎也不是很恐怖也）</p>
-<p>早餐吃了肠粉+油条，很好吃</p>
-<p>到6中比赛换了一个机房，居然没有隔板，<s>可以D！</s></p>
-<p><strong>T1</strong> 先预处理出 以每个为根分别 能向3个方向走多远，然后询问时找到符合条件的根并算出答案，复杂度 $O(nQ)$</p>
-<p>打了两个小时，过程中似乎想到了正解，但是去搞后2题了</p>
-<p><strong>T2</strong> 暴力矩阵乘法，$O(4^n\log K)$</p>
-<p><strong>T3</strong> 想要拆位，但是一直不会维护，最后打了最裸的暴力，一个特殊性质都不会啊！</p>
-<p>出场时感觉要寄了，此时发了D1的成绩单，总分180，T1A了，但lsx挂了，不知是什么原因</p>
-<p>中午退了酒店的房，提着东西来听课</p>
-<p>只听懂了T1，一直在看别人搞腐</p>
-<p>还有快乐滚榜，紧张激烈</p>
-<p>T1拿了40，T2T3爆0，离金线差40，要是集中精力A掉T1也许就能金了</p>
-<p>lsx差金线100，因为D1T1</p>
-<p>滚完榜，颁完奖，吃盒饭</p>
-<p>盒饭性价比不好说，12元但配了瓶7喜</p>
-<p>吃完饭，待完最后20分钟，踏上了大巴，睡了一觉</p>
-<p>醒来时已到了学校门口，就这样结束了这场广州之行。</p>
-]]></content>
-      <categories>
-        <category>游记</category>
-      </categories>
-  </entry>
-  <entry>
     <title>THUSC莫得游记</title>
-    <url>/2023/05/08/THUSC%E8%8E%AB%E5%BE%97%E6%B8%B8%E8%AE%B0/</url>
+    <url>/THUSC2023/</url>
     <content><![CDATA[<h2 id="为什么叫莫得游记？"><a class="header-anchor" href="#为什么叫莫得游记？"></a>为什么叫莫得游记？</h2>
 <p>jz著名金牌教练<strong>XC</strong>曾经说过：</p>
 <blockquote>
@@ -274,92 +357,8 @@ zzk点的全是特色菜，很好吃，<br>
       </categories>
   </entry>
   <entry>
-    <title>csp2023</title>
-    <url>/2023/10/22/csp2023/</url>
-    <content><![CDATA[<p>来 JZ 后坐到了背对门的位置，不敢腐败。</p>
-<p>暑假腐太多，有些后悔，现已杜绝了 Generals，Bilibili，ModernGMOJ（自己写的 Github 腐败项目），<s>原神</s> 等腐败，取关了 vicky，但还腐犇犇（虽然已经什么没有好康的了）。</p>
-<h3 id="day-4（周一）"><a class="header-anchor" href="#day-4（周一）"></a>day -4（周一）</h3>
-<p>晚上来训练时，XC 安排了初中周二周四的停课。</p>
-<h3 id="day-3（周二）"><a class="header-anchor" href="#day-3（周二）"></a>day -3（周二）</h3>
-<p>模拟赛想出了两题，T1 数组开小挂了 50 分，希望正式比赛时不要挂成这样。</p>
-<p>晚上补作业启动。</p>
-<h3 id="day-2（周三）"><a class="header-anchor" href="#day-2（周三）"></a>day -2（周三）</h3>
-<p>中午 <a href="https://www.luogu.com.cn/user/110010">lsx</a>，<a href="https://www.luogu.com.cn/user/513838">wtc</a>，<a href="https://www.luogu.com.cn/user/222729">pmx</a>，cyt 等初三高一大奆在团建 <s>团 Gen</s>，这标志着 generals 文化从 JY 向 JZ 传播进程的完成（学历史学的）。</p>
-<p>晚上训练改出了一题，不会 T3。</p>
-<h3 id="day-1（周四）"><a class="header-anchor" href="#day-1（周四）"></a>day -1（周四）</h3>
-<p>真·信心赛，全是诈骗题，人均 200 我 140，被薄纱了。赛后没调出 T1。。。</p>
-<p>晚上跟 <a href="https://www.luogu.com.cn/user/759370">fy</a> 和 wtc 去 知行餐厅，碰见好多认识的人。我不小心多点了一碗米饭，于是跟 wtc 拿去喂鸭子，有点引人注目（好像鸭子没什么食欲）。</p>
-<p>晚上戴眼镜被 fy 看到了，fy 说我玩原神玩近视了。</p>
-<h3 id="day-0（周五）"><a class="header-anchor" href="#day-0（周五）"></a>day 0（周五）</h3>
-<p>学文化课的下午放学，<s>可以 Gen 一晚上了</s>。</p>
-<p>下午去 303 试了一下机，Virtual Box 虚拟机还挺好用的。</p>
-<p>由于格式化考场的磁盘时出了某些问题，403 的电脑好像一重启 D 盘就会没。</p>
-<p>晚上主要复习了 c++ 语法。</p>
-<p>XC 把所有人叫来聊天，说今年 CSP 真是天时地利人和，周六早上不会有人六点半不到就起来，使我们没法好好休息（此时 wzx 拍了拍我的肩膀），而且天气也很好（真），303 机房换掉了原神键盘。还说不要太紧张，就把 CSP 当作<strong>昨天的模拟赛</strong>。</p>
-<p>chd 扬言要一个半小时 AK -J 之后玩 edge://surf。</p>
-<h3 id="day-1（周六）"><a class="header-anchor" href="#day-1（周六）"></a>day 1（周六）</h3>
-<p>6:00 闹钟，6:05 闹钟，6:10 闹钟，6:15 闹钟，最后 6:20 起了。</p>
-<p>吃完早餐后大约 6:50，旧科学馆已经拉起了警戒线，但保安在我弯腰过警戒线时看都不看我一眼。</p>
-<p>复习了字符串，但没什么用。大约 7:50 时 <a href="https://www.luogu.com.cn/user/373254">lmd</a> 和 lsx 来 Gen 了一把，还看到了一个叫 <a href="https://www.luogu.com.cn/user/121995">Smt</a> 人（不打 -J 的大奆去了图书馆）。</p>
-<hr>
-<p>把 pdf 密码看成了文件夹的解压密码，导致输错了 114514 次。</p>
-<p>T1 签到，$O(\log n)$ 直接过。</p>
-<p>T2 有点迷，后来想到是贪心，$O(n)$。</p>
-<p>T3 小模拟，先跳过，因为可能调试会费很多时间。</p>
-<p>T4 首先想到把 $1$ 个点拆成 $k$ 个，后来又想到可以二分答案，再倒着 BFS，$O(n\log(a+m))$。</p>
-<p>最后写 T3，因为运气好写得很顺利，过完大样例大概是 10:45。</p>
-<p>暴力不好写，于是没对拍，靠肉眼检查，希望能 AK 吧。</p>
-<hr>
-<p>T4 一堆写 SPFA 的，<a href="https://www.luogu.com.cn/user/793777">yjx</a> 似乎 AK 了，fy 最后十几秒写完了 T4。</p>
-<p>中午没回宿舍，跟着 <a href="https://www.luogu.com.cn/user/455757">ywj</a> 和 <a href="https://www.luogu.com.cn/user/473639">sqc</a> 跑去音乐厅想面基 <a href="https://www.luogu.com.cn/user/501947">duck</a> 但没面到。</p>
-<p>后来回机房复习了图论和莫队（最没用的算法），开机时发现 Windows 没了。</p>
-<p>进考场前 XC 把我叫去谈话，说以后不回宿舍要请假，谈完后又说记得不要写错文件名，不要开小数组。</p>
-<hr>
-<p>T1 签到。</p>
-<p>T2 想到 $O(n^3)$ 35 分做法。</p>
-<p>T3 巨模拟，跳过。</p>
-<p>T4 发现可以二分答案，但觉得细节有点多。</p>
-<p>打题顺序 1 --&gt; 4 --&gt; 2 --&gt; 3，T4 吸氧 0.7s 不吸氧 1.4s。</p>
-<p>打到 T3 时还剩 50min，感觉时间不够。</p>
-<p>此时感觉要退役了，T2 都想不出来，一等拿不了了，也不想打对拍。由于心情低落，我决定去上厕所。</p>
-<p>上厕所时突然发现 T2 可以枚举左端点，再维护一个栈，$O(n^2)$ 50 分。</p>
-<p>打完后发现如果字符串随机，那么合法的子串长度不会太长，$O(n\cdot E(len))$ A 性质 10 分拿下。</p>
-<hr>
-<p>很多 $O(n\sum)$ 切 T2 的。</p>
-<p>yjx 莅临了我们的教室，聊了很多文化课内容（被薄纱了），后来 <a href="https://www.luogu.com.cn/user/1025299">zy</a> 揭露了 yjx 传播绯闻的罪行，yjx 却说他<strong>忘记</strong>了这件事。</p>
-<h3 id="总结反思"><a class="header-anchor" href="#总结反思"></a>总结反思</h3>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>大模拟和细节多的题目放在后面写。</p>
-</li>
-<li class="lvl-2">
-<p>不要 dfs 式想题。</p>
-</li>
-<li class="lvl-2">
-<p>数组大小不要斤斤计较。</p>
-</li>
-<li class="lvl-2">
-<p>要留时间检查。</p>
-</li>
-</ul>
-<p>写题速度还是需要提高，要多打 ABC。</p>
-<h3 id="后记"><a class="header-anchor" href="#后记"></a>后记</h3>
-<p>%%% <a href="https://www.luogu.com.cn/user/111055">DX</a>，<a href="https://www.luogu.com.cn/user/99506">LHF</a>，<a href="https://www.luogu.com.cn/user/116664">Daniel_lele</a>，<a href="https://www.luogu.com.cn/user/272088">lqy</a> AK -S %%%。</p>
-<p>100+100+100+100，100+60+0+100。</p>
-<p>-J 比赛时似乎没断网导致泄题，看 €€£ 怎么查办。</p>
-<p><a href="https://www.noi.cn/xw/2023-10-23/796608.shtml">《关于部分平台私自发布CSP-J/S 2023认证结果的公告》</a></p>
-<p>-S T2 有<a href="https://www.luogu.com.cn/problem/CF1223F">类似的题</a>，但做法似乎不一样。</p>
-<p>周日回来后发现 Windows 处于有和没有的叠加态，每次观察就会波函数坍缩（说白了就是有时候开机有，有时候开机没有）。</p>
-<p>++NOIP.rp（前自增常数更小）。</p>
-]]></content>
-      <categories>
-        <category>游记</category>
-        <category>csp</category>
-      </categories>
-  </entry>
-  <entry>
     <title>「ZSKOI2023」总结</title>
-    <url>/2023/06/19/%E3%80%8CZSKOI2023%E3%80%8D%E6%80%BB%E7%BB%93/</url>
+    <url>/ZSKOI2023/</url>
     <content><![CDATA[<p>所以说这场比赛与义务教育有什么关系？</p>
 <h2 id="day-1，6-16，Fri"><a class="header-anchor" href="#day-1，6-16，Fri"></a>day -1，6.16，Fri</h2>
 <p><s>人在机房坐，比赛天上来。</s></p>
@@ -412,50 +411,22 @@ zzk点的全是特色菜，很好吃，<br>
       </categories>
   </entry>
   <entry>
-    <title>【扯淡】如何维护世界核平</title>
-    <url>/2023/12/04/%E3%80%90%E6%89%AF%E6%B7%A1%E3%80%91%E5%A6%82%E4%BD%95%E7%BB%B4%E6%8A%A4%E4%B8%96%E7%95%8C%E6%A0%B8%E5%B9%B3/</url>
-    <content><![CDATA[<p>假设一个区域存在两类人：鹰派和鸽派，他们要争取资源。</p>
-<p>如果两个人 A 和 B 分配 $2$ 单位的资源，会形成以下四种结果：</p>
-<ul class="lvl-0">
-<li class="lvl-4">
-<p>如果 A B 都是鸽派，则他们会和平相处，每人分得 $1$ 单位的资源。</p>
-</li>
-<li class="lvl-4">
-<p>如果 A 是鹰派，B 是鸽派，则 A 会独占 $2$ 单位的资源。反之亦然。</p>
-</li>
-<li class="lvl-4">
-<p>如果 A B 都是鹰派，则他们会爆发战争，最后还是每人分得 $1$ 单位的资源，但会因为战争而每人亏损 $x$ 单位的资源（$x&gt;0$）。</p>
-</li>
-</ul>
-<p>设该地区鹰派所占比例为 $h$，鸽派所占比例为 $1-h$，则：</p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>一位鸽派人士能得到的资源 $v_\text鸽=(1-h)\times1\ +\ h\times0=1-h$.</p>
-</li>
-<li class="lvl-2">
-<p>一位鹰派人士能得到的资源 $v_\text鹰=(1-h)\times2\ +\ h\times(1-x)=(-1-x)h+2$.</p>
-</li>
-</ul>
-<p>可以发现：</p>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>当 $h&lt;\frac 1x$ 时，$v_\text鹰&gt;v_\text鸽$，于是会有一些鸽派人士转变为鹰派，使 $h$ 增大。</p>
-</li>
-<li class="lvl-2">
-<p>当 $h&gt;\frac 1x$ 时，$v_\text鸽&gt;v_\text鹰$，于是会有一些鹰派人士转变为鸽派，使 $h$ 减小。</p>
-</li>
-</ul>
-<p>所以 $h$ 最终会等于 $\min(\frac 1x,1)$，此时 $v_\text鸽=v_\text鹰=max(0,1-\frac 1x)$.</p>
-<p>所以 $x$ 越大 $h$ 就越小，战争就越少，同时每个人获得的资源就越多。</p>
-<p><s>曼哈顿计划，启动！</s></p>
+    <title>【题解】斗地主</title>
+    <url>/editorial-landlords/</url>
+    <content><![CDATA[<p><a href="https://www.luogu.com.cn/record/141689771">原</a></p>
+<p><a href="https://www.luogu.com.cn/record/141691086">加强版</a></p>
+<p>首先搜索飞机（其实题面已经简化了很多，原本斗地主的飞机可以有机翼）、连对、顺子，然后就不需要考虑牌的数值，只用考虑牌的出现次数了（也就是说只用记录有几个炸弹、三张、对子、单牌）。</p>
+<p>先枚举出几个炸弹和三张（这里有可能要拆炸弹），然后再尝试把单牌和对子“塞”进去。</p>
+<p>可以证明，拆对子只能是拆成两张再“塞”到一个炸弹里（例如 <code>444422</code>），于是可以分开考虑对子和单牌，先塞单牌，再塞对子，因为塞对子时不用分开考虑炸弹和三张。</p>
+<p>加强版做法：把大小王视作两种不同的单牌，在“塞”单牌剩下大于等于两张时考虑凑王炸。</p>
 ]]></content>
       <categories>
-        <category>腐败</category>
+        <category>题解</category>
       </categories>
   </entry>
   <entry>
     <title>背包问题</title>
-    <url>/2021/07/15/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98/</url>
+    <url>/knapsack-problem/</url>
     <content><![CDATA[<h2 id="01背包"><a class="header-anchor" href="#01背包"></a>01背包</h2>
 <p>有一个背包容量为 $V$，还有 $n$ 件物品，第 $i$ 件的体积为 $v[i]$，价值为 $w[i]$，问背包能装载的最大价值</p>
 <h3 id="先站在背包的角度想一想"><a class="header-anchor" href="#先站在背包的角度想一想"></a>先站在背包的角度想一想</h3>
@@ -538,12 +509,55 @@ zzk点的全是特色菜，很好吃，<br>
       </categories>
   </entry>
   <entry>
+    <title>【扯淡】如何维护世界核平</title>
+    <url>/nuclear-flatten-world/</url>
+    <content><![CDATA[<p>假设一个区域存在两类人：鹰派和鸽派，他们要争取资源。</p>
+<p>如果两个人 A 和 B 分配 $2$ 单位的资源，会形成以下四种结果：</p>
+<ul class="lvl-0">
+<li class="lvl-4">
+<p>如果 A B 都是鸽派，则他们会和平相处，每人分得 $1$ 单位的资源。</p>
+</li>
+<li class="lvl-4">
+<p>如果 A 是鹰派，B 是鸽派，则 A 会独占 $2$ 单位的资源。反之亦然。</p>
+</li>
+<li class="lvl-4">
+<p>如果 A B 都是鹰派，则他们会爆发战争，最后还是每人分得 $1$ 单位的资源，但会因为战争而每人亏损 $x$ 单位的资源（$x&gt;0$）。</p>
+</li>
+</ul>
+<p>设该地区鹰派所占比例为 $h$，鸽派所占比例为 $1-h$，则：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>一位鸽派人士能得到的资源 $v_\text鸽=(1-h)\times1\ +\ h\times0=1-h$.</p>
+</li>
+<li class="lvl-2">
+<p>一位鹰派人士能得到的资源 $v_\text鹰=(1-h)\times2\ +\ h\times(1-x)=(-1-x)h+2$.</p>
+</li>
+</ul>
+<p>可以发现：</p>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>当 $h&lt;\frac 1x$ 时，$v_\text鹰&gt;v_\text鸽$，于是会有一些鸽派人士转变为鹰派，使 $h$ 增大。</p>
+</li>
+<li class="lvl-2">
+<p>当 $h&gt;\frac 1x$ 时，$v_\text鸽&gt;v_\text鹰$，于是会有一些鹰派人士转变为鸽派，使 $h$ 减小。</p>
+</li>
+</ul>
+<p>所以 $h$ 最终会等于 $\min(\frac 1x,1)$，此时 $v_\text鸽=v_\text鹰=max(0,1-\frac 1x)$.</p>
+<p>所以 $x$ 越大 $h$ 就越小，战争就越少，同时每个人获得的资源就越多。</p>
+<p><s>曼哈顿计划，启动！</s></p>
+]]></content>
+      <categories>
+        <category>腐败</category>
+      </categories>
+  </entry>
+  <entry>
     <title>about</title>
     <url>/about/index.html</url>
     <content><![CDATA[<p>JZ 初二地精一只，喜欢打 Gen 但菜得一批。</p>
 <p><a href="https://github.com/danielqfmai/danielqfmai.github.io/issues">博客有锅？提个 Issue</a></p>
 <p><a href="https://www.luogu.com.cn/user/378555">我的洛谷菜号</a></p>
 <p><a href="https://atcoder.jp/users/danielqf"><img src="https://atrating.baoshuo.dev/rating?username=danielqf" alt=""></a></p>
+<p><a href="https://codeforces.com/profile/danielqf"><img src="https://cfrating.baoshuo.dev/rating?username=danielqf&amp;style=for-the-badge" alt=""></a></p>
 <h2 id="分享"><a class="header-anchor" href="#分享"></a>分享</h2>
 <p><a href="https://www.luogu.com.cn/paste/hs3jg81l">KATEX 速查</a></p>
 <p><a href="https://csacademy.com/app/graph_editor">图论画图工具</a></p>

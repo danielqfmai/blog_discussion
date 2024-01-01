@@ -100,28 +100,32 @@
         click_time=0;
     </script>
     <script>
-        // this function is used to check current theme before page loaded.
-        (() => {
-            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
-            const isDark = currentTheme === 'dark';
-            const pagebody = document.getElementsByTagName('body')[0]
-            if (isDark) {
-                pagebody.classList.add('dark-theme');
-                // mobile
-                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
-            } else {
-                pagebody.classList.remove('dark-theme');
-                // mobile
-                document.getElementById("mobile-toggle-theme").innerText = "· Light"
-            }
-        })();
+//        // this function is used to check current theme before page loaded.
+//        (() => {
+//            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+//            const isDark = currentTheme === 'dark';
+//            const pagebody = document.getElementsByTagName('body')[0]
+//            if (isDark) {
+//                pagebody.classList.add('dark-theme');
+//                // mobile
+//                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+//            } else {
+//                pagebody.classList.remove('dark-theme');
+//                // mobile
+//                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+//            }
+//        })();
     </script>
 
     <div class="wrapper">
         <header>
     <nav class="navbar">
         <div class="container">
-            <div class="navbar-header header-logo"><a href="/">Danielqf&#39;s Blog</a></div>
+            <div class="navbar-header header-logo">
+                <a href="/">Danielqf&#39;s Blog</a>
+                <span style="display: none; margin: 0; padding-left: 84px;
+                    font-weight: 1000; font-size: 17px;"></span>
+            </div>
             <div class="menu navbar-right">
                 
                     <a class="menu-item" href="/archives">Posts</a>
@@ -158,6 +162,21 @@
 
 </header>
 <script>
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset>60) {
+            $('.navbar').css({'position':'fixed',
+//                'height':'calc(3.5rem - 15px)',
+//                'line-height':'calc(3.5rem - 15px)',
+                'left':'0px', 'right':'0px',
+                'background-color':'white', 'z-index':'900',
+                'box-shadow': '0 0 0.3em #888'});
+            $('.header-logo>span').css('display','inline');
+        }
+        else {
+            $('.navbar')[0].style='height:3.5rem; line-height:3.5rem;';
+            $('.header-logo>span').css('display','none');
+        }
+    });
     var mobileBtn = function f() {
         var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
         var mobileMenu = document.getElementById("mobile-menu");
@@ -192,7 +211,7 @@
         
 
         <article class="archive-item">
-            <a class="archive-item-link" href="/2023/12/04/%E3%80%90%E6%89%AF%E6%B7%A1%E3%80%91%E5%A6%82%E4%BD%95%E7%BB%B4%E6%8A%A4%E4%B8%96%E7%95%8C%E6%A0%B8%E5%B9%B3/">【扯淡】如何维护世界核平</a>
+            <a class="archive-item-link" href="/nuclear-flatten-world/">【扯淡】如何维护世界核平</a>
             <span class="archive-item-date">2023.12.04</span>
         </article>
     
