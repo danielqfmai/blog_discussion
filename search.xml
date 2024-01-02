@@ -1,6 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>GDKOI2023油寄</title>
+    <url>/GDKOI2023/</url>
+    <content><![CDATA[<p>3月10日下午坤点，抱着行李，怀着激动的心情，踏上了大巴，开始了长达2天半的被虐之旅</p>
+<h1>D0</h1>
+<p>车上看洋葱，<s>还偷拍了lsx和thy</s>，没有手机qwq</p>
+<p>到了酒店，4点50进到了房间，用电视腐B站</p>
+<p>接着去6中，领了个袋子然后去吃饭，这饭蔡和 2.5线城市的某小破学校 的有点像啊，4个蔡吃不完qwq</p>
+<p>晚上没走远，去吃了Mixue Icecream</p>
+<h1>D1</h1>
+<p>昨晚12点才睡，因为只收了手只因，<s>没有收电视</s>，居然没犯困</p>
+<p>早上在麦当劳吃了早餐，花了15大洋，热量还蛮高的（汉堡+薯饼+豆浆）</p>
+<p>8：30开始比赛 <s><strong>正片结束</strong></s></p>
+<p><strong>T1</strong> 是判断两方阵（方形矩阵）相乘是否等于第个方阵，$0\leqslant n\leqslant 3000$，之前C组D过原题，两边同时乘一个随机向量 $O(n^2)$ 判断</p>
+<p><strong>T2</strong> 是求满足 $\forall i\in[1,m],\ p_i&gt;m$ 的长度为 $n$ 错排列数，$T$ 组数据，$0\leqslant m\leqslant n\leqslant 2\times10^5,\ 0\leqslant T\leqslant 2\times10^5$</p>
+<p>首先前 $m$ 个数有 $\tbinom{n-m}{m}$ 种方案，然后转化为 $m$ 个点不限制 的长度为 $n-m$ 错排列数（从置换环角度考虑）</p>
+<p>$O™$ 暴算</p>
+<p><strong>T3</strong> 题面说得很清楚了，不再描述了~~（明明是懒）~~</p>
+<p>首先打了个暴力，然后1小时打 $m=0$ 的情况</p>
+<p><strong>赛后</strong></p>
+<p>T1没加快读，还随机了10次（lsx只随3次就用了1.9秒），要寄了！！！！</p>
+<p>T2没有想到可以 $O(nm)$ 递推！！</p>
+<p>中午pmx去渡忘记把房卡给我了，只能去找f6n，然后没腐多久就到2点了</p>
+<p>下午听讲题，只听懂了T1T2（先不写做法了）</p>
+<p>接着是两场不明所以的演讲，实在无聊，看周围的人打电动</p>
+<p>没发成绩，吃完晚饭后失望地走了</p>
+<p>晚上又去了蜜雪冰城，买了珍珠奶茶，不是很好喝，感觉有点亏</p>
+<p>然后和同学在必胜客合资买了一块披萨，还不错</p>
+<p>吃完后就呆在酒店搞腐，11点半睡觉</p>
+<h1>D2</h1>
+<p>昨晚睡得不好，因为看了不该看的（似乎也不是很恐怖也）</p>
+<p>早餐吃了肠粉+油条，很好吃</p>
+<p>到6中比赛换了一个机房，居然没有隔板，<s>可以D！</s></p>
+<p><strong>T1</strong> 先预处理出 以每个为根分别 能向3个方向走多远，然后询问时找到符合条件的根并算出答案，复杂度 $O(nQ)$</p>
+<p>打了两个小时，过程中似乎想到了正解，但是去搞后2题了</p>
+<p><strong>T2</strong> 暴力矩阵乘法，$O(4^n\log K)$</p>
+<p><strong>T3</strong> 想要拆位，但是一直不会维护，最后打了最裸的暴力，一个特殊性质都不会啊！</p>
+<p>出场时感觉要寄了，此时发了D1的成绩单，总分180，T1A了，但lsx挂了，不知是什么原因</p>
+<p>中午退了酒店的房，提着东西来听课</p>
+<p>只听懂了T1，一直在看别人搞腐</p>
+<p>还有快乐滚榜，紧张激烈</p>
+<p>T1拿了40，T2T3爆0，离金线差40，要是集中精力A掉T1也许就能金了</p>
+<p>lsx差金线100，因为D1T1</p>
+<p>滚完榜，颁完奖，吃盒饭</p>
+<p>盒饭性价比不好说，12元但配了瓶7喜</p>
+<p>吃完饭，待完最后20分钟，踏上了大巴，睡了一觉</p>
+<p>醒来时已到了学校门口，就这样结束了这场广州之行。</p>
+]]></content>
+      <categories>
+        <category>游记</category>
+      </categories>
+  </entry>
+  <entry>
     <title>csp2023</title>
     <url>/CSP2023/</url>
     <content><![CDATA[<p>来 JZ 后坐到了背对门的位置，不敢腐败。</p>
@@ -200,58 +252,6 @@
       </categories>
   </entry>
   <entry>
-    <title>GDKOI2023油寄</title>
-    <url>/GDKOI2023/</url>
-    <content><![CDATA[<p>3月10日下午坤点，抱着行李，怀着激动的心情，踏上了大巴，开始了长达2天半的被虐之旅</p>
-<h1>D0</h1>
-<p>车上看洋葱，<s>还偷拍了lsx和thy</s>，没有手机qwq</p>
-<p>到了酒店，4点50进到了房间，用电视腐B站</p>
-<p>接着去6中，领了个袋子然后去吃饭，这饭蔡和 2.5线城市的某小破学校 的有点像啊，4个蔡吃不完qwq</p>
-<p>晚上没走远，去吃了Mixue Icecream</p>
-<h1>D1</h1>
-<p>昨晚12点才睡，因为只收了手只因，<s>没有收电视</s>，居然没犯困</p>
-<p>早上在麦当劳吃了早餐，花了15大洋，热量还蛮高的（汉堡+薯饼+豆浆）</p>
-<p>8：30开始比赛 <s><strong>正片结束</strong></s></p>
-<p><strong>T1</strong> 是判断两方阵（方形矩阵）相乘是否等于第个方阵，$0\leqslant n\leqslant 3000$，之前C组D过原题，两边同时乘一个随机向量 $O(n^2)$ 判断</p>
-<p><strong>T2</strong> 是求满足 $\forall i\in[1,m],\ p_i&gt;m$ 的长度为 $n$ 错排列数，$T$ 组数据，$0\leqslant m\leqslant n\leqslant 2\times10^5,\ 0\leqslant T\leqslant 2\times10^5$</p>
-<p>首先前 $m$ 个数有 $\tbinom{n-m}{m}$ 种方案，然后转化为 $m$ 个点不限制 的长度为 $n-m$ 错排列数（从置换环角度考虑）</p>
-<p>$O™$ 暴算</p>
-<p><strong>T3</strong> 题面说得很清楚了，不再描述了~~（明明是懒）~~</p>
-<p>首先打了个暴力，然后1小时打 $m=0$ 的情况</p>
-<p><strong>赛后</strong></p>
-<p>T1没加快读，还随机了10次（lsx只随3次就用了1.9秒），要寄了！！！！</p>
-<p>T2没有想到可以 $O(nm)$ 递推！！</p>
-<p>中午pmx去渡忘记把房卡给我了，只能去找f6n，然后没腐多久就到2点了</p>
-<p>下午听讲题，只听懂了T1T2（先不写做法了）</p>
-<p>接着是两场不明所以的演讲，实在无聊，看周围的人打电动</p>
-<p>没发成绩，吃完晚饭后失望地走了</p>
-<p>晚上又去了蜜雪冰城，买了珍珠奶茶，不是很好喝，感觉有点亏</p>
-<p>然后和同学在必胜客合资买了一块披萨，还不错</p>
-<p>吃完后就呆在酒店搞腐，11点半睡觉</p>
-<h1>D2</h1>
-<p>昨晚睡得不好，因为看了不该看的（似乎也不是很恐怖也）</p>
-<p>早餐吃了肠粉+油条，很好吃</p>
-<p>到6中比赛换了一个机房，居然没有隔板，<s>可以D！</s></p>
-<p><strong>T1</strong> 先预处理出 以每个为根分别 能向3个方向走多远，然后询问时找到符合条件的根并算出答案，复杂度 $O(nQ)$</p>
-<p>打了两个小时，过程中似乎想到了正解，但是去搞后2题了</p>
-<p><strong>T2</strong> 暴力矩阵乘法，$O(4^n\log K)$</p>
-<p><strong>T3</strong> 想要拆位，但是一直不会维护，最后打了最裸的暴力，一个特殊性质都不会啊！</p>
-<p>出场时感觉要寄了，此时发了D1的成绩单，总分180，T1A了，但lsx挂了，不知是什么原因</p>
-<p>中午退了酒店的房，提着东西来听课</p>
-<p>只听懂了T1，一直在看别人搞腐</p>
-<p>还有快乐滚榜，紧张激烈</p>
-<p>T1拿了40，T2T3爆0，离金线差40，要是集中精力A掉T1也许就能金了</p>
-<p>lsx差金线100，因为D1T1</p>
-<p>滚完榜，颁完奖，吃盒饭</p>
-<p>盒饭性价比不好说，12元但配了瓶7喜</p>
-<p>吃完饭，待完最后20分钟，踏上了大巴，睡了一觉</p>
-<p>醒来时已到了学校门口，就这样结束了这场广州之行。</p>
-]]></content>
-      <categories>
-        <category>游记</category>
-      </categories>
-  </entry>
-  <entry>
     <title>THUSC莫得游记</title>
     <url>/THUSC2023/</url>
     <content><![CDATA[<h2 id="为什么叫莫得游记？"><a class="header-anchor" href="#为什么叫莫得游记？"></a>为什么叫莫得游记？</h2>
@@ -357,60 +357,6 @@ zzk点的全是特色菜，很好吃，<br>
       </categories>
   </entry>
   <entry>
-    <title>「ZSKOI2023」总结</title>
-    <url>/ZSKOI2023/</url>
-    <content><![CDATA[<p>所以说这场比赛与义务教育有什么关系？</p>
-<h2 id="day-1，6-16，Fri"><a class="header-anchor" href="#day-1，6-16，Fri"></a>day -1，6.16，Fri</h2>
-<p><s>人在机房坐，比赛天上来。</s></p>
-<p>当时洛谷日爆，然后<s>脑抽</s><a href="http://xn--luogu-fg1hpg7d90b38tpz3b0lirs1e0iyc.com.cn">写了个东西一直打开luogu.com.cn</a>。</p>
-<p>然后教练打开了屏幕广播，说了一下比赛的事情，把座位表发给我们。</p>
-<p>似乎不用linux评测。</p>
-<p>结束广播之后，屏幕就再也没有亮起来。。。（后面重启好了）</p>
-<h2 id="day-0，6-17，Sat"><a class="header-anchor" href="#day-0，6-17，Sat"></a>day 0，6.17，Sat</h2>
-<p>jy只有初一去了jz，高中在402断网比赛（当然还有春神），于是初中的去了302。</p>
-<p>8G内存！VScode！（虽然我不用）VMware！NOIlinux！</p>
-<p>下午Jimmy说<strong>应该</strong>是用Windows评测。。。</p>
-<h2 id="day-1，6-18-Sun"><a class="header-anchor" href="#day-1，6-18-Sun"></a>day 1，6.18.Sun</h2>
-<p>昨晚睡得比较晚，头有些痛。</p>
-<p>6点起来，7：50到jz，又睡了一会，8：20进考场，考场在503。</p>
-<p>我前两个位置都没人。Verser在我正前方3个位%%%</p>
-<p>没断网？全都在敲代码？没有VMware但有Gvim和CodeBlocks？</p>
-<p>于是我配好了Dev，测了一下a+b和文操。</p>
-<p>发了题面，没有大样例。</p>
-<p>开题！</p>
-<h3 id="T1"><a class="header-anchor" href="#T1"></a>T1</h3>
-<p>求给定字符串的最长回文<strong>子序列</strong>长度，$n\leq1000$。</p>
-<p>不会有人想manacher吧？</p>
-<p>想了一个朴素的 $O(n^2)$ 区间DP，应该能过。</p>
-<h3 id="T2"><a class="header-anchor" href="#T2"></a>T2</h3>
-<p>有两个盒子AB，其中黑白球数给定。每次从A拿一个球到B，再从B拿一个球到A。重复 $n$ 次，求A中白球比率的期望。$n,\text{总球数}\leq10^{18}$。</p>
-<p>奇奇怪怪，只会 $O(nm)$ dp。</p>
-<h3 id="T3"><a class="header-anchor" href="#T3"></a>T3</h3>
-<p>给定一个 $n\times n$ 的方阵，每次操作一个矩形 $(x1,y1)(x2,y2)$，给矩形内的点 $(x,y)$ 加上 $\binom{x-x1}{y-y1}$。求最终矩形每行每列的异或和。$n,Q\leq5000$</p>
-<p>题目主人公是<strong>骐度空间·莫羯座·十一月的萧彰</strong>。。。</p>
-<h3 id="T4"><a class="header-anchor" href="#T4"></a>T4</h3>
-<p>给定一颗树。每次操作先选择一个点 $a$ ，断开 $a$ 的邻边，再在 $a$ 与之前相邻的点之间重新连边（任意方式，只要没有环）。求把树调整成给定形态的最少操作次数（点有标号）。$n\leq10^6$。</p>
-<p>弃。</p>
-<p>看完题大约9点，感觉很懵，先打了T1，过了样例和手造数据。</p>
-<p>9点半，出去上了个厕所。</p>
-<p>然后强攻T3，发现了一个差分做法，设 $a_{i,j}=ans_{i,j}-ans_{i-1,j-1}-ans_{i-1,j}$，那么操作时只会改动 $O(n)$ 个位置。</p>
-<p>用1小时打完，尝试优化T2的DP无果，于是打了60部分分。</p>
-<p>T4暴力都不会。。。</p>
-<p>然后闲着没事干，打了T1T3的对拍。</p>
-<p>于是边检查边对拍边摸鱼了半个小时。</p>
-<p>估分100+60+100+0=260</p>
-<h3 id="赛后"><a class="header-anchor" href="#赛后"></a>赛后</h3>
-<p>听说不少人切T3，T1有好多奇怪做法。</p>
-<p>路上被-6n<s>打劫</s>了，他说401有VMware！</p>
-<p>yjx和我估分一样。</p>
-<p>lsx切T2？$O(64\log n)$？？？</p>
-<p>中考、期末考RP++！</p>
-]]></content>
-      <categories>
-        <category>游记</category>
-      </categories>
-  </entry>
-  <entry>
     <title>【题解】斗地主</title>
     <url>/editorial-landlords/</url>
     <content><![CDATA[<p><a href="https://www.luogu.com.cn/record/141689771">原</a></p>
@@ -506,6 +452,60 @@ zzk点的全是特色菜，很好吃，<br>
 ]]></content>
       <categories>
         <category>知识</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>「ZSKOI2023」总结</title>
+    <url>/ZSKOI2023/</url>
+    <content><![CDATA[<p>所以说这场比赛与义务教育有什么关系？</p>
+<h2 id="day-1，6-16，Fri"><a class="header-anchor" href="#day-1，6-16，Fri"></a>day -1，6.16，Fri</h2>
+<p><s>人在机房坐，比赛天上来。</s></p>
+<p>当时洛谷日爆，然后<s>脑抽</s><a href="http://xn--luogu-fg1hpg7d90b38tpz3b0lirs1e0iyc.com.cn">写了个东西一直打开luogu.com.cn</a>。</p>
+<p>然后教练打开了屏幕广播，说了一下比赛的事情，把座位表发给我们。</p>
+<p>似乎不用linux评测。</p>
+<p>结束广播之后，屏幕就再也没有亮起来。。。（后面重启好了）</p>
+<h2 id="day-0，6-17，Sat"><a class="header-anchor" href="#day-0，6-17，Sat"></a>day 0，6.17，Sat</h2>
+<p>jy只有初一去了jz，高中在402断网比赛（当然还有春神），于是初中的去了302。</p>
+<p>8G内存！VScode！（虽然我不用）VMware！NOIlinux！</p>
+<p>下午Jimmy说<strong>应该</strong>是用Windows评测。。。</p>
+<h2 id="day-1，6-18-Sun"><a class="header-anchor" href="#day-1，6-18-Sun"></a>day 1，6.18.Sun</h2>
+<p>昨晚睡得比较晚，头有些痛。</p>
+<p>6点起来，7：50到jz，又睡了一会，8：20进考场，考场在503。</p>
+<p>我前两个位置都没人。Verser在我正前方3个位%%%</p>
+<p>没断网？全都在敲代码？没有VMware但有Gvim和CodeBlocks？</p>
+<p>于是我配好了Dev，测了一下a+b和文操。</p>
+<p>发了题面，没有大样例。</p>
+<p>开题！</p>
+<h3 id="T1"><a class="header-anchor" href="#T1"></a>T1</h3>
+<p>求给定字符串的最长回文<strong>子序列</strong>长度，$n\leq1000$。</p>
+<p>不会有人想manacher吧？</p>
+<p>想了一个朴素的 $O(n^2)$ 区间DP，应该能过。</p>
+<h3 id="T2"><a class="header-anchor" href="#T2"></a>T2</h3>
+<p>有两个盒子AB，其中黑白球数给定。每次从A拿一个球到B，再从B拿一个球到A。重复 $n$ 次，求A中白球比率的期望。$n,\text{总球数}\leq10^{18}$。</p>
+<p>奇奇怪怪，只会 $O(nm)$ dp。</p>
+<h3 id="T3"><a class="header-anchor" href="#T3"></a>T3</h3>
+<p>给定一个 $n\times n$ 的方阵，每次操作一个矩形 $(x1,y1)(x2,y2)$，给矩形内的点 $(x,y)$ 加上 $\binom{x-x1}{y-y1}$。求最终矩形每行每列的异或和。$n,Q\leq5000$</p>
+<p>题目主人公是<strong>骐度空间·莫羯座·十一月的萧彰</strong>。。。</p>
+<h3 id="T4"><a class="header-anchor" href="#T4"></a>T4</h3>
+<p>给定一颗树。每次操作先选择一个点 $a$ ，断开 $a$ 的邻边，再在 $a$ 与之前相邻的点之间重新连边（任意方式，只要没有环）。求把树调整成给定形态的最少操作次数（点有标号）。$n\leq10^6$。</p>
+<p>弃。</p>
+<p>看完题大约9点，感觉很懵，先打了T1，过了样例和手造数据。</p>
+<p>9点半，出去上了个厕所。</p>
+<p>然后强攻T3，发现了一个差分做法，设 $a_{i,j}=ans_{i,j}-ans_{i-1,j-1}-ans_{i-1,j}$，那么操作时只会改动 $O(n)$ 个位置。</p>
+<p>用1小时打完，尝试优化T2的DP无果，于是打了60部分分。</p>
+<p>T4暴力都不会。。。</p>
+<p>然后闲着没事干，打了T1T3的对拍。</p>
+<p>于是边检查边对拍边摸鱼了半个小时。</p>
+<p>估分100+60+100+0=260</p>
+<h3 id="赛后"><a class="header-anchor" href="#赛后"></a>赛后</h3>
+<p>听说不少人切T3，T1有好多奇怪做法。</p>
+<p>路上被-6n<s>打劫</s>了，他说401有VMware！</p>
+<p>yjx和我估分一样。</p>
+<p>lsx切T2？$O(64\log n)$？？？</p>
+<p>中考、期末考RP++！</p>
+]]></content>
+      <categories>
+        <category>游记</category>
       </categories>
   </entry>
   <entry>
