@@ -53,89 +53,6 @@
       </categories>
   </entry>
   <entry>
-    <title>csp2023</title>
-    <url>/CSP2023/</url>
-    <content><![CDATA[<p>来 JZ 后坐到了背对门的位置，不敢腐败。</p>
-<p>暑假腐太多，有些后悔，现已杜绝了 Generals，Bilibili，ModernGMOJ（自己写的 Github 腐败项目），<s>原神</s> 等腐败，取关了 vicky，但还腐犇犇（虽然已经什么没有好康的了）。</p>
-<h3 id="day-4（周一）"><a class="header-anchor" href="#day-4（周一）"></a>day -4（周一）</h3>
-<p>晚上来训练时，XC 安排了初中周二周四的停课。</p>
-<h3 id="day-3（周二）"><a class="header-anchor" href="#day-3（周二）"></a>day -3（周二）</h3>
-<p>模拟赛想出了两题，T1 数组开小挂了 50 分，希望正式比赛时不要挂成这样。</p>
-<p>晚上补作业启动。</p>
-<h3 id="day-2（周三）"><a class="header-anchor" href="#day-2（周三）"></a>day -2（周三）</h3>
-<p>中午 <a href="https://www.luogu.com.cn/user/110010">lsx</a>，<a href="https://www.luogu.com.cn/user/513838">wtc</a>，<a href="https://www.luogu.com.cn/user/222729">pmx</a>，cyt 等初三高一大奆在团建 <s>团 Gen</s>，这标志着 generals 文化从 JY 向 JZ 传播进程的完成（学历史学的）。</p>
-<p>晚上训练改出了一题，不会 T3。</p>
-<h3 id="day-1（周四）"><a class="header-anchor" href="#day-1（周四）"></a>day -1（周四）</h3>
-<p>真·信心赛，全是诈骗题，人均 200 我 140，被薄纱了。赛后没调出 T1。。。</p>
-<p>晚上跟 <a href="https://www.luogu.com.cn/user/759370">fy</a> 和 wtc 去 知行餐厅，碰见好多认识的人。我不小心多点了一碗米饭，于是跟 wtc 拿去喂鸭子，有点引人注目（好像鸭子没什么食欲）。</p>
-<p>晚上戴眼镜被 fy 看到了，fy 说我玩原神玩近视了。</p>
-<h3 id="day-0（周五）"><a class="header-anchor" href="#day-0（周五）"></a>day 0（周五）</h3>
-<p>学文化课的下午放学，<s>可以 Gen 一晚上了</s>。</p>
-<p>下午去 303 试了一下机，Virtual Box 虚拟机还挺好用的。</p>
-<p>由于格式化考场的磁盘时出了某些问题，403 的电脑好像一重启 D 盘就会没。</p>
-<p>晚上主要复习了 c++ 语法。</p>
-<p>XC 把所有人叫来聊天，说今年 CSP 真是天时地利人和，周六早上不会有人六点半不到就起来，使我们没法好好休息（此时 wzx 拍了拍我的肩膀），而且天气也很好（真），303 机房换掉了原神键盘。还说不要太紧张，就把 CSP 当作<strong>昨天的模拟赛</strong>。</p>
-<p>chd 扬言要一个半小时 AK -J 之后玩 edge://surf。</p>
-<h3 id="day-1（周六）"><a class="header-anchor" href="#day-1（周六）"></a>day 1（周六）</h3>
-<p>6:00 闹钟，6:05 闹钟，6:10 闹钟，6:15 闹钟，最后 6:20 起了。</p>
-<p>吃完早餐后大约 6:50，旧科学馆已经拉起了警戒线，但保安在我弯腰过警戒线时看都不看我一眼。</p>
-<p>复习了字符串，但没什么用。大约 7:50 时 <a href="https://www.luogu.com.cn/user/373254">lmd</a> 和 lsx 来 Gen 了一把，还看到了一个叫 <a href="https://www.luogu.com.cn/user/121995">Smt</a> 人（不打 -J 的大奆去了图书馆）。</p>
-<hr>
-<p>把 pdf 密码看成了文件夹的解压密码，导致输错了 114514 次。</p>
-<p>T1 签到，$O(\log n)$ 直接过。</p>
-<p>T2 有点迷，后来想到是贪心，$O(n)$。</p>
-<p>T3 小模拟，先跳过，因为可能调试会费很多时间。</p>
-<p>T4 首先想到把 $1$ 个点拆成 $k$ 个，后来又想到可以二分答案，再倒着 BFS，$O(n\log(a+m))$。</p>
-<p>最后写 T3，因为运气好写得很顺利，过完大样例大概是 10:45。</p>
-<p>暴力不好写，于是没对拍，靠肉眼检查，希望能 AK 吧。</p>
-<hr>
-<p>T4 一堆写 SPFA 的，<a href="https://www.luogu.com.cn/user/793777">yjx</a> 似乎 AK 了，fy 最后十几秒写完了 T4。</p>
-<p>中午没回宿舍，跟着 <a href="https://www.luogu.com.cn/user/455757">ywj</a> 和 <a href="https://www.luogu.com.cn/user/473639">sqc</a> 跑去音乐厅想面基 <a href="https://www.luogu.com.cn/user/501947">duck</a> 但没面到。</p>
-<p>后来回机房复习了图论和莫队（最没用的算法），开机时发现 Windows 没了。</p>
-<p>进考场前 XC 把我叫去谈话，说以后不回宿舍要请假，谈完后又说记得不要写错文件名，不要开小数组。</p>
-<hr>
-<p>T1 签到。</p>
-<p>T2 想到 $O(n^3)$ 35 分做法。</p>
-<p>T3 巨模拟，跳过。</p>
-<p>T4 发现可以二分答案，但觉得细节有点多。</p>
-<p>打题顺序 1 --&gt; 4 --&gt; 2 --&gt; 3，T4 吸氧 0.7s 不吸氧 1.4s。</p>
-<p>打到 T3 时还剩 50min，感觉时间不够。</p>
-<p>此时感觉要退役了，T2 都想不出来，一等拿不了了，也不想打对拍。由于心情低落，我决定去上厕所。</p>
-<p>上厕所时突然发现 T2 可以枚举左端点，再维护一个栈，$O(n^2)$ 50 分。</p>
-<p>打完后发现如果字符串随机，那么合法的子串长度不会太长，$O(n\cdot E(len))$ A 性质 10 分拿下。</p>
-<hr>
-<p>很多 $O(n\sum)$ 切 T2 的。</p>
-<p>yjx 莅临了我们的教室，聊了很多文化课内容（被薄纱了），后来 <a href="https://www.luogu.com.cn/user/1025299">zy</a> 揭露了 yjx 传播绯闻的罪行，yjx 却说他<strong>忘记</strong>了这件事。</p>
-<h3 id="总结反思"><a class="header-anchor" href="#总结反思"></a>总结反思</h3>
-<ul class="lvl-0">
-<li class="lvl-2">
-<p>大模拟和细节多的题目放在后面写。</p>
-</li>
-<li class="lvl-2">
-<p>不要 dfs 式想题。</p>
-</li>
-<li class="lvl-2">
-<p>数组大小不要斤斤计较。</p>
-</li>
-<li class="lvl-2">
-<p>要留时间检查。</p>
-</li>
-</ul>
-<p>写题速度还是需要提高，要多打 ABC。</p>
-<h3 id="后记"><a class="header-anchor" href="#后记"></a>后记</h3>
-<p>%%% <a href="https://www.luogu.com.cn/user/111055">DX</a>，<a href="https://www.luogu.com.cn/user/99506">LHF</a>，<a href="https://www.luogu.com.cn/user/116664">Daniel_lele</a>，<a href="https://www.luogu.com.cn/user/272088">lqy</a> AK -S %%%。</p>
-<p>100+100+100+100，100+60+0+100。</p>
-<p>-J 比赛时似乎没断网导致泄题，看 €€£ 怎么查办。</p>
-<p><a href="https://www.noi.cn/xw/2023-10-23/796608.shtml">《关于部分平台私自发布CSP-J/S 2023认证结果的公告》</a></p>
-<p>-S T2 有<a href="https://www.luogu.com.cn/problem/CF1223F">类似的题</a>，但做法似乎不一样。</p>
-<p>周日回来后发现 Windows 处于有和没有的叠加态，每次观察就会波函数坍缩（说白了就是有时候开机有，有时候开机没有）。</p>
-<p>++NOIP.rp（前自增常数更小）。</p>
-]]></content>
-      <categories>
-        <category>游记</category>
-      </categories>
-  </entry>
-  <entry>
     <title>LocalSend从入门到被炸死</title>
     <url>/LocalSend/</url>
     <content><![CDATA[<p>LocalSend 顾名思义，局域网文件传输。</p>
@@ -252,6 +169,89 @@
       </categories>
   </entry>
   <entry>
+    <title>csp2023</title>
+    <url>/CSP2023/</url>
+    <content><![CDATA[<p>来 JZ 后坐到了背对门的位置，不敢腐败。</p>
+<p>暑假腐太多，有些后悔，现已杜绝了 Generals，Bilibili，ModernGMOJ（自己写的 Github 腐败项目），<s>原神</s> 等腐败，取关了 vicky，但还腐犇犇（虽然已经什么没有好康的了）。</p>
+<h3 id="day-4（周一）"><a class="header-anchor" href="#day-4（周一）"></a>day -4（周一）</h3>
+<p>晚上来训练时，XC 安排了初中周二周四的停课。</p>
+<h3 id="day-3（周二）"><a class="header-anchor" href="#day-3（周二）"></a>day -3（周二）</h3>
+<p>模拟赛想出了两题，T1 数组开小挂了 50 分，希望正式比赛时不要挂成这样。</p>
+<p>晚上补作业启动。</p>
+<h3 id="day-2（周三）"><a class="header-anchor" href="#day-2（周三）"></a>day -2（周三）</h3>
+<p>中午 <a href="https://www.luogu.com.cn/user/110010">lsx</a>，<a href="https://www.luogu.com.cn/user/513838">wtc</a>，<a href="https://www.luogu.com.cn/user/222729">pmx</a>，cyt 等初三高一大奆在团建 <s>团 Gen</s>，这标志着 generals 文化从 JY 向 JZ 传播进程的完成（学历史学的）。</p>
+<p>晚上训练改出了一题，不会 T3。</p>
+<h3 id="day-1（周四）"><a class="header-anchor" href="#day-1（周四）"></a>day -1（周四）</h3>
+<p>真·信心赛，全是诈骗题，人均 200 我 140，被薄纱了。赛后没调出 T1。。。</p>
+<p>晚上跟 <a href="https://www.luogu.com.cn/user/759370">fy</a> 和 wtc 去 知行餐厅，碰见好多认识的人。我不小心多点了一碗米饭，于是跟 wtc 拿去喂鸭子，有点引人注目（好像鸭子没什么食欲）。</p>
+<p>晚上戴眼镜被 fy 看到了，fy 说我玩原神玩近视了。</p>
+<h3 id="day-0（周五）"><a class="header-anchor" href="#day-0（周五）"></a>day 0（周五）</h3>
+<p>学文化课的下午放学，<s>可以 Gen 一晚上了</s>。</p>
+<p>下午去 303 试了一下机，Virtual Box 虚拟机还挺好用的。</p>
+<p>由于格式化考场的磁盘时出了某些问题，403 的电脑好像一重启 D 盘就会没。</p>
+<p>晚上主要复习了 c++ 语法。</p>
+<p>XC 把所有人叫来聊天，说今年 CSP 真是天时地利人和，周六早上不会有人六点半不到就起来，使我们没法好好休息（此时 wzx 拍了拍我的肩膀），而且天气也很好（真），303 机房换掉了原神键盘。还说不要太紧张，就把 CSP 当作<strong>昨天的模拟赛</strong>。</p>
+<p>chd 扬言要一个半小时 AK -J 之后玩 edge://surf。</p>
+<h3 id="day-1（周六）"><a class="header-anchor" href="#day-1（周六）"></a>day 1（周六）</h3>
+<p>6:00 闹钟，6:05 闹钟，6:10 闹钟，6:15 闹钟，最后 6:20 起了。</p>
+<p>吃完早餐后大约 6:50，旧科学馆已经拉起了警戒线，但保安在我弯腰过警戒线时看都不看我一眼。</p>
+<p>复习了字符串，但没什么用。大约 7:50 时 <a href="https://www.luogu.com.cn/user/373254">lmd</a> 和 lsx 来 Gen 了一把，还看到了一个叫 <a href="https://www.luogu.com.cn/user/121995">Smt</a> 人（不打 -J 的大奆去了图书馆）。</p>
+<hr>
+<p>把 pdf 密码看成了文件夹的解压密码，导致输错了 114514 次。</p>
+<p>T1 签到，$O(\log n)$ 直接过。</p>
+<p>T2 有点迷，后来想到是贪心，$O(n)$。</p>
+<p>T3 小模拟，先跳过，因为可能调试会费很多时间。</p>
+<p>T4 首先想到把 $1$ 个点拆成 $k$ 个，后来又想到可以二分答案，再倒着 BFS，$O(n\log(a+m))$。</p>
+<p>最后写 T3，因为运气好写得很顺利，过完大样例大概是 10:45。</p>
+<p>暴力不好写，于是没对拍，靠肉眼检查，希望能 AK 吧。</p>
+<hr>
+<p>T4 一堆写 SPFA 的，<a href="https://www.luogu.com.cn/user/793777">yjx</a> 似乎 AK 了，fy 最后十几秒写完了 T4。</p>
+<p>中午没回宿舍，跟着 <a href="https://www.luogu.com.cn/user/455757">ywj</a> 和 <a href="https://www.luogu.com.cn/user/473639">sqc</a> 跑去音乐厅想面基 <a href="https://www.luogu.com.cn/user/501947">duck</a> 但没面到。</p>
+<p>后来回机房复习了图论和莫队（最没用的算法），开机时发现 Windows 没了。</p>
+<p>进考场前 XC 把我叫去谈话，说以后不回宿舍要请假，谈完后又说记得不要写错文件名，不要开小数组。</p>
+<hr>
+<p>T1 签到。</p>
+<p>T2 想到 $O(n^3)$ 35 分做法。</p>
+<p>T3 巨模拟，跳过。</p>
+<p>T4 发现可以二分答案，但觉得细节有点多。</p>
+<p>打题顺序 1 --&gt; 4 --&gt; 2 --&gt; 3，T4 吸氧 0.7s 不吸氧 1.4s。</p>
+<p>打到 T3 时还剩 50min，感觉时间不够。</p>
+<p>此时感觉要退役了，T2 都想不出来，一等拿不了了，也不想打对拍。由于心情低落，我决定去上厕所。</p>
+<p>上厕所时突然发现 T2 可以枚举左端点，再维护一个栈，$O(n^2)$ 50 分。</p>
+<p>打完后发现如果字符串随机，那么合法的子串长度不会太长，$O(n\cdot E(len))$ A 性质 10 分拿下。</p>
+<hr>
+<p>很多 $O(n\sum)$ 切 T2 的。</p>
+<p>yjx 莅临了我们的教室，聊了很多文化课内容（被薄纱了），后来 <a href="https://www.luogu.com.cn/user/1025299">zy</a> 揭露了 yjx 传播绯闻的罪行，yjx 却说他<strong>忘记</strong>了这件事。</p>
+<h3 id="总结反思"><a class="header-anchor" href="#总结反思"></a>总结反思</h3>
+<ul class="lvl-0">
+<li class="lvl-2">
+<p>大模拟和细节多的题目放在后面写。</p>
+</li>
+<li class="lvl-2">
+<p>不要 dfs 式想题。</p>
+</li>
+<li class="lvl-2">
+<p>数组大小不要斤斤计较。</p>
+</li>
+<li class="lvl-2">
+<p>要留时间检查。</p>
+</li>
+</ul>
+<p>写题速度还是需要提高，要多打 ABC。</p>
+<h3 id="后记"><a class="header-anchor" href="#后记"></a>后记</h3>
+<p>%%% <a href="https://www.luogu.com.cn/user/111055">DX</a>，<a href="https://www.luogu.com.cn/user/99506">LHF</a>，<a href="https://www.luogu.com.cn/user/116664">Daniel_lele</a>，<a href="https://www.luogu.com.cn/user/272088">lqy</a> AK -S %%%。</p>
+<p>100+100+100+100，100+60+0+100。</p>
+<p>-J 比赛时似乎没断网导致泄题，看 €€£ 怎么查办。</p>
+<p><a href="https://www.noi.cn/xw/2023-10-23/796608.shtml">《关于部分平台私自发布CSP-J/S 2023认证结果的公告》</a></p>
+<p>-S T2 有<a href="https://www.luogu.com.cn/problem/CF1223F">类似的题</a>，但做法似乎不一样。</p>
+<p>周日回来后发现 Windows 处于有和没有的叠加态，每次观察就会波函数坍缩（说白了就是有时候开机有，有时候开机没有）。</p>
+<p>++NOIP.rp（前自增常数更小）。</p>
+]]></content>
+      <categories>
+        <category>游记</category>
+      </categories>
+  </entry>
+  <entry>
     <title>THUSC莫得游记</title>
     <url>/THUSC2023/</url>
     <content><![CDATA[<h2 id="为什么叫莫得游记？"><a class="header-anchor" href="#为什么叫莫得游记？"></a>为什么叫莫得游记？</h2>
@@ -357,6 +357,60 @@ zzk点的全是特色菜，很好吃，<br>
       </categories>
   </entry>
   <entry>
+    <title>「ZSKOI2023」总结</title>
+    <url>/ZSKOI2023/</url>
+    <content><![CDATA[<p>所以说这场比赛与义务教育有什么关系？</p>
+<h2 id="day-1，6-16，Fri"><a class="header-anchor" href="#day-1，6-16，Fri"></a>day -1，6.16，Fri</h2>
+<p><s>人在机房坐，比赛天上来。</s></p>
+<p>当时洛谷日爆，然后<s>脑抽</s><a href="http://xn--luogu-fg1hpg7d90b38tpz3b0lirs1e0iyc.com.cn">写了个东西一直打开luogu.com.cn</a>。</p>
+<p>然后教练打开了屏幕广播，说了一下比赛的事情，把座位表发给我们。</p>
+<p>似乎不用linux评测。</p>
+<p>结束广播之后，屏幕就再也没有亮起来。。。（后面重启好了）</p>
+<h2 id="day-0，6-17，Sat"><a class="header-anchor" href="#day-0，6-17，Sat"></a>day 0，6.17，Sat</h2>
+<p>jy只有初一去了jz，高中在402断网比赛（当然还有春神），于是初中的去了302。</p>
+<p>8G内存！VScode！（虽然我不用）VMware！NOIlinux！</p>
+<p>下午Jimmy说<strong>应该</strong>是用Windows评测。。。</p>
+<h2 id="day-1，6-18-Sun"><a class="header-anchor" href="#day-1，6-18-Sun"></a>day 1，6.18.Sun</h2>
+<p>昨晚睡得比较晚，头有些痛。</p>
+<p>6点起来，7：50到jz，又睡了一会，8：20进考场，考场在503。</p>
+<p>我前两个位置都没人。Verser在我正前方3个位%%%</p>
+<p>没断网？全都在敲代码？没有VMware但有Gvim和CodeBlocks？</p>
+<p>于是我配好了Dev，测了一下a+b和文操。</p>
+<p>发了题面，没有大样例。</p>
+<p>开题！</p>
+<h3 id="T1"><a class="header-anchor" href="#T1"></a>T1</h3>
+<p>求给定字符串的最长回文<strong>子序列</strong>长度，$n\leq1000$。</p>
+<p>不会有人想manacher吧？</p>
+<p>想了一个朴素的 $O(n^2)$ 区间DP，应该能过。</p>
+<h3 id="T2"><a class="header-anchor" href="#T2"></a>T2</h3>
+<p>有两个盒子AB，其中黑白球数给定。每次从A拿一个球到B，再从B拿一个球到A。重复 $n$ 次，求A中白球比率的期望。$n,\text{总球数}\leq10^{18}$。</p>
+<p>奇奇怪怪，只会 $O(nm)$ dp。</p>
+<h3 id="T3"><a class="header-anchor" href="#T3"></a>T3</h3>
+<p>给定一个 $n\times n$ 的方阵，每次操作一个矩形 $(x1,y1)(x2,y2)$，给矩形内的点 $(x,y)$ 加上 $\binom{x-x1}{y-y1}$。求最终矩形每行每列的异或和。$n,Q\leq5000$</p>
+<p>题目主人公是<strong>骐度空间·莫羯座·十一月的萧彰</strong>。。。</p>
+<h3 id="T4"><a class="header-anchor" href="#T4"></a>T4</h3>
+<p>给定一颗树。每次操作先选择一个点 $a$ ，断开 $a$ 的邻边，再在 $a$ 与之前相邻的点之间重新连边（任意方式，只要没有环）。求把树调整成给定形态的最少操作次数（点有标号）。$n\leq10^6$。</p>
+<p>弃。</p>
+<p>看完题大约9点，感觉很懵，先打了T1，过了样例和手造数据。</p>
+<p>9点半，出去上了个厕所。</p>
+<p>然后强攻T3，发现了一个差分做法，设 $a_{i,j}=ans_{i,j}-ans_{i-1,j-1}-ans_{i-1,j}$，那么操作时只会改动 $O(n)$ 个位置。</p>
+<p>用1小时打完，尝试优化T2的DP无果，于是打了60部分分。</p>
+<p>T4暴力都不会。。。</p>
+<p>然后闲着没事干，打了T1T3的对拍。</p>
+<p>于是边检查边对拍边摸鱼了半个小时。</p>
+<p>估分100+60+100+0=260</p>
+<h3 id="赛后"><a class="header-anchor" href="#赛后"></a>赛后</h3>
+<p>听说不少人切T3，T1有好多奇怪做法。</p>
+<p>路上被-6n<s>打劫</s>了，他说401有VMware！</p>
+<p>yjx和我估分一样。</p>
+<p>lsx切T2？$O(64\log n)$？？？</p>
+<p>中考、期末考RP++！</p>
+]]></content>
+      <categories>
+        <category>游记</category>
+      </categories>
+  </entry>
+  <entry>
     <title>【题解】斗地主</title>
     <url>/editorial-landlords/</url>
     <content><![CDATA[<p><a href="https://www.luogu.com.cn/record/141689771">原</a></p>
@@ -368,6 +422,46 @@ zzk点的全是特色菜，很好吃，<br>
 ]]></content>
       <categories>
         <category>题解</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>赌徒输光问题</title>
+    <url>/gambler-ruin/</url>
+    <content><![CDATA[<p>赌徒初始资金为 $x$ 元，每一轮有 $p$ 的概率赢一元，$1-p$ 的概率输一元，输光则停止赌博，或赢到 $n$ 元后收手，求破产的概率 $a_x$（$x\in[0,n]$）。</p>
+<p>显然<br>
+$$<br>
+a_0=1,a_n=0\\<br>
+\forall i\in[1,n-1],a_i=pa_{i+1}+(1-p)a_{i-1}<br>
+$$<br>
+很经典的常系数齐次线性递推，这里有一个比较方便的解法：<br>
+$$<br>
+(1-p)(a_i-a_{i-1})=p(a_{i+1}-a_i)<br>
+$$<br>
+令 $r=\frac p{1-p}$，则有<br>
+$$<br>
+a_{i+1}-a_{i}=r(a_i-a_{i-1})\\<br>
+a_{x}-a_0=\sum_{i=1}^xa_i-a_{i-1}=\sum_{i=1}^xr^{i-1}(a_1-a_0)=\frac{1-r^x}{1-r}(a_1-a_0)<br>
+$$<br>
+在 $x=n$ 时<br>
+$$<br>
+a_n-a_0=\frac{1-r^n}{1-r}(a_1-a_0)=-1<br>
+$$<br>
+所以<br>
+$$<br>
+a_x-a_0=\frac{1-r^x}{1-r}(a_1-a_0)=\frac{1-r^x}{1-r^n}\cdot\frac{1-r^n}{1-r}(a_1-a_0)=-\frac{1-r^x}{1-r^n}\\<br>
+a_x=1-\frac{1-r^x}{1-r^n}<br>
+$$</p>
+<h2 id="分析"><a class="header-anchor" href="#分析"></a>分析</h2>
+<p>如果一直赌而不收手，可以把 $n$ 视为无穷大。</p>
+<p>当 $p\ne1-p$ 时，$r\ne1$，$a_x$ 随 $n$ 的增大而增大，收敛于 $1$。</p>
+<p>当 $p=1-p=\frac 1 2$ 时，$r=1$，分母为 $0$，可以重新推导一下这种特殊情况，但这里我选择洛一下：<br>
+$$<br>
+a_x=1-\lim_{r\rightarrow1}\frac{1-r^x}{1-r^n}=1-\lim_{r\rightarrow1}\frac{-xr^{x-1}}{-nr^{n-1}}=\frac{n-x}n<br>
+$$<br>
+$a_x$ 依然随 $n$ 的增大而增大，收敛于 $1$，输光只是时间问题。</p>
+]]></content>
+      <categories>
+        <category>腐败</category>
       </categories>
   </entry>
   <entry>
@@ -452,60 +546,6 @@ zzk点的全是特色菜，很好吃，<br>
 ]]></content>
       <categories>
         <category>知识</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>「ZSKOI2023」总结</title>
-    <url>/ZSKOI2023/</url>
-    <content><![CDATA[<p>所以说这场比赛与义务教育有什么关系？</p>
-<h2 id="day-1，6-16，Fri"><a class="header-anchor" href="#day-1，6-16，Fri"></a>day -1，6.16，Fri</h2>
-<p><s>人在机房坐，比赛天上来。</s></p>
-<p>当时洛谷日爆，然后<s>脑抽</s><a href="http://xn--luogu-fg1hpg7d90b38tpz3b0lirs1e0iyc.com.cn">写了个东西一直打开luogu.com.cn</a>。</p>
-<p>然后教练打开了屏幕广播，说了一下比赛的事情，把座位表发给我们。</p>
-<p>似乎不用linux评测。</p>
-<p>结束广播之后，屏幕就再也没有亮起来。。。（后面重启好了）</p>
-<h2 id="day-0，6-17，Sat"><a class="header-anchor" href="#day-0，6-17，Sat"></a>day 0，6.17，Sat</h2>
-<p>jy只有初一去了jz，高中在402断网比赛（当然还有春神），于是初中的去了302。</p>
-<p>8G内存！VScode！（虽然我不用）VMware！NOIlinux！</p>
-<p>下午Jimmy说<strong>应该</strong>是用Windows评测。。。</p>
-<h2 id="day-1，6-18-Sun"><a class="header-anchor" href="#day-1，6-18-Sun"></a>day 1，6.18.Sun</h2>
-<p>昨晚睡得比较晚，头有些痛。</p>
-<p>6点起来，7：50到jz，又睡了一会，8：20进考场，考场在503。</p>
-<p>我前两个位置都没人。Verser在我正前方3个位%%%</p>
-<p>没断网？全都在敲代码？没有VMware但有Gvim和CodeBlocks？</p>
-<p>于是我配好了Dev，测了一下a+b和文操。</p>
-<p>发了题面，没有大样例。</p>
-<p>开题！</p>
-<h3 id="T1"><a class="header-anchor" href="#T1"></a>T1</h3>
-<p>求给定字符串的最长回文<strong>子序列</strong>长度，$n\leq1000$。</p>
-<p>不会有人想manacher吧？</p>
-<p>想了一个朴素的 $O(n^2)$ 区间DP，应该能过。</p>
-<h3 id="T2"><a class="header-anchor" href="#T2"></a>T2</h3>
-<p>有两个盒子AB，其中黑白球数给定。每次从A拿一个球到B，再从B拿一个球到A。重复 $n$ 次，求A中白球比率的期望。$n,\text{总球数}\leq10^{18}$。</p>
-<p>奇奇怪怪，只会 $O(nm)$ dp。</p>
-<h3 id="T3"><a class="header-anchor" href="#T3"></a>T3</h3>
-<p>给定一个 $n\times n$ 的方阵，每次操作一个矩形 $(x1,y1)(x2,y2)$，给矩形内的点 $(x,y)$ 加上 $\binom{x-x1}{y-y1}$。求最终矩形每行每列的异或和。$n,Q\leq5000$</p>
-<p>题目主人公是<strong>骐度空间·莫羯座·十一月的萧彰</strong>。。。</p>
-<h3 id="T4"><a class="header-anchor" href="#T4"></a>T4</h3>
-<p>给定一颗树。每次操作先选择一个点 $a$ ，断开 $a$ 的邻边，再在 $a$ 与之前相邻的点之间重新连边（任意方式，只要没有环）。求把树调整成给定形态的最少操作次数（点有标号）。$n\leq10^6$。</p>
-<p>弃。</p>
-<p>看完题大约9点，感觉很懵，先打了T1，过了样例和手造数据。</p>
-<p>9点半，出去上了个厕所。</p>
-<p>然后强攻T3，发现了一个差分做法，设 $a_{i,j}=ans_{i,j}-ans_{i-1,j-1}-ans_{i-1,j}$，那么操作时只会改动 $O(n)$ 个位置。</p>
-<p>用1小时打完，尝试优化T2的DP无果，于是打了60部分分。</p>
-<p>T4暴力都不会。。。</p>
-<p>然后闲着没事干，打了T1T3的对拍。</p>
-<p>于是边检查边对拍边摸鱼了半个小时。</p>
-<p>估分100+60+100+0=260</p>
-<h3 id="赛后"><a class="header-anchor" href="#赛后"></a>赛后</h3>
-<p>听说不少人切T3，T1有好多奇怪做法。</p>
-<p>路上被-6n<s>打劫</s>了，他说401有VMware！</p>
-<p>yjx和我估分一样。</p>
-<p>lsx切T2？$O(64\log n)$？？？</p>
-<p>中考、期末考RP++！</p>
-]]></content>
-      <categories>
-        <category>游记</category>
       </categories>
   </entry>
   <entry>

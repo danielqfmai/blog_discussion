@@ -15,7 +15,7 @@
 
 
 
-<title>Category: 腐败 | Danielqf&#39;s Blog</title>
+<title>赌徒输光问题 | Danielqf&#39;s Blog</title>
 
 
 
@@ -105,7 +105,7 @@
         <div class="container">
             <div class="navbar-header header-logo">
                 <a href="/">Danielqf&#39;s Blog</a>
-                <span class="title"></span>
+                <span class="title">赌徒输光问题</span>
             </div>
             <div class="menu navbar-right">
                 
@@ -175,52 +175,157 @@
         height: calc(100% - 105px);" onclick="click_time=Date.now()"></div>
 </div>
 
-            
-
-
+            <div class="container">
     
-<div class="container">
-    <div class="post-wrap categories">
-        <h2 class="post-title">-&nbsp;<a href="/category">Categories</a>&nbsp;·&nbsp;腐败-</h2>
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
     </div>
-    <div class="post-wrap archive">
-    
-    
-        
-
-        
-            <h3>2024</h3>
-        
-
-        <article class="archive-item">
-            <a class="archive-item-link" href="/gambler-ruin/">赌徒输光问题</a>
-            <span class="archive-item-date">2024.01.12</span>
-        </article>
-    
-        
-
-        
-            <h3>2023</h3>
-        
-
-        <article class="archive-item">
-            <a class="archive-item-link" href="/nuclear-flatten-world/">【扯淡】如何维护世界核平</a>
-            <span class="archive-item-date">2023.12.04</span>
-        </article>
-    
-        
-
-        
-
-        <article class="archive-item">
-            <a class="archive-item-link" href="/LocalSend/">LocalSend从入门到被炸死</a>
-            <span class="archive-item-date">2023.10.08</span>
-        </article>
-    
-    
-</div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
 </div>
 
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">赌徒输光问题</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href=>danielqf</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a>2024.01.12&nbsp;&nbsp;20:13:14</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E8%85%90%E8%B4%A5/">腐败</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <p>赌徒初始资金为 $x$ 元，每一轮有 $p$ 的概率赢一元，$1-p$ 的概率输一元，输光则停止赌博，或赢到 $n$ 元后收手，求破产的概率 $a_x$（$x\in[0,n]$）。</p>
+<p>显然<br>
+$$<br>
+a_0=1,a_n=0\\<br>
+\forall i\in[1,n-1],a_i=pa_{i+1}+(1-p)a_{i-1}<br>
+$$<br>
+很经典的常系数齐次线性递推，这里有一个比较方便的解法：<br>
+$$<br>
+(1-p)(a_i-a_{i-1})=p(a_{i+1}-a_i)<br>
+$$<br>
+令 $r=\frac p{1-p}$，则有<br>
+$$<br>
+a_{i+1}-a_{i}=r(a_i-a_{i-1})\\<br>
+a_{x}-a_0=\sum_{i=1}^xa_i-a_{i-1}=\sum_{i=1}^xr^{i-1}(a_1-a_0)=\frac{1-r^x}{1-r}(a_1-a_0)<br>
+$$<br>
+在 $x=n$ 时<br>
+$$<br>
+a_n-a_0=\frac{1-r^n}{1-r}(a_1-a_0)=-1<br>
+$$<br>
+所以<br>
+$$<br>
+a_x-a_0=\frac{1-r^x}{1-r}(a_1-a_0)=\frac{1-r^x}{1-r^n}\cdot\frac{1-r^n}{1-r}(a_1-a_0)=-\frac{1-r^x}{1-r^n}\\<br>
+a_x=1-\frac{1-r^x}{1-r^n}<br>
+$$</p>
+<h2 id="分析"><a class="header-anchor" href="#分析"></a>分析</h2>
+<p>如果一直赌而不收手，可以把 $n$ 视为无穷大。</p>
+<p>当 $p\ne1-p$ 时，$r\ne1$，$a_x$ 随 $n$ 的增大而增大，收敛于 $1$。</p>
+<p>当 $p=1-p=\frac 1 2$ 时，$r=1$，分母为 $0$，可以重新推导一下这种特殊情况，但这里我选择洛一下：<br>
+$$<br>
+a_x=1-\lim_{r\rightarrow1}\frac{1-r^x}{1-r^n}=1-\lim_{r\rightarrow1}\frac{-xr^{x-1}}{-nr^{n-1}}=\frac{n-x}n<br>
+$$<br>
+$a_x$ 依然随 $n$ 的增大而增大，收敛于 $1$，输光只是时间问题。</p>
+
+        </div>
+
+        
+    <script src="https://giscus.app/client.js"
+        data-repo="danielqfmai/danielqfmai.github.io"
+        data-repo-id="R_kgDOK66FXA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOK66FXM4Cb1ep"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+    </script>
+    </article>
+</div>
 
         </div>
         <footer id="footer" class="footer">
