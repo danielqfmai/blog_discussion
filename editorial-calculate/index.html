@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="danielqf">
+
+
+    <meta name="subtitle" content="Modify">
+
+
+
+
+<title>【题解】GDKOI2024TGD2T2计算 | Danielqf&#39;s Blog</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        <!-- MathJax配置，可通过单美元符号书写行内公式等 -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+        preferredFont: "TeX",
+        availableFonts: ["STIX","TeX"],
+        linebreaks: { automatic:true },
+        EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+        inlineMath: [ ["$", "$"], ["\\(","\\)"] ],
+        processEscapes: true,
+        ignoreClass: "tex2jax_ignore|dno",
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+        equationNumbers: { autoNumber: "AMS" },
+        noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } },
+        Macros: { href: "{}" }
+    },
+    messageStyle: "none"
+    });
+</script>
+<!-- 给MathJax元素添加has-jax class -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+<!-- 通过连接CDN加载MathJax的js代码 -->
+<script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+    
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+    
+<script src="/js/search.js"></script>
+
+    <script type="text/javascript">
+        var search_path = "search.xml";
+        if (search_path.length == 0) {
+            search_path = "search.xml";
+        }
+        var path = "/" + search_path;
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        click_time=0;
+    </script>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo">
+                <a href="/">Danielqf&#39;s Blog</a>
+                <span class="title">【题解】GDKOI2024TGD2T2计算</span>
+            </div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Category</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <a class="menu-item" onclick="$('#search-page').show(); $('#local-search-input')[0].focus();">Search</a>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Danielqf&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Category</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset>60) {
+            $('.navbar')[0].classList.add('topped');
+        }
+        else {
+            $('.navbar')[0].classList.remove('topped');
+        }
+    });
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+
+        <div class="main">
+            <div style="z-index: 1000; position: fixed; background-color: #000a;
+        top: 0; bottom: 0; left: 0; right: 0; padding: 0 max(50% - 375px,5px); display: none;" id="search-page"
+        onclick="if (Date.now()-click_time>=10) { this.style.display='none'; } quitting=1; ">
+    <input id="local-search-input" style="height: 24px; position: relative; top: 24px; font-size: 16px;
+        width: calc(100% - 50px); color: white; background-color: initial; padding: 12px 23px; border-radius: 5px; border: 2px solid #bbb; outline: 0;"
+        onclick="click_time=Date.now()">
+    <div id="local-search-result" style="width: 100%; position: relative; top: 24px;
+        height: calc(100% - 105px);" onclick="click_time=Date.now()"></div>
+</div>
+
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">【题解】GDKOI2024TGD2T2计算</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href=>danielqf</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a>2024.01.14&nbsp;&nbsp;20:44:11</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E9%A2%98%E8%A7%A3/">题解</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h2 id="题意"><a class="header-anchor" href="#题意"></a>题意</h2>
+<p>定义<br>
+$$<br>
+F(x,a,b)=\begin{cases}<br>
+0&amp;a=0\lor b=0,\\<br>
+\gcd(x^a-1,x^b-1)+1&amp;otherwise.<br>
+\end{cases}<br>
+\quad(x&gt;0,\ a,b\ge0)<br>
+$$<br>
+给定 $m,a,b,c,d$，求集合 $(F(m,a,b),F(m,c,d)]\cap\mathbb Z$ 的和为 $m$ 的倍数的子集数。</p>
+<p>答案对 $998244353$ 取模。</p>
+<h2 id="F"><a class="header-anchor" href="#F"></a>F</h2>
+<p>$$<br>
+\begin{align*}<br>
+F(x,a,b)&amp;=\gcd(x^a-1,x^b-1)+1\\<br>
+&amp;=\gcd(x^b-1,(x^a-1)-(x^b-1))+1\\<br>
+&amp;=\gcd(x^b-1,x^b(x^{a-b}-1))+1\\<br>
+&amp;=\gcd(x^b-1,x^{a-b}-1)+1&amp;(x^b-1\perp x^b)\\<br>
+&amp;=F(x,b,a-b).<br>
+\end{align*}<br>
+$$<br>
+其中 $0&lt;b&lt;a$.</p>
+<p>可以发现这是一个辗转相除的过程，所以 $F(x,a,b)=x^{\gcd(a,b)}\quad(a,b\ne0)$.</p>
+<h2 id="65"><a class="header-anchor" href="#65"></a>65%</h2>
+<p>列出生成函数<br>
+$$<br>
+f(x)=\prod_{i=0}^{m-1}x^i+1<br>
+$$<br>
+令 $k=\frac{R-L}m$，则答案为<br>
+$$<br>
+\sum_{i\ge0}[x^{im}]f(x)^k<br>
+$$<br>
+其本质是循环卷积，$O(m^2)$ 计算 $f(x)$ 之后再 $O(m\log m\log k)$ 多项式快速幂即可。</p>
+<h2 id="100"><a class="header-anchor" href="#100"></a>100%</h2>
+<p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/blog/command-block/dan-wei-gen-fan-yan-xiao-ji">单位根反演</a><br>
+$$<br>
+\begin{align*}<br>
+\sum_{i\ge0}[x^{im}]f(x)^k&amp;=\sum_{i\ge0}[m|i][x^i]f(x)^k\\<br>
+&amp;=\sum_{i\ge0}[x^i]f(x)^k\frac1m\sum_{t=0}^{m-1}w_m^{it}\\<br>
+&amp;=\frac1m\sum_{t=0}^{m-1}\sum_{i\ge0}({w_m^t})^i[x^i]f(x)^k\\<br>
+&amp;=\frac1m\sum_{t=0}^{m-1}f(w_m^t)^k<br>
+\end{align*}<br>
+$$<br>
+令 $d=\gcd(m,t),s=\frac td,n=\frac md$，则<br>
+$$<br>
+f(w_m^t)=\prod_{i=0}^{m-1}w_m^{it}+1=(\prod_{i=0}^{n-1}w_n^{is}+1)^d=(\prod_{i=0}^{n-1}w_n^i+1)^d<br>
+$$<br>
+所以<br>
+$$<br>
+\begin{align*}<br>
+\frac1m\sum_{t=0}^{m-1}f(w_m^t)^k&amp;=\frac1m\sum_{d|m}\sum_{t=0}^{m-1}\\gcd(m,t)=d](\prod_{i=0}^{n-1}w_n^i+1)^{kd}\\<br>
+&amp;=\frac1m\sum_{d|m}\varphi(n)(\prod_{i=0}^{n-1}w_n^i+1)^{kd}<br>
+\end{align*}<br>
+$$<br>
+根据<a target="_blank" rel="noopener" href="https://oi-wiki.org/math/poly/fundamental/">代数基本定理</a><br>
+$$<br>
+x^n-1=\prod_{i=0}^{n-1}x-w_n^i<br>
+$$<br>
+代入 $x=-1$<br>
+$$<br>
+\begin{align*}<br>
+(-1)^n-1&amp;=\prod_{i=0}^{n-1}-1-w_n^i\\<br>
+1-(-1)^n&amp;=\prod_{i=0}^{n-1}w_n^i+1<br>
+\end{align*}<br>
+$$<br>
+所以<br>
+$$<br>
+\frac1m\sum_{d|m}\varphi(n)(\prod_{i=0}^{n-1}w_n^i+1)^{kd}=\frac1m\sum_{d|m\land2\nmid n}\varphi(n)2^{kd}<br>
+$$<br>
+$O(m)$ 预处理 $\varphi(n)$，再 $O(Td(m)\log km)$ 计算即可，其中 $d(m)$ 为 $m$ 的正因子个数。</p>
+
+        </div>
+
+        
+    <script src="https://giscus.app/client.js"
+        data-repo="danielqfmai/danielqfmai.github.io"
+        data-repo-id="R_kgDOK66FXA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOK66FXM4Cb1ep"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+    </script>
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© danielqf | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/danielqfmai/chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
